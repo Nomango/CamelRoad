@@ -1,0 +1,162 @@
+body{
+    color: #666;
+}
+.customize-head,.customize-desc,.phone-input,.textarea-input{
+    width: 100%;
+}
+.customize-head{
+    background-image: url("__IMAGE__/pc/mthumb.jpg");
+}
+.customize-content,.submit-btn{
+    text-align: center;
+}
+.customize-content{
+    width: 1210px;
+    margin: 80px auto 60px auto;
+}
+.customize-process-box,.form-item:first-child,.customize-img-box,.point-box{
+    display: flex;
+}
+.customize-process-box{
+    justify-content: center;
+    margin-left: -72px;
+}
+.customize-process-item{
+    width: 230px;
+}
+.customize-process-item:not(:last-of-type){
+    margin-right: 25px;
+}
+.process-img{
+    width: 108px;
+    height: 108px;
+}
+.process-img:first-child{
+    margin-left: 54px;
+}
+.process-img:last-child{
+    margin-right: 54px;
+}
+.customize-desc{
+    margin-top: 40px;
+}
+.consult-1-desc{
+    padding-left: 35px;
+}
+.consult-2-desc{
+    padding-left: 67px;
+}
+.customize-desc-title{
+    font-size: 24px;
+}
+.provide-subtitle,.customize-desc-p{
+    font-weight: lighter;
+}
+.customize-desc-p{
+    margin-top: 40px;
+    line-height: 25px;
+}
+.customize-desc-p,.form-input{
+    font-size: 14px;
+}
+.customize-img-box{
+    padding-left: 10px;
+}
+.point-box{
+    align-items: center;
+}
+.point-icon{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 50px;
+    background-color: #999;
+    margin-left: 10px;
+}
+.consult .point-icon:last-child{
+    width: 10px;
+    height: 10px;
+}
+.consult-1 .point-box:not(:last-of-type){
+    margin-right: 10px;
+}
+.consult-1 .point-box:last-child .point-icon:last-child{
+    width: 10px;
+    height: 10px
+}
+.consult-2 .point-box{
+    margin-left: 30px;
+}
+.consult-2 .point-box .point-icon:last-child{
+    margin-right: 10px;
+}
+.provide-box{
+    margin-top: 80px;
+}
+.provide-title{
+    font-size: 36px;
+}
+.provide-subtitle{
+    font-size: 18px;
+    margin: 40px 0;
+}
+.form-box{
+    width: 370px;
+    margin: 0 auto;
+}
+.form-item:first-child{
+    justify-content: space-between;
+}
+.form-item:first-child input{
+    width: 123px;
+}
+.form-item{
+    margin-bottom: 20px;
+}
+input::placeholder,textarea::placeholder{
+    color: #999;
+}
+.form-input{
+    border: 1px solid #8a8a8a;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 0;
+    text-indent: 10px;
+    border-radius: 8px;
+}
+.textarea-input{
+    resize: none;
+    min-height: 80px;
+}
+.name-input{
+    border-radius: 8px 0 0 8px;
+    border-right: 0;
+}
+.site-input{
+    border-radius: 0;
+}
+.date-input{
+    border-left: 0;
+    border-radius: 0 8px 8px 0;
+}
+.form-item:last-child{
+    text-align: left;
+}
+.submit-btn{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: #e3435a;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    opacity: 1;
+}
+.submit-btn:hover{
+    opacity: .8;
+    transition: all .3s;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骆驼带路</title>
+    {include file="layout/head" /}
+    <link rel="stylesheet" href="__CSS__/pc/detailTouristMall.css" />
+    <style>
+        .detail-head{
+            background-image: url("__IMAGE__/pc/dtourist.jpg");
+        }
+    </style>
+</head>
+<body>
+{include file="pclayout/header" /}
+<div class="detail-box">
+    <div class="detail-head allhead-img"></div>
+    <div class="detail-content">
+        <div class="select-box">
+            <p class="select-p">当前选择:</p>
+            <div class="select-btn-box">
+                <p class="close-p">
+                    <i class="close-icon"></i>
+                </p>
+                <p>精选旅行</p>
+            </div>
+        </div>
+        <div class="site-box">
+            <p class="site-p">目的地：</p>
+            <div class="site-list">
+                <p class="site-item active">乌鲁木齐</p>
+                <p class="site-item">乌鲁木齐</p>
+                <p class="site-item">乌鲁木齐</p>
+            </div>
+        </div>
+        <div class="sort-box">
+            <div class="sort-item comprehensive-box active">
+                <p class="comprehensive">综合排序</p>
+                <img src="__IMAGE__/pc/arrow.png" alt="" class="arrow-img hideCon showCon">
+            </div>
+            <div class="sort-item price-item">
+                <p class="comprehensive">价格</p>
+                <img src="__IMAGE__/pc/arrow.png" alt="" class="arrow-img hideCon">
+            </div>
+            <div class="sort-item sold-item">
+                <p class="comprehensive">销量</p>
+                <img src="__IMAGE__/pc/arrow.png" alt="" class="arrow-img hideCon">
+            </div>
+            <div class="sort-price-box">
+                <input type="text" placeholder="￥" class="price-input">
+                <span>-</span>
+                <input type="text" placeholder="￥" class="price-input">
+            </div>
+        </div>
+        <div class="result-box">
+            <div class="result-list">
+                <div class="result-item" onclick="detailTourist()">
+                    <img src="__IMAGE__/pc/bhb.jpg" alt="" class="result-img">
+                    <div class="result-desc">
+                        <p class="result-desc-top">
+                            <span class="result-desc-left"> < 包车自由行 > </span>
+                            <span class="result-desc-right">环天山360度无死角，包车自由行，独家推荐。</span>
+                        </p>
+                        <p class="result-desc-footer">
+                            <span class="date-span">阿勒泰：6天</span>
+                            <span class="sold-span">已售：100</span>
+                            <span class="price-span">
+                                <em class="price-em">￥110000</em>
+                                <em class="text-em">起</em>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <img src="__IMAGE__/pc/bhb.jpg" alt="" class="result-img">
+                    <div class="result-desc">
+                        <p class="result-desc-top">
+                            新疆探险旅游，自驾旅游等特色旅游线路，大美新疆一生不可错过的旅行！
+                        </p>
+                        <p class="result-desc-footer">
+                            <span class="date-span">阿勒泰：6天</span>
+                            <span class="sold-span">已售：100</span>
+                            <span class="price-span">
+                            <em class="price-em">￥110000</em>
+                            <em class="text-em">起</em>
+                        </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <img src="__IMAGE__/pc/bhb.jpg" alt="" class="result-img">
+                    <div class="result-desc">
+                        <p class="result-desc-top">
+                            新疆探险旅游，自驾旅游等特色旅游线路，大美新疆一生不可错过的旅行！
+                        </p>
+                        <p class="result-desc-footer">
+                            <span class="date-span">阿勒泰：6天</span>
+                            <span class="sold-span">已售：100</span>
+                            <span class="price-span">
+                            <em class="price-em">￥110000</em>
+                            <em class="text-em">起</em>
+                        </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <img src="__IMAGE__/pc/bhb.jpg" alt="" class="result-img">
+                    <div class="result-desc">
+                        <p class="result-desc-top">
+                            新疆探险旅游，自驾旅游等特色旅游线路，大美新疆一生不可错过的旅行！
+                        </p>
+                        <p class="result-desc-footer">
+                            <span class="date-span">阿勒泰：6天</span>
+                            <span class="sold-span">已售：100</span>
+                            <span class="price-span">
+                            <em class="price-em">￥110000</em>
+                            <em class="text-em">起</em>
+                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="page-box">
+                <button class="button pre-btn">上一页</button>
+                <span class="page-span">1</span>
+                <button class="button next-btn">下一页</button>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="pclayout/return" /}
+{include file="pclayout/footer" /}
+<script>
+    var url = window.location.href;
+    if (url == "http://localhost:8088/CamelRoad/public/index/customize/detailtouristmall.html"){
+        $("#bazaMall").css('color','#e3435a')
+    }else {
+        console.log(url)
+    }
+    $(".sort-item").click(function () {
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $(this).siblings().children('img').removeClass('showCon');
+        $(this).children('img').addClass('showCon');
+    });
+    function detailTourist() {
+        location.href = "{:url('Customize/detailTourist')}";
+    }
+    var back_btn = $(".return-box");
+    back_btn.on('click',function () {
+        $('html,body').animate({
+            scrollTop: 0
+        },800)
+    });
+    $(window).on('scroll',function () {
+        if($(window).scrollTop() > $(window).height()){
+            back_btn.fadeIn();
+        } else {
+            back_btn.fadeOut();
+        }
+
+    });
+    $(window).trigger('scroll');//触发选中的事件
+</script>
+</body>
+</html>

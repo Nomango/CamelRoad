@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骆驼带路</title>
+    {include file="layout/head"/}
+    <link rel="stylesheet" href="__CSS__/mobile/detailSpecialty.css" />
+</head>
+<body>
+{include file="layout/header"/}
+<div class="detail-box">
+    <img src="__IMAGE__/alt.jpg" alt="" class="detail-img">
+    <div class="desc-box">
+        <p class="title-p">标题</p>
+        <p class="desc-p">新疆特产是基于新疆独特的地理环境和人文环境而产生</p>
+        <div class="price-box">
+            <p class="price-p">￥：19.80</p>
+            <p class="sale-p">销量：22</p>
+        </div>
+    </div>
+</div>
+<div class="detail-footer">
+    <div class="detail-p-box">
+        <p class="detail-p active">商品详情</p>
+        <p class="detail-p">注意事项</p>
+    </div>
+    <div class="detail-content-box">
+        <div class="detail-content-item hideCon showCon">
+            <p class="detail-content-p">商品详情</p>
+        </div>
+        <div class="detail-content-item hideCon">
+            <p class="detail-content-p">注意事项</p>
+        </div>
+    </div>
+    <button class="order-btn">预约</button>
+</div>
+<div class="mask"></div>
+<div class="order-box">
+    <div class="account-list">
+        <p class="order-list-p">数量：</p>
+        <div class="add-box">
+            <p class="del-p">
+                <i>-</i>
+            </p>
+            <input type="text" class="add-input">
+            <p class="add-p">
+                <i>+</i>
+            </p>
+        </div>
+    </div>
+    <div class="order-list">
+        <p class="order-p">联系人</p>
+        <input type="text" placeholder="联系人姓名" class="order-input">
+    </div>
+    <div class="order-list">
+        <p class="order-p">联系人电话</p>
+        <input type="text" placeholder="联系人电话" class="order-input">
+    </div>
+    <div class="remark-list">
+        <p class="order-list-p">备注</p>
+        <textarea name="" class="order-textarea" id="" cols="30" rows="10"></textarea>
+    </div>
+    <button class="submit-btn">提交</button>
+</div>
+<script>
+    $(".order-btn").click(function () {
+        $(".order-box").slideDown();
+        $(".mask").fadeIn();
+    });
+    $(".mask").click(function () {
+        $(".order-box").slideUp();
+        $(".mask").fadeOut();
+    });
+    $(".detail-p-box .detail-p").click(function () {
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $(".detail-content-item").eq(index).addClass('showCon').siblings().removeClass('showCon');
+    })
+</script>
+</body>
+</html>

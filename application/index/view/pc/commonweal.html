@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骆驼带路</title>
+    {include file="layout/head"/}
+    <link rel="stylesheet" href="__CSS__/pc/commonweal.css" />
+    <style>
+        .common-weal-head{
+            background-image: url("__IMAGE__/pc/common.jpg");
+        }
+    </style>
+</head>
+<body>
+{include file="pclayout/header" /}
+<div class="commonweal-box">
+    <div class="common-weal-head allhead-img"></div>
+    <div class="common-weal-content">
+        <div class="common-weal-item">
+            <img src="__IMAGE__/pc/common.jpg" alt="" class="item-img">
+            <div class="item-desc">
+                <p class="item-title">标题</p>
+                <p class="item-subtitle">
+                    <span class="desc-span">
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法。指有福安社会公众的福祉和利益
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法。指有福安社会公众的福祉和利益
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法
+                    </span>
+                    <span class="detail-span">查看详情 >></span>
+                </p>
+            </div>
+        </div>
+        <div class="common-weal-item">
+            <img src="__IMAGE__/pc/common.jpg" alt="" class="item-img">
+            <div class="item-desc">
+                <p class="item-title">标题</p>
+                <p class="item-subtitle">
+                    <span class="desc-span">
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法。指有福安社会公众的福祉和利益
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法。指有福安社会公众的福祉和利益
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法
+                    </span>
+                    <span class="detail-span">查看详情 >></span>
+                </p>
+            </div>
+        </div>
+        <div class="common-weal-item">
+            <img src="__IMAGE__/pc/common.jpg" alt="" class="item-img">
+            <div class="item-desc">
+                <p class="item-title">标题</p>
+                <p class="item-subtitle">
+                    <span class="desc-span">
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法。指有福安社会公众的福祉和利益
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法。指有福安社会公众的福祉和利益
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法
+                    </span>
+                    <span class="detail-span">查看详情 >></span>
+                </p>
+            </div>
+        </div>
+        <div class="common-weal-item">
+            <img src="__IMAGE__/pc/common.jpg" alt="" class="item-img">
+            <div class="item-desc">
+                <p class="item-title">标题</p>
+                <p class="item-subtitle">
+                    <span class="desc-span">
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法。指有福安社会公众的福祉和利益
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法。指有福安社会公众的福祉和利益
+                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法
+                    </span>
+                    <span class="detail-span">查看详情 >></span>
+                </p>
+            </div>
+        </div>
+        <div class="page-box">
+            <p class="pre-p">
+                <i class="page-icon"></i>
+            </p>
+            <p class="page-p">
+                <span class="active">1</span>
+                <span class="">2</span>
+                <span class="">3</span>
+                <span class="">4</span>
+                <span class="">5</span>
+            </p>
+            <p class="next-p">
+                <i class="page-icon"></i>
+            </p>
+        </div>
+    </div>
+</div>
+{include file="pclayout/return" /}
+{include file="pclayout/footer" /}
+<script>
+    var url = window.location.href;
+    if (url == "http://localhost:8088/CamelRoad/public/index/customize/commonweal.html"){
+        $("#commonweal").css('color','#e3435a')
+    }
+    var back_btn = $(".return-box");
+    back_btn.on('click',function () {
+        $('html,body').animate({
+            scrollTop: 0
+        },800)
+    });
+    $(window).on('scroll',function () {
+        if($(window).scrollTop() > $(window).height()){
+            back_btn.fadeIn();
+        } else {
+            back_btn.fadeOut();
+        }
+
+    });
+    $(window).trigger('scroll');//触发选中的事件
+</script>
+</body>
+</html>

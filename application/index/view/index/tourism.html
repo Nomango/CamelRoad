@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骆驼带路</title>
+    {include file="layout/head" /}
+    <link rel="stylesheet" href="__CSS__/mobile/tourism.css" />
+</head>
+<body>
+{include file="layout/header" /}
+<div class="tab-container">
+    <ul>
+        <li class="tab-item active">全部</li>
+        <li class="tab-item">精选旅行</li>
+        <li class="tab-item">主题推荐</li>
+        <li class="tab-item">包车自由行</li>
+    </ul>
+</div>
+<div class="tag-box">
+    <div class="tag-item">
+        <p class="tag-item-p">阿勒泰</p>
+        <p class="tag-item-p">阿勒泰</p>
+    </div>
+    <div class="type-box">
+        <div class="type-item active">
+            <p class="type-item-p">综合排序</p>
+            <i class="down-icon"></i>
+        </div>
+        <div class="type-item">
+            <p class="type-item-p">价格</p>
+            <i class="down-icon"></i>
+        </div>
+        <div class="type-item">
+            <p class="type-item-p">销量</p>
+            <i class="down-icon"></i>
+        </div>
+        <div class="type-item">
+            <img src="__IMAGE__/icon.png" alt="" class="type-item-img" id="type-img">
+        </div>
+    </div>
+</div>
+<div class="tab-content-box">
+    <div class="tab-content hideCon showCon">
+        <div class="tourist-box">
+            <div class="tab-content-item card">
+                <img src="__IMAGE__/alt.jpg" alt="" class="tab-content-item-img">
+                <div class="tab-content-item-desc">
+                    <p class="content-item-title">新疆探险旅游，自驾旅游等</p>
+                    <p class="tag-item-time">阿勒泰：6天</p>
+                    <div class="tag-item-price">
+                        <p class="tag-sold-p">已售：100</p>
+                        <p class="tag-price-p">￥11000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content-item card">
+                <img src="__IMAGE__/alt.jpg" alt="" class="tab-content-item-img">
+                <div class="tab-content-item-desc">
+                    <p class="content-item-title">新疆探险旅游，自驾旅游等</p>
+                    <p class="tag-item-time">阿勒泰：6天</p>
+                    <div class="tag-item-price">
+                        <p class="tag-sold-p">已售：100</p>
+                        <p class="tag-price-p">￥11000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content hideCon">2</div>
+    <div class="tab-content hideCon">
+        <div class="theme-box">
+            <div class="theme-item">
+                <img src="__IMAGE__/alt.jpg" alt="" class="theme-item-img">
+                <div class="theme-desc-box">
+                    <p class="theme-item-title">新疆探险旅游，自驾旅游等</p>
+                    <div class="theme-item-price">
+                        <p class="theme-price-p">￥11000</p>
+                        <p class="theme-item-time">阿勒泰：6天</p>
+                        <p class="theme-sold-p">已售：100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content hideCon">4</div>
+</div>
+<script>
+    $(".tab-item").click(function () {
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $(".tab-content").eq(index).addClass("showCon").siblings().removeClass('showCon');
+    });
+    $(".type-item").click(function () {
+        var index = $(this).index();
+        if(index == 3){
+            $("#type-img")[0].src = "__IMAGE__/icon_2.png";
+            $(this).addClass('active').siblings().removeClass('active');
+        }else {
+            $("#type-img")[0].src = "__IMAGE__/icon.png";
+            $(this).addClass('active').siblings().removeClass('active');
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骆驼带路</title>
+    {include file="layout/head"/}
+    <link rel="stylesheet" href="__CSS__/pc/customize.css" />
+    <style>
+        .customize-head{
+            background-image: url("__IMAGE__/pc/mthumb.jpg");
+        }
+    </style>
+</head>
+<body>
+{include file="pclayout/header"}
+<div class="customize-head allhead-img"></div>
+<div class="customize-content">
+    <div class="customize-process-box">
+        <div class="customize-process-item">
+            <div class="customize-img-box consult">
+                <img src="__IMAGE__/pc/consult.png" alt="" class="process-img">
+                <div class="point-box">
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                </div>
+            </div>
+            <div class="customize-desc">
+                <p class="customize-desc-title">免费咨询</p>
+                <p class="customize-desc-p">我们有属于自己专业的旅游服务团队不断的为用户提供更多更快捷实用的功能与服务</p>
+            </div>
+        </div>
+        <div class="customize-process-item">
+            <div class="customize-img-box consult-1">
+                <div class="point-box">
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                </div>
+                <img src="__IMAGE__/pc/consult_1.png" alt="" class="process-img">
+                <div class="point-box">
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                </div>
+            </div>
+            <div class="customize-desc consult-1-desc">
+                <p class="customize-desc-title">沟通行程</p>
+                <p class="customize-desc-p">我们有属于自己专业的旅游服务团队不断的为用户提供更多更快捷实用的功能与服务</p>
+            </div>
+        </div>
+        <div class="customize-process-item">
+            <div class="customize-img-box consult-2">
+                <div class="point-box">
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                    <i class="point-icon"></i>
+                </div>
+                <img src="__IMAGE__/pc/consult_2.png" alt="" class="process-img consult2-img">
+            </div>
+            <div class="customize-desc consult-2-desc">
+                <p class="customize-desc-title">预定落实</p>
+                <p class="customize-desc-p">我们有属于自己专业的旅游服务团队不断的为用户提供更多更快捷实用的功能与服务</p>
+            </div>
+        </div>
+    </div>
+    <div class="provide-box">
+        <p class="provide-title">提供需求</p>
+        <p class="provide-subtitle">说出你的需求，谈谈你的旅行</p>
+        <div class="form-box">
+            <div class="form-item">
+                <input type="text" class="form-input name-input" placeholder="姓名">
+                <input type="text" class="form-input site-input" placeholder="目的地">
+                <input type="text" class="form-input date-input" placeholder="天数">
+            </div>
+            <div class="form-item">
+                <input type="text" class="form-input phone-input" placeholder="电话号码">
+            </div>
+            <div class="form-item">
+                <textarea name="" id="" class="form-input textarea-input" placeholder="备注内容" style="overflow: hidden"></textarea>
+            </div>
+            <div class="form-item">
+                <button class="submit-btn">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="pclayout/return" /}
+{include file="pclayout/footer" /}
+<script>
+    var url = window.location.href;
+    if (url == "http://localhost:8088/CamelRoad/public/index/customize/customize.html"){
+        $("#customize").css('color','#e3435a')
+    }
+    var back_btn = $(".return-box");
+    back_btn.on('click',function () {
+        $('html,body').animate({
+            scrollTop: 0
+        },800)
+    });
+    $(window).on('scroll',function () {
+        if($(window).scrollTop() > $(window).height()){
+            back_btn.fadeIn();
+        } else {
+            back_btn.fadeOut();
+        }
+
+    });
+    $(window).trigger('scroll');//触发选中的事件
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="__CSS__/mobile/menu.css">
+{include file="layout/head" /}
+<div class="menu-box">
+    <img src="__IMAGE__/menu/menu.png" alt="" class="menu-img">
+</div>
+
+<div class="menu-list">
+    <div class="menu-item active">
+        <img src="__IMAGE__/menu/home_2.png" alt="" class="home-img" id="home-img-1">
+        <p class="">主页</p>
+    </div>
+    <div class="menu-item">
+        <img src="__IMAGE__/menu/private.png" alt="" class="home-img" id="home-img-2">
+        <p class="">私人订制</p>
+    </div>
+    <div class="menu-item">
+        <img src="__IMAGE__/menu/about.png" alt="" class="home-img" id="home-img-3">
+        <p class="">关于我们</p>
+    </div>
+    <div class="menu-item">
+        <img src="__IMAGE__/menu/contact.png" alt="" class="home-img" id="home-img-4">
+        <p class="">联系我们</p>
+    </div>
+</div>
+<script>
+    $(".menu-box").click('click',function (e) {
+        e.stopPropagation();
+        if($(".menu-list").css('display')== 'none'){
+            $(".menu-list").fadeIn();
+        }else {
+            $(".menu-list").fadeOut();
+        }
+        $(document).on('click',function () {
+            $(".menu-list").fadeOut();
+        })
+    });
+    $(".menu-list").click(function (e) {
+        e.stopPropagation();
+    });
+    $(".menu-item").click(function () {
+        var index  = $(this).index();
+        if(index == 0){
+            $('#home-img-1')[0].src = "__IMAGE__/menu/home_2.png";
+            location.href = "{:url('Index/index')}";
+        }else {
+            $('#home-img-1')[0].src = "__IMAGE__/menu/home.png";
+        }
+        if(index == 1){
+            $('#home-img-2')[0].src = "__IMAGE__/menu/private_2.png";
+            location.href = "{:url('Contact/privateTailor')}";
+        }else {
+            $('#home-img-2')[0].src = "__IMAGE__/menu/private.png";
+        }
+        if(index == 2){
+            $('#home-img-3')[0].src = "__IMAGE__/menu/about_2.png";
+        }else {
+            $('#home-img-3')[0].src = "__IMAGE__/menu/about.png";
+        }
+        if(index == 3){
+            $('#home-img-4')[0].src = "__IMAGE__/menu/contact_2.png";
+            location.href = "{:url('Contact/contact')}";
+        }else {
+            $('#home-img-4')[0].src = "__IMAGE__/menu/contact.png";
+        }
+        console.log($(this).children('img')[0].src);
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>

@@ -1,0 +1,92 @@
+.primary-title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 7.5px;
+    height: 51px;
+    border-radius: 0 15px 0 15px;
+    background-color: #e3435a;
+}
+.primary-title{
+    position: relative;
+    padding-left: 25px;
+}
+.remark-p,.primary-title{
+    color: #000;
+    font-size: 28pt;
+}
+.sub-primary-title{
+    color: #999;
+}
+.sub-primary-title,.private-textarea{
+    font-size: 18pt;
+}
+.private-textarea{
+    color: #666;
+}
+.private-box,.remark-box,.private-textarea{
+    margin-top: 20px;
+}
+.private-box,.remark-box{
+    background-color: #fff;
+}
+.private-box{
+    padding: 0 20px;
+}
+.remark-box{
+    padding: 20px 0 0 0;
+}
+.primary-img{
+    width: 100%;
+    height: 300px;
+}
+.private-item{
+    display: flex;
+    align-items: center;
+    line-height: 68pt;
+    height: 68pt;
+    border-bottom: 1px solid #cdcdcd;
+}
+.private-item:last-child{
+    border-bottom: none;
+}
+.primary-item-p{
+    width: 160pt;
+    font-size: 24pt;
+    color: #666;
+    text-align: left;
+}
+input::placeholder,textarea::placeholder{
+    color: #9c9c9c;
+}
+.private-input{
+    width: calc(100% - 160pt);
+    font-size: 20pt;
+    padding: 15px 0;
+    text-indent: 10px;
+    border: none;
+}
+.private-textarea{
+    width: calc(100% - 40px);
+    resize: none;
+    min-height: 300px;
+    border-radius: 15px;
+    background-color: #eeeeee;
+    text-indent: 10px;
+    padding-top: 5px;
+    margin-left: 20px;
+}
+.remark-p{
+    padding: 0 0 0 20px;
+}
+.submit-btn{
+    width: 100%;
+    font-size: 30pt;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+    margin-top: 220pt;
+    background-color: #e3435a;
+}

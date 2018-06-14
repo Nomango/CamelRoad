@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骆驼带路</title>
+    {include file="layout/head"/}
+    <link rel="stylesheet" href="__CSS__/pc/joinUs.css" />
+    <style>
+        .join-head{
+            background-image: url("__IMAGE__/pc/ajh.jpg");
+        }
+        .welfare-desc-box{
+            background-image: url("__IMAGE__/pc/common.jpg");
+        }
+    </style>
+</head>
+<body>
+{include file="pclayout/header" /}
+<div class="join-box">
+    <div class="join-head allhead-img"></div>
+    <div class="join-content">
+        <p class="content-title">我们的团队</p>
+        <div class="team-img-box">
+            <img src="__IMAGE__/pc/common.jpg" alt="" class="team-img">
+            <img src="__IMAGE__/pc/common.jpg" alt="" class="team-img">
+            <img src="__IMAGE__/pc/common.jpg" alt="" class="team-img">
+            <img src="__IMAGE__/pc/common.jpg" alt="" class="team-img">
+        </div>
+    </div>
+    <div class="welfare-box">
+        <p class="welfare-title">公司福利</p>
+        <div class="welfare-desc-box allhead-img">
+            <div class="mask"></div>
+            <div class="desc-item">
+                <img src="__IMAGE__/pc/money.png" alt="" class="desc-img">
+                <p class="desc-subtitle">更多收入</p>
+                <p class="desc-p">充分利用空闲时间，运用赚取的额外收入来帮助自己早日实现梦想。</p>
+            </div>
+            <div class="desc-item">
+                <img src="__IMAGE__/pc/money.png" alt="" class="desc-img">
+                <p class="desc-subtitle">更多收入</p>
+                <p class="desc-p">充分利用空闲时间，运用赚取的额外收入来帮助自己早日实现梦想。</p>
+            </div>
+            <div class="desc-item">
+                <img src="__IMAGE__/pc/money.png" alt="" class="desc-img">
+                <p class="desc-subtitle">更多收入</p>
+                <p class="desc-p">充分利用空闲时间，运用赚取的额外收入来帮助自己早日实现梦想。</p>
+            </div>
+        </div>
+    </div>
+    <div class="recruit-box">
+        <p class="recruit-title">招聘职位</p>
+        <div class="recruit-content">
+            <div class="recruit-tab">
+                <p class="recruit-item active">算法工程师</p>
+                <p class="recruit-item">产品工程师</p>
+                <p class="recruit-item">技术工程师</p>
+                <p class="recruit-item">配送工程师</p>
+            </div>
+            <div class="tab-con-box">
+                <div class="tab-content hideCon showCon">
+                    <div class="job-box">
+                        <p class="job-desc">
+                            <span class="job-title">工作职位</span>
+                            <span class="job-span">1、必须掌握计算机相关知识，熟练使用仿真工具MATLAB等</span>
+                            <span class="job-span">2、必须掌握计算机相关知识，熟练使用仿真工具MATLAB等</span>
+                        </p>
+                        <p class="require-p">
+                            <span class="require-span">工作要求</span>
+                            <span class="job-span">1、必须掌握计算机相关知识，熟练使用仿真工具MATLAB等</span>
+                            <span class="job-span">2、必须掌握计算机相关知识，熟练使用仿真工具MATLAB等</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-content hideCon">2</div>
+                <div class="tab-content hideCon">3</div>
+                <div class="tab-content hideCon">4</div>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="pclayout/return" /}
+{include file="pclayout/footer" /}
+<script>
+    var url = window.location.href;
+    if (url == "http://localhost:8088/CamelRoad/public/index/customize/joinus.html"){
+        $("#aboutus").css('color','#e3435a')
+    }
+    $(".recruit-item").click(function () {
+        var index = $(this).index();
+        $(this).addClass("active").siblings().removeClass('active');
+        $('.tab-content').eq(index).addClass('showCon').siblings().removeClass('showCon');
+    });
+    var back_btn = $(".return-box");
+    back_btn.on('click',function () {
+        $('html,body').animate({
+            scrollTop: 0
+        },800)
+    });
+    $(window).on('scroll',function () {
+        if($(window).scrollTop() > $(window).height()){
+            back_btn.fadeIn();
+        } else {
+            back_btn.fadeOut();
+        }
+
+    });
+    $(window).trigger('scroll');//触发选中的事件
+</script>
+</body>
+</html>

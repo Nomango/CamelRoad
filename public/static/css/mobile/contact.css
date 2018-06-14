@@ -1,0 +1,24 @@
+.contact-box{
+    margin-top: 20px;
+    background-color: #fff;
+}
+.contact-item{
+    height: 98px;
+    line-height: 98px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.contact-item:not(:last-of-type){
+    border-bottom: 1px solid #ccc;
+}
+.contact-img{
+    width: 80px;
+    height: 75px;
+    margin-left: 40px;
+}
+.contact-p{
+    color: #666;
+    font-size: 24pt;
+    margin-left: 50px;
+}

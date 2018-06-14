@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骆驼带路</title>
+    {include file="layout/head"/}
+    <link rel="stylesheet" href="__CSS__/pc/detailTourist.css" />
+    <style>
+        .detail-head{
+            background-image: url("__IMAGE__/pc/horse.jpg");
+        }
+    </style>
+</head>
+<body>
+{include file="pclayout/header" /}
+<div class="detail-box">
+    <div class="detail-head allhead-img"></div>
+    <div class="detail-content-box">
+        <p class="detail-title">乌鲁木齐三日游</p>
+        <div class="detail-desc">
+            <img src="__IMAGE__/pc/horse.jpg" alt="" class="detail-img">
+            <div class="desc-box">
+                <p class="sold-p">已售：888</p>
+                <p class="price-p">
+                    促销价：
+                    <span class="price-span">￥2564</span>
+                </p>
+                <div class="date-box">
+                    <div class="date-left">
+                        <p class="date-name">出发日期：</p>
+                        <input type="text" class="date-input">
+                        <p class="connect-p">-</p>
+                        <input type="text" class="date-input">
+                        <p class="connect-p">-</p>
+                        <input type="text" class="date-input">
+                    </div>
+                   <div class="date-right">
+                       <p class="account-p">数量:</p>
+                       <div class="account-box">
+                           <p class="account-btn reduce-btn"><i>-</i></p>
+                           <input type="text" value="1" class="account-input">
+                           <p class="account-btn add-btn"><i>+</i></p>
+                       </div>
+                   </div>
+                </div>
+                <div class="service-box">
+                    <p class="service-p">包车服务:</p>
+                    <div class="service-list">
+                        <div class="service-item active">
+                            <p class="type-p">5座经济型</p>
+                            <p>（别克威朗）</p>
+                        </div>
+                        <div class="service-item">
+                            <p class="type-p">5座经济型</p>
+                            <p>（别克威朗）</p>
+                        </div>
+                        <div class="service-item">
+                            <p class="type-p">5座经济型</p>
+                            <p>（别克威朗）</p>
+                        </div>
+                        <div class="service-item">
+                            <p class="type-p">5座经济型</p>
+                            <p>（别克威朗）</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="site-p">出发地点：乌鲁木齐</p>
+                <button class="bespoke-btn">预约</button>
+            </div>
+        </div>
+        <div class="introduce-box">
+            <div class="introduce-tab">
+                <p class="introduce-item active">
+                    <span class="introduce-item-span">行程介绍</span>
+                    <span class="line-span"></span>
+                </p>
+                <p class="introduce-item">
+                    <span class="introduce-item-span">费用说明</span>
+                    <span class="line-span"></span>
+                </p>
+            </div>
+            <div class="introduce-content-box">
+                <div class="introduce-con hideCon showCon">
+                    <div class="introduce-desc-box">
+                        <p class="introduce-desc-title">1.【报名费用】</p>
+                        <p class="introduce-dsec">
+                            <span>
+                                享奢团：
+                            </span>
+                            <span>定价为成人6900元/人 儿童为3450元/人</span>
+                            <span>
+                                经济团：
+                            </span>
+                            <span>定价为成人4900元/人 儿童为2900元/人</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="introduce-con hideCon">费用说明</div>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="pclayout/return" /}
+{include file="pclayout/footer" /}
+<script>
+    var url = window.location.href;
+    if (url == "http://localhost:8088/CamelRoad/public/index/customize/detailtourist.html"){
+        $("#bazaMall").css('color','#e3435a')
+    }else {
+        console.log(url)
+    }
+    $(".service-item").click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+    $(".reduce-btn").on('click',function () {
+        var count = $(".account-input").val();
+        if(count>0){
+            --count;
+            $(".account-input").val(count);
+        }
+    });
+    $(".add-btn").on('click',function () {
+        var count = $(".account-input").val();
+        count++;
+        $(".account-input").val(count);
+    });
+
+    $(".introduce-item").click(function () {
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $(".introduce-con").eq(index).addClass('showCon').siblings().removeClass('showCon');
+    });
+    var back_btn = $(".return-box");
+    back_btn.on('click',function () {
+        $('html,body').animate({
+            scrollTop: 0
+        },800)
+    });
+    $(window).on('scroll',function () {
+        if($(window).scrollTop() > $(window).height()){
+            back_btn.fadeIn();
+        } else {
+            back_btn.fadeOut();
+        }
+
+    });
+    $(window).trigger('scroll');//触发选中的事件
+</script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骆驼带路</title>
+    {include file="layout/head"/}
+    <link rel="stylesheet" href="__CSS__/pc/index.css" />
+    <style>
+        .desc-right{
+            background-image: url("__IMAGE__/pc/team.jpg");
+        }
+        .service-bgm{
+            height: 392px;
+            background-image: url("__IMAGE__/pc/service.jpg");
+        }
+    </style>
+</head>
+<body>
+{include file="pclayout/header"}
+{include file="pclayout/banner"}
+<div class="content-body">
+    <div class="desc-content-box">
+        <div class="desc-left">
+            <div class="desc-left-top">
+                <p class="desc-title">什么是骆驼带路？</p>
+                <p class="sub-desc-title">我们是新疆旅行的亲密伙伴</p>
+            </div>
+            <p class="desc-p">骆驼带路是新疆首个线上个性化定制+线下特色服务为基点，通过在各地区骆驼驿站；培训管理“骆驼客”；整理区域资源；策划线路活动的方式，向客户提供旅行定制及特色带路服务的旅游品牌系统。</p>
+            <p class="desc-p">产品涵盖新疆及中亚地区轻户外旅游线路、各类主题类型活动、个人及团队定制旅行、本地骆驼客向导与民宿等综合性旅游服务</p>
+            <button class="button know-btn">了解更多</button>
+        </div>
+        <div class="desc-right">
+            <img src="__IMAGE__/pc/team_2.jpg" alt="" class="desc-right-img">
+        </div>
+    </div>
+    <div class="share-box">
+        <div class="share-top">
+            <p class="share-title">游记分享</p>
+            <p class="sub-share-title">旅行的途中，美好的景色或是美好的事物总是需要记录下来的，这样自己以后再回顾起来也是一种快乐</p>
+        </div>
+        <div class="share-content">
+            <div class="share-left">
+                <img src="__IMAGE__/pc/video.jpg" alt="" class="video-img">
+                <div class="video-btn-box">
+                    <i class="video-icon"></i>
+                </div>
+                <video width="604" height="406" controls class="video-paly" id="video">
+                    <source src="__IMAGE__/pc/movie.mp4" type="video/mp4">
+                    <source src="__IMAGE__/pc/movie.ogg" type="video/ogg">
+                    <source src="__IMAGE__/pc/movie.webm" type="video/webm">
+                    您的浏览器不支持 video 属性。
+                </video>
+            </div>
+            <div class="share-right">
+                <img src="__IMAGE__/pc/vd_1.jpg" alt="" class="video-right-img">
+                <img src="__IMAGE__/pc/vd_1.jpg" alt="" class="video-right-img">
+                <img src="__IMAGE__/pc/vd_1.jpg" alt="" class="video-right-img">
+                <img src="__IMAGE__/pc/vd_1.jpg" alt="" class="video-right-img">
+            </div>
+        </div>
+    </div>
+    <div class="tab-box">
+        <p class="tab-p active">热门地区</p>
+        <p class="tab-p">热门活动</p>
+        <p class="tab-p">热门资讯</p>
+    </div>
+    <div class="tab-content-box">
+        <div class="tab-content-item hideCon showCon">
+            <div class="travel-item-box">
+                <div class="travel-item" onclick="detailTourist()" style="background-image: url('__IMAGE__/130.jpg')">
+                    <div class="travel-item-inner"></div>
+                    <div class="travel-item-outer">
+                        <p class="travel-item-title">乌鲁木齐</p>
+                        <p class="travel-item-desc">美丽的牧场三日游</p>
+                    </div>
+                </div>
+                <div class="travel-item" style="background-image: url('__IMAGE__/130.jpg')">
+                    <div class="travel-item-inner"></div>
+                    <div class="travel-item-outer">
+                        <p class="travel-item-title">乌鲁木齐</p>
+                        <p class="travel-item-desc">美丽的牧场三日游</p>
+                    </div>
+                </div>
+                <div class="travel-item" style="background-image: url('__IMAGE__/130.jpg')">
+                    <div class="travel-item-inner"></div>
+                    <div class="travel-item-outer">
+                        <p class="travel-item-title">乌鲁木齐</p>
+                        <p class="travel-item-desc">美丽的牧场三日游</p>
+                    </div>
+                </div>
+                <div class="travel-item" style="background-image: url('__IMAGE__/130.jpg')">
+                    <div class="travel-item-inner"></div>
+                    <div class="travel-item-outer">
+                        <p class="travel-item-title">乌鲁木齐</p>
+                        <p class="travel-item-desc">美丽的牧场三日游</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content-item hideCon">
+            <div class="travel-item-box">
+                <div class="site-item">
+                    <img src="__IMAGE__/pc/ks.jpg" alt="" class="site-img">
+                    <div class="site-desc-content">
+                        <p class="site-title">喀什三日游</p>
+                        <p class="site-desc">新疆探险旅游，自驾旅游大美新疆，一生不能错过的旅行</p>
+                        <p class="site-desc">新疆探险旅游，自驾旅游大美新疆，一生不能错过的旅行</p>
+                    </div>
+                </div>
+                <div class="site-item">
+                    <img src="__IMAGE__/pc/ks.jpg" alt="" class="site-img">
+                    <div class="site-desc-content">
+                        <p class="site-title">喀什三日游</p>
+                        <p class="site-desc">新疆探险旅游，自驾旅游大美新疆，一生不能错过的旅行</p>
+                        <p class="site-desc">新疆探险旅游，自驾旅游大美新疆，一生不能错过的旅行</p>
+                    </div>
+                </div>
+                <div class="site-item">
+                    <img src="__IMAGE__/pc/ks.jpg" alt="" class="site-img">
+                    <div class="site-desc-content">
+                        <p class="site-title">喀什三日游</p>
+                        <p class="site-desc">新疆探险旅游，自驾旅游大美新疆，一生不能错过的旅行</p>
+                        <p class="site-desc">新疆探险旅游，自驾旅游大美新疆，一生不能错过的旅行</p>
+                    </div>
+                </div>
+                <div class="site-item">
+                    <img src="__IMAGE__/pc/ks.jpg" alt="" class="site-img">
+                    <div class="site-desc-content">
+                        <p class="site-title">喀什三日游</p>
+                        <p class="site-desc">新疆探险旅游，自驾旅游大美新疆，一生不能错过的旅行</p>
+                        <p class="site-desc">新疆探险旅游，自驾旅游大美新疆，一生不能错过的旅行</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content-item hideCon">
+            <div class="travel-item-box">
+                <img src="__IMAGE__/pc/ks.jpg" alt="" class="information-img">
+                <div class="information-list">
+                    <div class="information-item">
+                        <p class="information-p">乌鲁木齐一日游火焰山跟团游</p>
+                        <p class="information-time">2018-05-12</p>
+                    </div>
+                    <div class="information-item">
+                        <p class="information-p">乌鲁木齐一日游火焰山跟团游</p>
+                        <p class="information-time">2018-05-12</p>
+                    </div>
+                    <div class="information-item">
+                        <p class="information-p">乌鲁木齐一日游火焰山跟团游</p>
+                        <p class="information-time">2018-05-12</p>
+                    </div>
+                    <div class="information-item">
+                        <p class="information-p">乌鲁木齐一日游火焰山跟团游</p>
+                        <p class="information-time">2018-05-12</p>
+                    </div>
+                    <div class="information-item">
+                        <p class="information-p">乌鲁木齐一日游火焰山跟团游</p>
+                        <p class="information-time">2018-05-12</p>
+                    </div>
+                    <div class="information-item">
+                        <p class="information-p">乌鲁木齐一日游火焰山跟团游</p>
+                        <p class="information-time">2018-05-12</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="commonweal-box">
+    <div class="commonweal-content">
+        <p class="commonweal-title">公益活动</p>
+        <div class="commonweal-item">
+            <img src="__IMAGE__/pc/common.jpg" alt="" class="commonweal-img">
+            <div class="commonweal-desc-box">
+                <p class="commonweal-desc-title">标题</p>
+                <p class="commonweal-desc">
+                    <span class="desc-span">
+                        公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法。指有关社会公众的福祉和利益。
+                        公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法。指有关社会公众的福祉和利益。
+                        公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法
+                    </span>
+                    <span class="desc-detail">查看详情 >></span>
+                </p>
+            </div>
+        </div>
+        <div class="commonweal-item">
+            <img src="__IMAGE__/pc/common.jpg" alt="" class="commonweal-img">
+            <div class="commonweal-desc-box">
+                <p class="commonweal-desc-title">标题</p>
+                <p class="commonweal-desc">
+                    <span class="desc-span">
+                        公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法。指有关社会公众的福祉和利益。
+                        公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法。指有关社会公众的福祉和利益。
+                        公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法
+                    </span>
+                    <span class="desc-detail">查看详情 >></span>
+                </p>
+            </div>
+        </div>
+        <div class="more-btn-box">
+            <button class="button more-btn">查看更多</button>
+        </div>
+    </div>
+</div>
+<div class="service-box">
+    <p class="service-title">服务推荐</p>
+    <div class="service-bgm allhead-img">
+        <div class="service-item">
+            <img src="__IMAGE__/pc/line.png" alt="" class="service-icon">
+            <p class="service-p">线路推荐</p>
+        </div>
+        <div class="service-item">
+            <img src="__IMAGE__/pc/chartered.png" alt="" class="service-icon">
+            <p class="service-p">包车服务</p>
+        </div>
+        <div class="service-item">
+            <img src="__IMAGE__/pc/customize.png" alt="" class="service-icon">
+            <p class="service-p">旅游定制</p>
+        </div>
+    </div>
+</div>
+<div class="customize-box">
+    <p class="customize-title">微信定制向导</p>
+    <img src="__IMAGE__/pc/team.jpg" alt="" width="10%">
+    <div class="interest-box">
+        <p class="interest-title">关注微信公众号</p>
+        <img src="__IMAGE__/pc/team.jpg" alt="" class="interest-img">
+    </div>
+</div>
+{include file="pclayout/return" /}
+{include file="pclayout/footer" /}
+<script>
+    var video = document.getElementById("video");
+    var back_btn = $(".return-box");
+    var url = window.location.href;
+    if (url == "http://localhost:8088/CamelRoad/public/index/pcindex/pcindex.html"){
+        $("#home").css('color','#e3435a')
+    }
+    $(".video-btn-box").click(function () {
+        console.log("123");
+        video.style.display = "block";
+        $(".video-img").addClass('hideCon');
+        if(video.pause){
+            video.play();
+        }
+    });
+    $(".tab-p").click(function () {
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $(".tab-content-item").eq(index).addClass('showCon').siblings().removeClass('showCon')
+    });
+    back_btn.on('click',function () {
+        $('html,body').animate({
+            scrollTop: 0
+        },800)
+    });
+    $(window).on('scroll',function () {
+        if($(window).scrollTop() > $(window).height()){
+            back_btn.fadeIn();
+        } else {
+            back_btn.fadeOut();
+        }
+    });
+    $(window).trigger('scroll');//触发选中的事件
+
+    function detailTourist() {
+        location.href = "{:url('Pcindex/detailTourist')}"
+    }
+
+
+</script>
+</body>
+</html>

@@ -4,13 +4,183 @@
     <meta charset="UTF-8">
     <title>骆驼带路</title>
     {include file="layout/head" /}
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="__CSS__/mobile/index.css" />
 </head>
 <body>
 
 {include file="layout/header" /}
-<p> 456</p>
+{include file="layout/banner" /}
+{include file="layout/menu" /}
+<div class="sub-banner-list">
+    <div class="sub-banner-item">
+        <img src="__IMAGE__/1.png" alt="" class="sub-banner-img">
+        <p class="sub-banner-p">新疆旅游</p>
+    </div>
+    <div class="sub-banner-item">
+        <img src="__IMAGE__/2.png" alt="" class="sub-banner-img">
+        <p class="sub-banner-p">新疆特产</p>
+    </div>
+    <div class="sub-banner-item">
+        <img src="__IMAGE__/3.png" alt="" class="sub-banner-img">
+        <p class="sub-banner-p">私人订制</p>
+    </div>
+</div>
+<div class="content-body">
+    <div class="tabContainer">
+        <ul>
+            <li class="tab-item active">热门旅游</li>
+            <li class="tab-item ">热门地区</li>
+            <li class="tab-item ">热门资讯</li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div class="tab-content-item hideCon showCon">
+            <div class="travel-item-box">
+                <div class="travel-item" onclick="detailTourist()" style="background-image: url('__IMAGE__/130.jpg')">
+                    <div class="travel-item-inner"></div>
+                    <div class="travel-item-outer">
+                        <p class="travel-item-title">乌鲁木齐</p>
+                        <p class="travel-item-desc">美丽的牧场三日游</p>
+                    </div>
+                </div>
+                <div class="travel-item" style="background-image: url('__IMAGE__/130.jpg')">
+                    <div class="travel-item-inner"></div>
+                    <div class="travel-item-outer">
+                        <p class="travel-item-title">乌鲁木齐</p>
+                        <p class="travel-item-desc">美丽的牧场三日游</p>
+                    </div>
+                </div>
+                <div class="travel-item" style="background-image: url('__IMAGE__/130.jpg')">
+                    <div class="travel-item-inner"></div>
+                    <div class="travel-item-outer">
+                        <p class="travel-item-title">乌鲁木齐</p>
+                        <p class="travel-item-desc">美丽的牧场三日游</p>
+                    </div>
+                </div>
+                <div class="travel-item" style="background-image: url('__IMAGE__/130.jpg')">
+                    <div class="travel-item-inner"></div>
+                    <div class="travel-item-outer">
+                        <p class="travel-item-title">乌鲁木齐</p>
+                        <p class="travel-item-desc">美丽的牧场三日游</p>
+                    </div>
+                </div>
+            </div>
+            <div class="travel-item-page">
+                <button class="button pre-btn">更多</button>
+            </div>
+        </div>
+        <div class="tab-content-item hideCon">
+            <div class="travel-item-box">
+                <div class="site-item">
+                    <img src="__IMAGE__/130.jpg" alt="" class="site-img">
+                    <div class="site-desc-content">
+                        <p class="site-title">喀什三日游</p>
+                        <p class="site-desc">新疆探险旅游，自驾旅游大美新疆，一生不能错过的旅行</p>
+                        <span class="site-price">
+                            <p class="sold-p">已售：100</p>
+                            <span class="price-p">
+                                <em>￥110000</em>
+                                起
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="site-item">
+                    <img src="__IMAGE__/130.jpg" alt="" class="site-img">
+                    <div class="site-desc-content">
+                        <p class="site-title">喀什三日游</p>
+                        <p class="site-desc">新疆探险旅游，自驾旅游大美新疆，一生不能错过的旅行</p>
+                        <span class="site-price">
+                            <p class="sold-p">已售：100</p>
+                            <span class="price-p">
+                                <em>￥110000</em>
+                                起
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="travel-item-page">
+                <button class="button pre-btn">更多</button>
+            </div>
+        </div>
+        <div class="tab-content-item hideCon">
+            <div class="travel-item-box">
+                <div class="information-content">
+                    <img src="__IMAGE__/130.jpg" alt="" class="information-img">
+                    <div class="information-list">
+                        <div class="information-item">
+                            <p class="information-p">乌鲁木齐一日游火焰山跟团游</p>
+                            <p class="information-time">2018-05-12</p>
+                            <i class="icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel-item-page">
+                <button class="button information-btn">更多</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="primary-box">
+    <p class="primary-title">公益活动</p>
+    <i class="icon"></i>
+</div>
+<div class="benefit-item-list">
+    <div class="benefit-item">
+        <div class="benefit-item-left">
+            <p class="benefit-item-title">公益是 公共利益事业的简称</p>
+            <p class="benefit-item-time">2018/05/20</p>
+        </div>
+        <img src="__IMAGE__/130.jpg" alt="" class="benefit-item-img">
+    </div>
+</div>
+<div class="join-box">
+    <p class="primary-title">加入我们</p>
+    <div class="form-box">
+        <div class="form-item">
+            <p class="primary-p">您的姓名：</p>
+            <input type="text" class="primary-input must-input">
+            <span class="must-icon"></span>
+        </div>
+        <div class="form-item">
+            <p class="primary-p">联系电话：</p>
+            <input type="text" class="primary-input must-input">
+            <span class="must-icon"></span>
+        </div>
+        <div class="form-item">
+            <p class="primary-p">备注留言：</p>
+            <textarea type="text" class="primary-input primary-textarea" style="overflow: hidden"></textarea>
+        </div>
+        <div class="form-item">
+            <input type="button" value="提交" class="primary-input primary-button">
+        </div>
+    </div>
+</div>
 {include file="layout/footer" /}
-
+<script>
+    $(".tabContainer .tab-item").click(function () {
+        var index = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".tab-content .tab-content-item").eq(index).addClass("showCon").siblings().removeClass("showCon");
+    });
+    $(".sub-banner-item").eq(0).click(function () {
+        location.href = "{:url('Contact/tourism')}";
+    });
+    $(".sub-banner-item").eq(1).click(function () {
+        location.href = "{:url('Contact/specialtyMall')}";
+    });
+    $(".sub-banner-item").eq(2).click(function () {
+        location.href = "{:url('Contact/privateTailor')}";
+    });
+    $(".pre-btn").click(function () {
+       location.href = "{:url('Contact/tourism')}";
+    });
+    function detailTourist() {
+        location.href = "{:url('Contact/detailTourist')}";
+    }
+</script>
 </body>
-
 </html>

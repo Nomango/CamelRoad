@@ -16,12 +16,12 @@ return [
 
     // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '__STATIC__' => '/Camel/public/static',
-        '__ROOT__' => '/Camel/public/index',
-        '__IMAGE__' => '/Camel/public/static/image',
-        '__CSS__' => '/Camel/public/static/css',
-        '__JS__' => '/Camel/public/static/js',
-        '__LIB__' => '/Camel/public/static/lib',
+        '__STATIC__' => '/CamelRoad/public/static',
+        '__ROOT__' => '/CamelRoad/public/index',
+        '__IMAGE__' => '/CamelRoad/public/static/image',
+        '__CSS__' => '/CamelRoad/public/static/css',
+        '__JS__' => '/CamelRoad/public/static/js',
+        '__LIB__' => '/CamelRoad/public/static/lib',
     ],
 
     // 应用调试模式

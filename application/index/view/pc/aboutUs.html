@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骆驼带路</title>
+    {include file="layout/head"/}
+    <link rel="stylesheet" href="__CSS__/pc/aboutUs.css" />
+    <style>
+        .about-head{
+            background-image: url("__IMAGE__/pc/common.jpg");
+        }
+    </style>
+</head>
+<body>
+{include file="pclayout/header" /}
+<div class="about-box">
+    <div class="about-head allhead-img"></div>
+    <div class="about-content">
+        <p class="content-title">我们的品牌</p>
+        <div class="brand-img-box">
+            <img src="__IMAGE__/pc/wu.jpg" alt="" class="brand-img">
+            <img src="__IMAGE__/pc/wu.jpg" alt="" class="brand-img">
+            <img src="__IMAGE__/pc/wu.jpg" alt="" class="brand-img">
+            <img src="__IMAGE__/pc/wu.jpg" alt="" class="brand-img">
+        </div>
+        <div class="brand-desc">
+            <p class="desc-p">
+                骆驼带路是新疆首个以线上个性化定制+线下特色服务为基点，通过在各地区建立骆驼驿站；培训管理“骆驼客”；整理区域资源；
+                策划线路活动的方式
+            </p>
+            <p class="desc-p">
+                向客户提供旅行定制及特色带路服务的旅游品牌系统。产品涵盖新疆及中亚地区轻户外旅行线路、各类主体类型活动、个人及团队定制旅行、
+                本地骆驼客向导与民宿等综合性旅游服务。
+            </p>
+        </div>
+        <div class="advantage-box">
+            <p class="advantage-title">我们的优势</p>
+            <div class="advantage-list">
+                <div class="advantage-item">
+                    <img src="__IMAGE__/pc/rich.png" alt="" class="advantage-img">
+                    <p class="advantage-subtitle">产品丰富</p>
+                    <p class="advantage-desc">从近千家旅舍，精选出性价比高的优质线路，组成丰富的产品线，满足您国内外出游需求</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="__IMAGE__/pc/high.png" alt="" class="advantage-img">
+                    <p class="advantage-subtitle">性价比高</p>
+                    <p class="advantage-desc">从近千家旅舍，精选出性价比高的优质线路，组成丰富的产品线，满足您国内外出游需求</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="__IMAGE__/pc/reliable.png" alt="" class="advantage-img">
+                    <p class="advantage-subtitle">专业可靠</p>
+                    <p class="advantage-desc">从近千家旅舍，精选出性价比高的优质线路，组成丰富的产品线，满足您国内外出游需求</p>
+                </div>
+                <div class="advantage-item">
+                    <img src="__IMAGE__/pc/opacity.png" alt="" class="advantage-img">
+                    <p class="advantage-subtitle">价格透明</p>
+                    <p class="advantage-desc">从近千家旅舍，精选出性价比高的优质线路，组成丰富的产品线，满足您国内外出游需求</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{include file="pclayout/return" /}
+{include file="pclayout/footer" /}
+<script>
+    var back_btn = $(".return-box");
+    var url = window.location.href;
+    if (url == "http://localhost:8088/CamelRoad/public/index/customize/aboutus.html"){
+        $("#aboutus").css('color','#e3435a')
+    }
+    back_btn.on('click',function () {
+        $('html,body').animate({
+            scrollTop: 0
+        },800)
+    });
+    $(window).on('scroll',function () {
+        if($(window).scrollTop() > $(window).height()){
+            back_btn.fadeIn();
+        } else {
+            back_btn.fadeOut();
+        }
+    });
+    $(window).trigger('scroll');//触发选中的事件
+</script>
+</body>
+</html>

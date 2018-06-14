@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>骆驼带路</title>
+    {include file="layout/head" /}
+    <link rel="stylesheet" href="__CSS__/mobile/specialtyMall.css" />
+</head>
+<body>
+{include file="layout/header" /}
+<div class="special-box">
+    <div class="categroy-left">
+        <div class="cate-item active">丰富特产</div>
+        <div class="cate-item">干果类</div>
+        <div class="cate-item">水果类</div>
+    </div>
+    <div class="categroy-right">
+        <div class="cate-box hideCate showCate">
+            <div class="product">
+                <div class="cate-list card" onclick="detailSpecailty()">
+                    <img src="__IMAGE__/alt.jpg" alt="" class="cate-list-img">
+                    <div class="categroy-list-desc">
+                        <p class="categroy-list-title">【标题】新疆特产是基本的</p>
+                        <div class="categroy-list-price-box">
+                            <p class="sale-p">销量：22</p>
+                            <p class="price-p">￥：19.80</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cate-list card">
+                    <img src="__IMAGE__/alt.jpg" alt="" class="cate-list-img">
+                    <div class="categroy-list-desc">
+                        <p class="categroy-list-title">【标题】新疆特产是基本的</p>
+                        <div class="categroy-list-price-box">
+                            <p class="sale-p">销量：22</p>
+                            <p class="price-p">￥：19.80</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cate-list card">
+                    <img src="__IMAGE__/alt.jpg" alt="" class="cate-list-img">
+                    <div class="categroy-list-desc">
+                        <p class="categroy-list-title">【标题】新疆特产是基本的</p>
+                        <div class="categroy-list-price-box">
+                            <p class="sale-p">销量：22</p>
+                            <p class="price-p">￥：19.80</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cate-box hideCate">
+            <button>13445542</button>
+        </div>
+        <div class="cate-box hideCate">
+            <button>1</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".categroy-left .cate-item").on('click',function () {
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.categroy-right .cate-box').eq(index).addClass('showCate').siblings().removeClass('showCate')
+    })
+    function detailSpecailty() {
+        location.href = "{:url('Contact/detailSpecialty')}";
+    }
+</script>
+</body>
+</html>

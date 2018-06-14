@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #eeeeee;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+.header{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    line-height: 100px;
+    padding: 5px 0;
+    background-color: #e3435a;
+    text-align: center;
+}
+.header-title{
+    color: #fff;
+    font-size: 48px;
+}

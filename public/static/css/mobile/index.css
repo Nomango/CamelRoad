@@ -1,0 +1,256 @@
+.sub-banner-list{
+    padding: 20px 0;
+
+}
+.sub-banner-list{
+    justify-content: center;
+}
+.sub-banner-list,.content-body,.content-body .tab-item,.travel-item-inner,.travel-item-outer,.benefit-item-list,.primary-box,.join-box{
+    background-color: #fff;
+}
+.sub-banner-list,.sub-banner-p,.content-body,.travel-item-desc,.primary-box,.benefit-item-list,.join-box,.travel-item-page,.form-item,.primary-input,.site-desc,.site-price{
+    margin-top: 20px;
+}
+.sub-banner-list,.sub-banner-item,.travel-item-box,.benefit-item,.primary-box,.form-box,.site-item,.site-desc-content,.site-price{
+    display: flex;
+}
+.sub-banner-item,.benefit-item,.primary-box,.form-box{
+    align-items: center;
+}
+.sub-banner-item,.site-item,.site-desc-content,.form-box{
+    flex-direction: column;
+}
+.sub-banner-item:not(:last-of-type){
+    margin-right: 140px;
+}
+.sub-banner-img{
+    width: 100px;
+    height: 100px;
+}
+.sub-banner-p,.tab-item{
+    font-size: 30px;
+}
+.content-body,.benefit-item-list,.primary-box,.join-box,.site-desc-content{
+    padding: 20px;
+}
+.tabContainer{
+    margin-bottom: 20px;
+}
+.content-body .tab-item{
+    width: 200pt;
+    height: 60pt;
+    line-height: 60pt;
+    margin-right: 24pt;
+    border-radius: 40px;
+}
+.tab-item.active,.pre-btn,.primary-button,.information-btn{
+    color: #fff;
+    background-color: #e3435a;
+}
+.hideCon{
+    display: none;
+}
+.showCon,.icon{
+    display: block;
+}
+.travel-item,.content-body .tab-item{
+    display: inline-block;
+}
+.travel-item{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.travel-item,.site-item{
+    width: 345pt;
+    min-height: 387.5pt;
+    margin: 0 0 20px 0;
+}
+.primary-input,.travel-item,.primary-title{
+    position: relative;
+}
+.travel-item-box{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.travel-item-outer,.content-body .tab-item,.button,.primary-button,.travel-item-page{
+    text-align: center;
+}
+.travel-item-inner,.travel-item-outer,.primary-title:before,.must-icon:after{
+    position: absolute;
+}
+.travel-item-inner{
+    bottom: 40px;
+    left: calc(50% - 145pt);
+    width: 290pt;
+    min-height: 165pt;
+    opacity: .4;
+}
+.travel-item-outer{
+    bottom: 50px;
+    left: calc(50% - 137pt);
+    width: 272pt;
+    min-height: 147pt;
+    opacity: .7;
+    z-index: 10;
+}
+.travel-item-title{
+    font-size: 36pt;
+    margin-top: 30px;
+}
+.travel-item-desc,.site-title,.information-item{
+    font-size: 24pt;
+}
+.site-img{
+    width: 100%;
+    min-height: 194pt;
+}
+.button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.pre-btn,.information-btn{
+    font-size: 30px;
+    min-width: 154pt;
+    min-height: 60pt;
+    line-height: 60pt;
+}
+.primary-box,.benefit-item{
+    justify-content: space-between;
+}
+.primary-title:before{
+    content: '';
+    left: 0;
+    top: 0;
+    width: 7.5px;
+    height: 51px;
+    border-radius: 0 15px 0 15px;
+    background-color: #e3435a;
+}
+.primary-title{
+    font-size: 28pt;
+    color: #333;
+    padding-left: 25px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    transform: rotate(45deg);
+}
+.benefit-item{
+    padding-bottom: 20px;
+}
+.benefit-item:not(:last-of-type){
+    border-bottom: 5px solid #eeeeee;
+}
+.benefit-item-left{
+    padding: 20px 0 0 20px;
+}
+.benefit-item-title{
+    font-size: 32pt;
+}
+.benefit-item-time{
+    margin-top: 117px;
+    font-size: 22pt;
+    color: #b0b0b0;
+}
+.benefit-item-img{
+    width: 169pt;
+    height: 169pt;
+}
+.form-box{
+    padding-bottom: 100px;
+}
+.form-item{
+    width: 580px;
+}
+.primary-p{
+    color: #666;
+    text-align: left;
+}
+.primary-p,.primary-input{
+    font-size: 28pt;
+}
+.primary-input{
+    width: 95%;
+    height: 81px;
+    line-height: 81px;
+    text-indent: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #999999;
+    border-radius: 15px;
+}
+.must-icon:after{
+    content: "*";
+    color: #ec1e20;
+    font-size: 60px;
+    margin-left: 13px;
+    margin-top: 40px;
+}
+.primary-textarea{
+    resize: none;
+    min-height: 162px;
+    line-height: 41px;
+    padding-top: 10px;
+}
+.primary-button{
+    text-indent: 0;
+    border: 1px solid #e3435a;
+    background-color: #e3435a;
+}
+.site-item{
+    box-shadow: 0 0 39px #e0e0e0;
+}
+.site-price{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.site-desc,.sold-p{
+    color: #999;
+}
+.price-p em{
+    color: #f5843b;
+    font-style: normal;
+}
+.site-desc,.site-price{
+    font-size: 22pt;
+}
+.information-img{
+    width: 100%;
+    height: 400pt;
+}
+.information-content{
+    width: 100%;
+    padding: 5px;
+}
+.information-p{
+    width: 12em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    padding-left: 40px;
+}
+.information-p:before{
+    content: '·';
+    font-size: 50px;
+    color: #666;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+.information-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #666666;
+    height: 65px;
+    line-height: 65px;
+    margin-top: 20px;
+    border-top: 1px solid #aaa;
+}
+.information-item:last-child{
+    border-bottom: 1px solid #aaa;
+}

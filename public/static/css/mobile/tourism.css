@@ -1,0 +1,110 @@
+body{
+    font-size: 24pt;
+}
+.tab-container,.tag-item{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 20px;
+}
+.tab-container,.tag-item,.type-box,.tab-content-item-desc,.theme-box{
+    background-color: #fff;
+}
+.tab-item{
+    display: inline-block;
+    margin-right: 50pt;
+}
+.tab-item.active{
+    color: #e3435a;
+    border-bottom: 1px solid #e3435a;
+}
+.hideCon{
+    display: none;
+}
+.showCon,.tag-item-p,.down-icon{
+    display: block;
+}
+.theme-desc-box,.theme-item-price,.tab-content-item-img{
+    width: 100%;
+}
+.tag-item,.type-item,.type-box,.tag-item-price,.theme-item,.theme-item-price,.theme-box,.tourist-box{
+    display: flex;
+}
+.tag-item,.type-box,.type-item,.tag-item-price,.theme-item-price{
+    align-items: center;
+}
+.tag-item-price,.theme-item-price,.tourist-box{
+    justify-content: space-between;
+}
+.type-item,.tag-item,.tab-container{
+    height: 60pt;
+    line-height: 60pt;
+}
+.tag-item-p{
+    width: 105pt;
+    height: 40pt;
+    line-height: 40pt;
+    color: #e3435a;
+    text-align: center;
+    border: 1px solid #e3435a;
+    margin-right: 20px;
+}
+.type-box{
+    justify-content: space-between;
+    padding: 0 80px 0 20px;
+}
+.type-item.active p{
+    color: #e3435a;
+}
+.type-item.active .down-icon{
+    border-top: 10px solid #e3435a;
+}
+.down-icon{
+    width: 0;
+    border: 10px solid transparent;
+    border-top: 10px solid #666;
+    margin:10px 0 0 20px;
+}
+.card{
+    box-shadow: 10px 10px 29px #e0e0e0;
+}
+.tab-content-item{
+    width: 345pt;
+    height: auto;
+    margin-bottom: 20px;
+}
+.tab-content-item-img{
+    min-height: 234pt;
+}
+.tab-content-item-desc,.tab-content,.theme-item{
+    padding: 20px;
+}
+.theme-box{
+    flex-direction: column;
+}
+.content-item-title,.theme-item-title{
+    color: #666;
+}
+.tag-item-time,.tag-item-price{
+    margin-top: 15px;
+}
+.tag-item-time,.tag-sold-p,.theme-item-time,.theme-sold-p{
+    color: #999;
+}
+.tag-price-p,.theme-price-p{
+    color: #e3435a;
+}
+.theme-item-img{
+    width: 150pt;
+    height: 150pt;
+}
+.theme-desc-box{
+    padding-bottom: 40px;
+    margin-left: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.theme-item-price{
+    margin-top: 80pt;
+}
+.type-item-img{
+    width: 35px;
+    height: 35px;
+}

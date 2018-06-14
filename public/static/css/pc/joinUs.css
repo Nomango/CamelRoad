@@ -1,0 +1,118 @@
+body{
+    color: #666;
+}
+.join-box,.welfare-box,.welfare-desc-box{
+    width: 100%;
+}
+.welfare-box,.welfare-desc-box,.recruit-box,.join-content,.recruit-item{
+    text-align: center;
+}
+.recruit-box,.join-content{
+    width: 1210px;
+    margin: 80px auto;
+}
+.content-title,.welfare-title,.recruit-title{
+    font-size: 36px;
+}
+.team-img-box,.welfare-desc-box,.recruit-tab,.job-box,.job-desc,.require-p,.recruit-content{
+    display: flex;
+}
+.welfare-desc-box,.team-img-box{
+    align-items: center;
+}
+.team-img-box{
+    justify-content: space-between;
+}
+.job-box,.tab-content{
+    text-align: left;
+}
+.team-img{
+    width: 287.5px;
+    height: 170px;
+}
+.welfare-box,.team-img-box{
+    margin-top: 80px;
+}
+.welfare-desc-box{
+    justify-content: space-around;
+    position: relative;
+}
+.mask{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4);
+}
+.welfare-desc-box,.recruit-content,.require-p{
+    margin-top: 40px;
+}
+.desc-img{
+    width: 130px;
+    height: 130px;
+}
+.desc-item{
+    width: 200px;
+    display: inline-block;
+    z-index: 1;
+}
+.desc-subtitle,.desc-p,.recruit-item{
+    color: #fff;
+}
+.desc-subtitle{
+    font-size: 24px;
+    margin: 40px 0;
+}
+.desc-p,.recruit-item,.job-title,.require-span{
+    font-size: 18px;
+}
+.job-title,.require-span{
+    color: #e3435a;
+}
+.desc-p{
+    font-weight: lighter;
+}
+.recruit-tab,.job-box,.job-desc,.require-p{
+    flex-direction: column;
+}
+.recruit-item{
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #666;
+}
+.recruit-item:not(:last-of-type){
+    margin-bottom: 10px;
+}
+.recruit-item.active{
+    background-color: #e3435a;
+}
+.tab-con-box{
+    margin-left: 40px;
+}
+.job-span{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.recruit-content{
+    justify-content: center;
+}
+.tab-content{
+    min-width: 370px;
+    min-height: 245px;
+}
+.hideCon{
+    display: none;
+    opacity: 0;
+}
+.showCon{
+    display: block;
+    animation: rise 2s cubic-bezier(0.19, 1, 0.22, 1) .15s forwards;
+}
+@keyframes rise{
+    0% {opacity: .3;transform: translate3d(0,100%,0);}
+    50% {opacity: 1;}
+    100% {opacity: 1;transform: translate3d(0,0,0);}
+}

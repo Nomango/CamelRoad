@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="__CSS__/pc/header.css">
+<script src="__LIB__/jquery/jquery-3.3.1.min.js"></script>
+
+<div class="header-box">
+    <div class="header-content">
+        <img src="__IMAGE__/pc/logo.png" alt="" class="header-img">
+        <div class="header-tab-box">
+            <ul>
+                <li class="tab-item">
+                    <a href="{:url('Pcindex/pcindex')}" class="tab-item-a" id="home">主页</a>
+                </li>
+                <li class="tab-item">
+                    <a href="{:url('Customize/customize')}" class="tab-item-a" id="customize">定制旅行</a>
+                </li>
+                <li class="tab-item">
+                    <a href="{:url('Customize/commonweal')}" class="tab-item-a" id="commonweal">公益活动</a>
+                </li>
+                <li class="tab-item">
+                    <a href="#" class="tab-item-a" id="bazaMall">巴扎商城</a>
+                    <dl class="mall-dl">
+                        <dd class="triangle"></dd>
+                        <dd class="tab-item-dd">
+                            <a href="{:url('Customize/touristMall')}" class="dd-a">旅游商城</a>
+                        </dd>
+                        <dd class="tab-item-dd">
+                            <a href="{:url('Customize/productMall')}" class="dd-a">特产商城</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="tab-item">
+                    <a href="#" class="tab-item-a" id="aboutus">关于我们</a>
+                    <dl class="about-dl">
+                        <dd class="triangle"></dd>
+                        <dd class="tab-item-dd">
+                            <a href="{:url('Customize/aboutUs')}" class="dd-a">关于我们</a>
+                        </dd>
+                        <dd class="tab-item-dd">
+                            <a href="{:url('Customize/joinUs')}" class="dd-a">加入我们</a>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(".tab-item").hover(function () {
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        if(index == 3){
+            if ($(".mall-dl").hasClass('animation')){
+                $(".mall-dl").removeClass('animation');
+            }else {
+                $(".about-dl").removeClass('animation');
+                $(".mall-dl").addClass('animation');
+            }
+            $(document).on("click",function () {
+                $('.mall-dl').removeClass('animation');
+            });
+        }
+        if(index == 4){
+            if ($(".about-dl").hasClass('animation')){
+                $(".about-dl").removeClass('animation');
+            }else {
+                $(".mall-dl").removeClass('animation');
+                $(".about-dl").addClass('animation');
+            }
+            $(document).on("click",function () {
+                $('.about-dl').removeClass('animation');
+            });
+        }
+    },function () {
+        $(this).removeClass('active').siblings().removeClass('active');
+        $('.about-dl').removeClass('animation');
+        $('.mall-dl').removeClass('animation');
+    });
+    $(".mall-dl").on('click',function (e) {
+        e.stopPropagation()
+    });
+    $(".about-dl").on('click',function (e) {
+        e.stopPropagation()
+    })
+</script>

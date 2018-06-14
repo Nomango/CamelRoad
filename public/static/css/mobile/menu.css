@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu-box{
+    left: 80px;
+    top: 82%;
+    z-index: 15;
+}
+.menu-box,.menu-list{
+    position: fixed;
+}
+.menu-img{
+    width: 120px;
+    height: 120px;
+}
+.menu-list{
+    display: none;
+    left: 135px;
+    top: 55%;
+    z-index: 14;
+    background-color: rgba(255,255,255,.8);
+    padding: 20px 20px 80px 20px;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    height: 80pt;
+    line-height: 80pt;
+}
+.menu-item.active p{
+    color: #e3435a;
+}
+.menu-item p{
+    font-size: 28pt;
+    margin-left: 40px;
+}
+.menu-item img{
+    width: 45px;
+    height: 45px;
+}

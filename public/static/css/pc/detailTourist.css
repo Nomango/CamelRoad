@@ -1,0 +1,178 @@
+body{
+    color: #666;
+    background-color: #eeeeee;
+}
+.detail-box,.detail-head,.date-box,.desc-box{
+    width: 100%;
+}
+.detail-head{
+    background-image: url("__IMAGE__/pc/horse.jpg");
+}
+.detail-content-box{
+    width: 1210px;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 40px 10px 10px 10px;
+}
+.detail-title{
+    font-size: 36px;
+}
+.detail-desc{
+    margin: 20px 0 30px 0;
+}
+.detail-img{
+    width: 399px;
+    height: 399px;
+    margin-left: 30px;
+}
+.desc-box,.introduce-tab{
+    font-size: 24px;
+}
+.desc-box{
+    margin-left: 20px;
+    padding: 20px 0 0 40px;
+    border-top: 1px solid #ccc;
+}
+.price-p,.date-box{
+    margin-top: 25px;
+}
+.price-span{
+    color: #e3435a;
+}
+.date-box,.date-left,.date-right,.account-box,.detail-desc,.service-list,.introduce-item,.introduce-dsec,.introduce-tab{
+    display: flex;
+}
+.date-right{
+    align-items: center;
+    margin-left: 100px;
+}
+.account-input,.date-input{
+    height: 30px;
+    color: #666;
+}
+.introduce-dsec,.account-input,.date-input{
+    line-height: 30px;
+}
+.introduce-box,.desc-box{
+    text-align: left;
+}
+.account-box,.date-input,.service-item,.introduce-tab{
+    border: 1px solid #ccc;
+}
+.date-input{
+    width: 65px;
+    text-indent: 5px;
+}
+.account-input,.account-btn,.service-item,.bespoke-btn,.detail-content-box{
+    text-align: center;
+}
+.account-input,.bespoke-btn{
+    border: none;
+}
+.account-input{
+    width: 125px;
+}
+.account-btn,.introduce-desc-box{
+    font-size: 18px;
+}
+.account-btn{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.reduce-btn{
+    margin: 5px 0 0 10px;
+}
+.add-btn{
+    margin: 5px 10px 0 0;
+}
+.add-btn i{
+    margin: 0 0 0 -2px;
+}
+.service-box,.service-list{
+    margin-top: 20px;
+}
+.service-item,.bespoke-btn,.account-btn,.introduce-item{
+    cursor: pointer;
+}
+.service-item{
+    width: 96px;
+    height: 60px;
+}
+.service-item:not(:last-of-type){
+    margin-right: 20px;
+}
+.service-item.active{
+    color: #e3435a;
+    border: 1px solid #e3435a;
+}
+.site-p,.service-item p{
+    font-size: 14px;
+}
+.service-item p{
+    line-height: 25px;
+}
+.type-p{
+    margin-top: 5px;
+}
+.site-p{
+    margin: 20px 0;
+}
+.connect-p{
+    margin: 0 5px;
+    color: #999;
+}
+.bespoke-btn{
+    outline: none;
+    background-color: #e3435a;
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    opacity: 1;
+}
+.bespoke-btn:hover{
+    transition: all .3s;
+    opacity: .8;
+}
+.introduce-tab{
+    width: calc(100% - 20px);
+    padding: 10px 0 0 20px;
+}
+.introduce-item.active .introduce-item-span{
+    padding: 0 0 10px 0;
+    border-bottom: 1.5px solid #e3435a;
+}
+.introduce-content-box{
+    padding-left: 20px;
+}
+.hideCon{
+    display: none;
+}
+.showCon{
+    display: block;
+}
+.line-span{
+    margin: 0 20px;
+}
+.line-span{
+    width: 1px;
+    height: 35px;
+    border-left: 1px solid #ccc;
+}
+.introduce-con{
+    margin-top: 20px;
+    min-height: 200px;
+}
+.introduce-desc-title{
+    color: rgb(63,169,245);
+}
+.introduce-dsec{
+    flex-direction: column;
+    line-height: 30px;
+    margin-top: 10px;
+}

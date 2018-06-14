@@ -1,0 +1,48 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+<style>
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 40px;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 0 14px;
+    }
+    .swiper-pagination-bullet {
+        width: 40px;
+        height: 5px;
+        border-radius: 0;
+        background-color: #fff;
+        margin-top: -20px;
+    }
+</style>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="__IMAGE__/user_bg_1.jpg" alt="" width="100%"></div>
+        <div class="swiper-slide"><img src="__IMAGE__/user_bg_2.jpg" alt="" width="100%"></div>
+        <div class="swiper-slide"><img src="__IMAGE__/user_bg_3.jpg" alt="" width="100%"></div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-bullets">
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+        <span class="swiper-pagination-bullet ">
+        </span><span class="swiper-pagination-bullet"></span>
+    </div>
+</div>
+
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        speed:300,
+        autoplay : {
+            delay:5000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + '</span>';
+            },
+        },
+        uniqueNavElements: false,
+    })
+</script>
