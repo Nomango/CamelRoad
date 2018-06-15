@@ -1,39 +1,16 @@
-body{
-    color: #666666;
-}
-.content-body,.commonweal-content{
-    width: 1210px;
-}
-.content-body,.commonweal-content,.share-box,.commonweal-box{
-    margin: 0 auto;
-}
-.desc-content-box{
-    margin: 80px auto;
-}
-.desc-content-box,.travel-item-box,.information-item{
-    justify-content: space-between;
-}
-.share-box,.desc-content-box,.video-img,.commonweal-box,.service-box,.customize-box,.service-bgm{
-    width: 100%;
-}
-.desc-content-box,.share-content,.share-right,.travel-item-box,.commonweal-content,.commonweal-item,.service-bgm,.service-item,.information-list,.information-item{
-    display: flex;
-}
+
 .desc-left{
     width: 410px;
     color: #666;
 }
-.desc-left-top,.button,.share-top,.commonweal-box,.service-box,.customize-box,.travel-item-outer{
-    text-align: center;
-}
-.commonweal-desc-title,.commonweal-title,.travel-item-title,.desc-title,.share-title,.service-p,.service-title,.customize-title{
-    font-size: 36px;
+.desc-left .desc-p{
+    font-size: 18px;
 }
 .travel-item-desc,.interest-title,.site-title,.information-item p{
     font-size: 24px;
 }
 .sub-desc-title{
-    margin: 40px 0;
+    margin: 20px 0;
 }
 .sub-desc-title,.know-btn,.sub-share-title,.more-btn{
     font-size: 18px;
@@ -46,7 +23,7 @@ body{
     letter-spacing: .5px;
 }
 .desc-p:not(:first-of-type){
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .desc-right,.share-left,.travel-item{
     position: relative;
@@ -91,7 +68,13 @@ body{
     width: 130px;
     height: 40px;
     line-height: 40px;
-    margin-top: 50px;
+    margin-top: 28px;
+    border-radius: 5px;
+    opacity: 1;
+}
+.know-btn:hover{
+    transition: all .3s;
+    opacity: .8;
 }
 .share-box{
     min-height: 400px;
@@ -241,7 +224,9 @@ body{
 .service-box,.service-bgm,.interest-title,.tab-box{
     margin-top: 80px;
 }
-
+.service-bgm .service-item{
+    border: none;
+}
 .service-bgm,.service-item{
     align-items: center;
     justify-content: center;
@@ -250,11 +235,12 @@ body{
     width: 93px;
     height: 93px;
 }
-.service-item:not(:last-of-type){
+.service-bgm .service-item:not(:last-of-type){
     margin-right: 192px;
 }
-.service-p{
+.service-bgm .service-p{
     margin-top: 40px;
+    font-size: 36px;
 }
 .customize-title{
     margin: 80px 0;

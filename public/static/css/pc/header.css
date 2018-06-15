@@ -2,73 +2,190 @@
     padding: 0;
     margin: 0;
 }
+body,.account-input,.date-input,.pre-btn{
+    color: #666;
+}
 ul,li{
     list-style: none;
 }
 a:hover,.about-dl dd a:hover{
     color: #333;
 }
-.header-box{
+.header-box,.about-box,.common-weal-head,.customize-head,.customize-desc,.phone-input,.textarea-input,.detail-box,
+.detail-head,.date-box,.desc-box,.detail-box,.result-img,.share-box,.desc-content-box,.video-img,.commonweal-box,
+.service-box,.customize-box,.service-bgm,.join-box,.welfare-box,.welfare-desc-box,.product-box,.product-item-img,
+.tourist-box,.selected-img,.chartered-img,.more-box{
     width: 100%;
+}
+.header-box,.item-desc,.detail-content-box,.detail-content,.sort-item.active,.close-icon{
     background-color: #fff;
-    padding: 20px 0;
 }
-.header-content{
-    width: 1210px;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-}
-.header-content{
+.header-content,.advantage-list,.brand-img-box,.customize-process-box,.form-item:first-child,.customize-img-box,.point-box,.date-box,
+.account-box,.detail-desc,.introduce-item,.introduce-dsec,.introduce-tab,.site-box,.select-box,.site-list,.sort-box,.sort-item,
+.result-list,.result-desc-footer,.page-box,.desc-content-box,.share-content,.share-right,.travel-item-box,.commonweal-content,
+.commonweal-item,.service-bgm,.service-item,.information-list,.information-item,.team-img-box,.welfare-desc-box,.recruit-tab,
+.job-box,.job-desc,.require-p,.recruit-content,.product-list,.price-p,.selected-desc-footer,.chartered-desc-footer,
+.selected-list,.chartered-list,.common-weal-item,.pre-p,.next-p,.date-left,.date-right,
+.service-list{
     display: flex;
 }
-.header-img{
-    width: 12%;
+.header-box{
+    padding: 20px 0;
 }
-.tab-item{
-    display: inline-block;
-    font-size: 18px;
-    cursor: pointer;
+.header-content,.brand-img-box,.form-item:first-child,.result-list,.result-desc-footer,.desc-content-box,
+.travel-item-box,.information-item,.team-img-box,.product-list{
+    justify-content: space-between;
+}
+.advantage-list,.welfare-desc-box{
+    justify-content: space-around;
+}
+.page-box,.pre-p,.next-p,.customize-process-box,.sort-item,.page-box,.recruit-content{
+    justify-content: center;
+}
+.header-content,.advantage-list,.brand-img-box,.page-box,.pre-p,.next-p,.point-box,.date-right,.site-box,
+.select-box,.sort-box,.sort-item,.result-desc-footer,.welfare-desc-box,.team-img-box{
+    align-items: center;
+}
+.introduce-dsec{
+    flex-direction: column;
+}
+.tab-item,.select-btn-box,.close-icon,.welfare-desc-box{
     position: relative;
 }
-.tab-item.active .tab-item-a{
+.introduce-box,.desc-box,.job-box,.tab-content,.item-desc{
+    text-align: left;
+}
+.mall-dl,.about-dl,.about-content,.page-p span,.customize-content,.submit-btn,.account-input,.account-btn,
+.bespoke-btn,.detail-content-box,.service-item,.select-btn-box,.desc-left-top,.button,.share-top,
+.commonweal-box,.customize-box,.travel-item-outer,.welfare-box,.welfare-desc-box,.recruit-box,
+.join-content,.recruit-item,.product-content{
+    text-align: center;
+}
+.header-content,.about-content,.common-weal-content,.customize-content,.detail-content-box,.content-body,
+.commonweal-content,.recruit-box,.join-content,.product-content,.tourist-content{
+    width: 1210px;
+}
+.header-content,.form-box,.content-body,.commonweal-content,.share-box,.commonweal-box{
+    margin: 0 auto;
+}
+.about-content,.recruit-box,.join-content,.desc-content-box,.tourist-content{
+    margin: 80px auto;
+}
+.tab-item,.pre-p,.next-p,.submit-btn,.bespoke-btn,.account-btn,.introduce-item,.service-item,
+.close-icon,.site-item,.sort-item,.result-item,.button,.recruit-item{
+    cursor: pointer;
+}
+.tab-item.active .tab-item-a,.price-span,.service-item.active{
     color: #e3435a;
+}
+.service-item.active{
+    border: 1px solid #e3435a;
+}
+.introduce-dsec,.item-desc-p{
+    margin-top: 10px;
+}
+.advantage-desc{
+    margin-top: 20px;
+}
+.advantage-subtitle,.customize-desc,.customize-desc-p{
+    margin-top: 40px;
+}
+.advantage-desc,.customize-desc-p,.service-item p{
+    line-height: 25px;
+}
+.introduce-dsec,.account-input,.date-input,.result-desc-top,.item-desc-p{
+    line-height: 30px;
+}
+.advantage-desc,.customize-desc-p,.form-input,.service-item p,.site-p,.job-span{
+    font-size: 14px;
+}
+.dd-a,.tab-item,.provide-subtitle,.account-btn,.introduce-desc-box,.item-desc-p{
+    font-size: 18px;
+}
+.advantage-subtitle,.customize-desc-title,.desc-box,.introduce-tab,.price-em,.item-desc-title,.price-span{
+    font-size: 24px;
+}
+.content-title,.advantage-title,.item-title,.provide-title,.detail-title,.commonweal-desc-title,
+.commonweal-title,.travel-item-title,.desc-title,.share-title,.service-title,.customize-title,
+.content-title,.welfare-title,.recruit-title,.product-title{
+    font-size: 36px;
 }
 .tab-item:not(:last-of-type){
     margin-right: 80px;
 }
-.triangle{
+.introduce-dsec{
+    margin-top: 10px;
+}
+.job-span{
+    margin-top: 20px;
+}
+.bespoke-btn{
+    margin-top: 40px;
+}
+.page-box{
+    margin-top: 60px;
+}
+.advantage-box,.brand-img-box,.provide-box,.welfare-box,.team-img-box{
+    margin-top: 80px;
+}
+.common-weal-item:not(:last-of-type),.form-item,.result-item{
+    margin-bottom: 20px;
+}
+.advantage-title{
+    margin-bottom: 40px;
+}
+.desc-p,.desc-span,.item-title,.provide-subtitle,.customize-desc-p,.item-desc-p{
+    font-weight: lighter;
+}
+.header-img{
+    width: 12%;
+}
+.tab-item,.advantage-item,.page-p span,.point-icon,.account-btn{
+    display: inline-block;
+}
+.mall-dl,.about-dl,.hideCon{
+    display: none;
+}
+.mall-dl,.about-dl,.triangle,.close-p,.close-icon:after{
     position: absolute;
+}
+.mall-dl,.about-dl,.bespoke-btn,.recruit-item.active{
+    background-color: #e3435a;
+}
+.pre-p,.next-p,.page-p span,.point-icon,.account-btn,.close-icon{
+    border-radius: 50%;
+}
+.page-icon,.triangle,.showCon,.close-icon{
+    display: block;
+}
+.account-input,.bespoke-btn{
+    border: none;
+}
+.account-box,.introduce-tab,.date-input,.service-item,.price-input,.sort-box,.select-btn-box{
+    border: 1px solid #ccc;
+}
+.mall-dl .dd-a:hover,.about-dl .dd-a:hover,.dd-a,.mall-dl,.page-p span.active,.bespoke-btn,.account-btn,.next-btn{
+    color: #fff;
+}
+.about-dl dd,.mall-dl dd{
+    padding: 10px 0;
+}
+.triangle{
     top: -40px;
     left: 45px;
-    display: block;
     width: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 20px solid #e3435a;
 }
 .mall-dl,.about-dl{
-    display: none;
     opacity: 0;
-    position: absolute;
     right: -30px;
     top: 45px;
     width: 120px;
-    text-align: center;
-    background-color: #e3435a;
-    color: #fff;
     line-height: 36px;
     border-radius: 10px;
     z-index: 100;
-}
-.dd-a{
-    font-size: 18px;
-}
-.mall-dl .dd-a:hover,.about-dl .dd-a:hover,.dd-a{
-    color: #fff;
-}
-.about-dl dd,.mall-dl dd{
-    padding: 10px 0;
 }
 .animation{
     display: block;

@@ -1,33 +1,4 @@
-body{
-    color: #666;
-}
-.about-box{
-    width: 100%;
-}
-.about-head{
-    background-image: url("__IMAGE__/pc/common.jpg");
-}
-.about-content{
-    width: 1210px;
-    margin: 80px auto;
-    text-align: center;
-}
-.content-title,.advantage-title{
-    font-size: 36px;
-}
-.advantage-box,.brand-img-box{
-    margin-top: 80px;
-}
-.advantage-list,.brand-img-box{
-    display: flex;
-    align-items: center;
-}
-.brand-img-box{
-    justify-content: space-between;
-}
-.advantage-list{
-    justify-content: space-around;
-}
+
 .brand-img{
     width: 287.5px;
     height: 387.5px;
@@ -37,27 +8,13 @@ body{
     margin: 40px auto 0;
 }
 .desc-p{
-    font-size: 24px;
     line-height: 35px;
-    font-weight: lighter;
 }
 .advantage-item{
     width: 200px;
-    display: inline-block;
 }
 .advantage-img{
     width: 130px;
     height: 130px;
 }
-.advantage-title{
-    margin-bottom: 40px;
-}
-.advantage-subtitle{
-    font-size: 24px;
-    margin-top: 40px;
-}
-.advantage-desc{
-    font-size: 14px;
-    line-height: 25px;
-    margin-top: 20px;
-}
+

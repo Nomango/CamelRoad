@@ -1,41 +1,7 @@
-body{
-    color: #666;
-}
-.join-box,.welfare-box,.welfare-desc-box{
-    width: 100%;
-}
-.welfare-box,.welfare-desc-box,.recruit-box,.join-content,.recruit-item{
-    text-align: center;
-}
-.recruit-box,.join-content{
-    width: 1210px;
-    margin: 80px auto;
-}
-.content-title,.welfare-title,.recruit-title{
-    font-size: 36px;
-}
-.team-img-box,.welfare-desc-box,.recruit-tab,.job-box,.job-desc,.require-p,.recruit-content{
-    display: flex;
-}
-.welfare-desc-box,.team-img-box{
-    align-items: center;
-}
-.team-img-box{
-    justify-content: space-between;
-}
-.job-box,.tab-content{
-    text-align: left;
-}
+
 .team-img{
     width: 287.5px;
     height: 170px;
-}
-.welfare-box,.team-img-box{
-    margin-top: 80px;
-}
-.welfare-desc-box{
-    justify-content: space-around;
-    position: relative;
 }
 .mask{
     position: absolute;
@@ -77,7 +43,6 @@ body{
     flex-direction: column;
 }
 .recruit-item{
-    cursor: pointer;
     width: 120px;
     height: 30px;
     line-height: 30px;
@@ -86,18 +51,8 @@ body{
 .recruit-item:not(:last-of-type){
     margin-bottom: 10px;
 }
-.recruit-item.active{
-    background-color: #e3435a;
-}
 .tab-con-box{
     margin-left: 40px;
-}
-.job-span{
-    font-size: 14px;
-    margin-top: 20px;
-}
-.recruit-content{
-    justify-content: center;
 }
 .tab-content{
     min-width: 370px;

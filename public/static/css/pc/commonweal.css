@@ -1,21 +1,8 @@
 body{
     background-color: #eeeeee;
 }
-.common-weal-head{
-    width: 100%;
-}
-.common-weal-head{
-    background-image: url("__IMAGE__/pc/common.jpg");
-}
 .common-weal-content{
-    width: 1210px;
     margin: 20px auto 60px;
-}
-.common-weal-item,.page-box,.pre-p,.next-p{
-    display: flex;
-}
-.common-weal-item:not(:last-of-type){
-    margin-bottom: 20px;
 }
 .item-img{
     width: 390px;
@@ -24,13 +11,6 @@ body{
 .item-desc{
     padding: 10px 20px 20px 20px;
     text-align: left;
-    background-color: #fff;
-}
-.desc-span,.item-title{
-    font-weight: lighter;
-}
-.item-title{
-    font-size: 36px;
 }
 .detail-span,.desc-span{
     font-size: 18px;
@@ -45,19 +25,12 @@ body{
 .page-box{
     margin-top: 60px;
 }
-.page-box,.pre-p,.next-p{
-    align-items: center;
-    justify-content: center;
-}
 .pre-p,.next-p{
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     border: 1px solid #e3435a;
-    cursor: pointer;
 }
 .page-icon{
-    display: block;
     width: 15px;
     height: 15px;
     border-top: 1.5px solid #e3435a;
@@ -79,14 +52,8 @@ body{
     margin: 0 20px;
 }
 .page-p span{
-    display: inline-block;
     width: 28px;
     height: 28px;
     line-height: 28px;
-    border-radius: 50%;
-    text-align: center;
     padding-right: 2px;
-}
-.page-p span.active{
-    color: #fff;
 }

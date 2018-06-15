@@ -1,16 +1,7 @@
 body{
-    color: #666;
     font-size: 18px;
 }
-.tourist-box,.selected-img,.chartered-img,.more-box{
-    width: 100%;
-}
-.tourist-content{
-    width: 1210px;
-    margin: 80px auto;
-}
 .selected-desc-footer,.chartered-desc-footer,.selected-list,.chartered-list{
-    display: flex;
     justify-content: space-between;
 }
 .selected-list,.chartered-list{
@@ -48,6 +39,10 @@ body{
 .price-em{
     font-size: 24px;
     color: rgb(255,67,90);
+}
+.text-em{
+    color: #666;
+    font-size: 18px;
 }
 .price-span em{
     font-style: normal;
