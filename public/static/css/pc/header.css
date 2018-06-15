@@ -25,7 +25,7 @@ a:hover,.about-dl dd a:hover{
 .result-list,.result-desc-footer,.page-box,.desc-content-box,.share-content,.share-right,.travel-item-box,.commonweal-content,
 .commonweal-item,.service-bgm,.service-item,.information-list,.information-item,.team-img-box,.welfare-desc-box,.recruit-tab,
 .job-box,.job-desc,.require-p,.recruit-content,.product-list,.price-p,.selected-desc-footer,.chartered-desc-footer,
-.selected-list,.chartered-list,.common-weal-item,.pre-p,.next-p,.date-left,.date-right,
+.selected-list,.chartered-list,.common-weal-item,.pre-p,.next-p,.date-left,.date-right,.swiper-slide
 .service-list{
     display: flex;
 }
@@ -36,10 +36,10 @@ a:hover,.about-dl dd a:hover{
 .travel-item-box,.information-item,.team-img-box,.product-list{
     justify-content: space-between;
 }
-.advantage-list,.welfare-desc-box{
+.advantage-list,.swiper-slide{
     justify-content: space-around;
 }
-.page-box,.pre-p,.next-p,.customize-process-box,.sort-item,.page-box,.recruit-content{
+.page-box,.pre-p,.next-p,.customize-process-box,.sort-item,.page-box,.recruit-content,.welfare-desc-box{
     justify-content: center;
 }
 .header-content,.advantage-list,.brand-img-box,.page-box,.pre-p,.next-p,.point-box,.date-right,.site-box,
@@ -49,16 +49,16 @@ a:hover,.about-dl dd a:hover{
 .introduce-dsec{
     flex-direction: column;
 }
-.tab-item,.select-btn-box,.close-icon,.welfare-desc-box{
+.tab-item,.select-btn-box,.close-icon,.welfare-desc-box,.swiper-slide-img-box{
     position: relative;
 }
-.introduce-box,.desc-box,.job-box,.tab-content,.item-desc{
+.introduce-box,.desc-box,.job-box,.tab-content,.item-desc,.form-item:last-child{
     text-align: left;
 }
 .mall-dl,.about-dl,.about-content,.page-p span,.customize-content,.submit-btn,.account-input,.account-btn,
 .bespoke-btn,.detail-content-box,.service-item,.select-btn-box,.desc-left-top,.button,.share-top,
 .commonweal-box,.customize-box,.travel-item-outer,.welfare-box,.welfare-desc-box,.recruit-box,
-.join-content,.recruit-item,.product-content{
+.join-content,.recruit-item,.product-content,.swiper-slide-img-box,.more-box,.more-btn{
     text-align: center;
 }
 .header-content,.about-content,.common-weal-content,.customize-content,.detail-content-box,.content-body,
@@ -90,7 +90,7 @@ a:hover,.about-dl dd a:hover{
 .advantage-subtitle,.customize-desc,.customize-desc-p{
     margin-top: 40px;
 }
-.advantage-desc,.customize-desc-p,.service-item p{
+.advantage-desc,.customize-desc-p{
     line-height: 25px;
 }
 .introduce-dsec,.account-input,.date-input,.result-desc-top,.item-desc-p{
@@ -100,15 +100,15 @@ a:hover,.about-dl dd a:hover{
     font-size: 14px;
 }
 .dd-a,.tab-item,.provide-subtitle,.account-btn,.introduce-desc-box,.item-desc-p{
-    font-size: 18px;
+    font-size: 16px;
 }
 .advantage-subtitle,.customize-desc-title,.desc-box,.introduce-tab,.price-em,.item-desc-title,.price-span{
-    font-size: 24px;
+    font-size: 18px;
 }
 .content-title,.advantage-title,.item-title,.provide-title,.detail-title,.commonweal-desc-title,
 .commonweal-title,.travel-item-title,.desc-title,.share-title,.service-title,.customize-title,
 .content-title,.welfare-title,.recruit-title,.product-title{
-    font-size: 36px;
+    font-size: 24px;
 }
 .tab-item:not(:last-of-type){
     margin-right: 80px;
@@ -119,7 +119,7 @@ a:hover,.about-dl dd a:hover{
 .job-span{
     margin-top: 20px;
 }
-.bespoke-btn{
+.bespoke-btn,.welfare-desc-box,.recruit-content,.require-p{
     margin-top: 40px;
 }
 .page-box{
@@ -146,7 +146,7 @@ a:hover,.about-dl dd a:hover{
 .mall-dl,.about-dl,.hideCon{
     display: none;
 }
-.mall-dl,.about-dl,.triangle,.close-p,.close-icon:after{
+.mall-dl,.about-dl,.triangle,.close-p,.close-icon:after,.swiper-slide-p{
     position: absolute;
 }
 .mall-dl,.about-dl,.bespoke-btn,.recruit-item.active{
@@ -169,6 +169,10 @@ a:hover,.about-dl dd a:hover{
 }
 .about-dl dd,.mall-dl dd{
     padding: 10px 0;
+}
+.advantage-img,.desc-img{
+    width: 100px;
+    height: 100px;
 }
 .triangle{
     top: -40px;

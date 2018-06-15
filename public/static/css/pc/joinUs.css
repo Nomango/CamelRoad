@@ -11,27 +11,23 @@
     bottom: 0;
     background-color: rgba(0,0,0,.4);
 }
-.welfare-desc-box,.recruit-content,.require-p{
-    margin-top: 40px;
-}
-.desc-img{
-    width: 130px;
-    height: 130px;
-}
 .desc-item{
     width: 200px;
     display: inline-block;
     z-index: 1;
 }
+.desc-item:not(:last-of-type){
+    margin-right: 150px;
+}
 .desc-subtitle,.desc-p,.recruit-item{
     color: #fff;
 }
 .desc-subtitle{
-    font-size: 24px;
+    font-size: 18px;
     margin: 40px 0;
 }
 .desc-p,.recruit-item,.job-title,.require-span{
-    font-size: 18px;
+    font-size: 16px;
 }
 .job-title,.require-span{
     color: #e3435a;

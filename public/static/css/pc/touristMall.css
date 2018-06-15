@@ -21,7 +21,7 @@ body{
     height: 263px;
 }
 .selected-p,.recommend-title,.chartered-title{
-    font-size: 36px;
+    font-size: 24px;
 }
 .selected-desc,.chartered-desc{
     padding: 10px;
@@ -37,18 +37,15 @@ body{
     color: #999;
 }
 .price-em{
-    font-size: 24px;
+    font-size: 18px;
     color: rgb(255,67,90);
 }
 .text-em{
     color: #666;
-    font-size: 18px;
+    font-size: 16px;
 }
 .price-span em{
     font-style: normal;
-}
-.more-box,.more-btn{
-    text-align: center;
 }
 .more-btn{
     border: 1px solid #e3435a;
@@ -60,6 +57,7 @@ body{
     margin: 40px auto 0 ;
     color: #e3435a;
     border-radius: 10px;
+    font-size: 16px;
 }
 .more-btn:hover{
     transition: all .5s;

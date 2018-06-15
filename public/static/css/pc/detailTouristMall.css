@@ -13,9 +13,6 @@ em{
     margin: 20px auto 0;
     padding: 0 10px 40px 10px;
 }
-.site-box,.select-box,.site-list,.sort-box,.sort-item,.result-list,.result-desc-footer,.page-box{
-    /*display: flex;*/
-}
 .select-box{
     border-bottom: 1px solid #ccc;
     height: 60px;

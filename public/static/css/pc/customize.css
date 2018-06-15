@@ -89,9 +89,6 @@ input::placeholder,textarea::placeholder{
     border-left: 0;
     border-radius: 0 8px 8px 0;
 }
-.form-item:last-child{
-    text-align: left;
-}
 .submit-btn{
     width: 120px;
     height: 40px;
