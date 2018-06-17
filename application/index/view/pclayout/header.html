@@ -71,8 +71,10 @@
         }
     },function () {
         $(this).removeClass('active').siblings().removeClass('active');
-        $('.about-dl').removeClass('animation');
-        $('.mall-dl').removeClass('animation');
+        setTimeout(function () {
+            $('.about-dl').removeClass('animation');
+            $('.mall-dl').removeClass('animation');
+        });
     });
     $(".mall-dl").on('click',function (e) {
         e.stopPropagation()

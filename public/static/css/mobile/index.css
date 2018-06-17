@@ -60,6 +60,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.information-p:before,.primary-p,.information-item{
+    color: #666;
+}
 .travel-item,.site-item{
     width: 345pt;
     min-height: 387.5pt;
@@ -68,14 +71,16 @@
 .primary-input,.travel-item,.primary-title{
     position: relative;
 }
+.primary-box,.benefit-item,.travel-item-box,.site-price{
+    justify-content: space-between;
+}
 .travel-item-box{
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .travel-item-outer,.content-body .tab-item,.button,.primary-button,.travel-item-page{
     text-align: center;
 }
-.travel-item-inner,.travel-item-outer,.primary-title:before,.must-icon:after{
+.travel-item-inner,.travel-item-outer,.primary-title:before,.must-icon:after,.information-p:before{
     position: absolute;
 }
 .travel-item-inner{
@@ -114,9 +119,6 @@
     min-width: 154pt;
     min-height: 60pt;
     line-height: 60pt;
-}
-.primary-box,.benefit-item{
-    justify-content: space-between;
 }
 .primary-title:before{
     content: '';
@@ -166,8 +168,8 @@
 .form-item{
     width: 580px;
 }
+
 .primary-p{
-    color: #666;
     text-align: left;
 }
 .primary-p,.primary-input{
@@ -205,7 +207,6 @@
 }
 .site-price{
     flex-direction: row;
-    justify-content: space-between;
 }
 .site-desc,.sold-p{
     color: #999;
@@ -236,8 +237,6 @@
 .information-p:before{
     content: '·';
     font-size: 50px;
-    color: #666;
-    position: absolute;
     left: 0;
     font-weight: bold;
 }
@@ -245,7 +244,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: #666666;
     height: 65px;
     line-height: 65px;
     margin-top: 20px;

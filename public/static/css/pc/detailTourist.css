@@ -11,10 +11,17 @@ body{
 .detail-img{
     width: 399px;
     height: 399px;
-    margin-left: 30px;
+}
+.detail-img,.desc-box{
+    margin-left: 20px;
+}
+.detail-title{
+    margin-left: 45px;
+}
+.introduce-content-box{
+    padding-left: 20px;
 }
 .desc-box{
-    margin-left: 20px;
     padding: 20px 0 0 40px;
     border-top: 1px solid #ccc;
 }
@@ -32,7 +39,7 @@ body{
     text-indent: 5px;
 }
 .account-input{
-    width: 125px;
+    width: 80px;
 }
 .account-btn{
     width: 20px;
@@ -49,7 +56,7 @@ body{
 .add-btn i{
     margin: 0 0 0 -2px;
 }
-.service-box,.service-list{
+.service-box,.service-list,.introduce-con{
     margin-top: 20px;
 }
 .service-item{
@@ -60,8 +67,11 @@ body{
 .service-item:not(:last-of-type){
     margin-right: 20px;
 }
+.date-left{
+    align-items: center;
+}
 .type-p{
-    margin-top: 5px;
+    margin-top: 8px;
 }
 .site-p{
     margin: 20px 0;
@@ -89,13 +99,20 @@ body{
     color: #666;
     padding: 0 0 10px 0;
 }
+.service-list{
+    display: flex;
+}
+.bespoke-btn{
+    margin-top: 22px;
+}
+.account-box{
+    margin-left: 10px;
+}
 .introduce-item.active .introduce-item-span{
     font-weight: normal;
     border-bottom: 1.5px solid #e3435a;
 }
-.introduce-content-box{
-    padding-left: 20px;
-}
+
 .line-span{
     margin: 0 20px;
 }
@@ -105,7 +122,6 @@ body{
     border-left: 1px solid #ccc;
 }
 .introduce-con{
-    margin-top: 20px;
     min-height: 200px;
 }
 .introduce-desc-title{

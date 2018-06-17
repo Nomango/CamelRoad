@@ -9,7 +9,7 @@ em{
     font-style: normal;
 }
 .detail-content{
-    width: 1210px;
+    width: 1130px;
     margin: 20px auto 0;
     padding: 0 10px 40px 10px;
 }
@@ -80,9 +80,12 @@ input::placeholder{
 .result-list{
     flex-wrap: wrap;
 }
+.page-box{
+    margin-top: 20px;
+}
 .result-item{
-    width: 390px;
-    height: 413px;
+    width: 363px;
+    min-height: 384px;
     box-shadow: 3px 5px 29px rgba(0,0,0,.18);
 }
 .result-img{
@@ -102,10 +105,6 @@ input::placeholder{
 }
 .result-desc-right,.date-span,.sold-span{
     color: #999;
-}
-.text-em{
-    color: #666;
-    font-size: 18px;
 }
 .button,.page-span{
     font-size: 20px;

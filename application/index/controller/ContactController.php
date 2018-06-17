@@ -26,19 +26,19 @@ class ContactController extends Controller
         return $this->fetch('index/detailTourist');
     }
     //新疆旅游
-    public function tourism(){
-        return $this->fetch('index/tourism');
+    public function detailTouristMall(){
+        return $this->fetch('index/detailTouristMall');
     }
     //特产商城
-    public function specialtyMall(){
-        return $this->fetch('index/specialtyMall');
+    public function productMall(){
+        return $this->fetch('index/productMall');
     }
     //详细的特产
-    public function detailSpecialty(){
-        return $this->fetch('index/detailSpecialty');
+    public function detailProduct(){
+        return $this->fetch('index/detailProduct');
     }
     //私人订制
-    public function privateTailor(){
-        return $this->fetch('index/private');
+    public function customize(){
+        return $this->fetch('index/customize');
     }
 }

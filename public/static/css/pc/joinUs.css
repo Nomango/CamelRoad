@@ -1,7 +1,7 @@
 
 .team-img{
-    width: 287.5px;
-    height: 170px;
+    width: 267.5px;
+    height: 158.5px;
 }
 .mask{
     position: absolute;
@@ -23,17 +23,18 @@
     color: #fff;
 }
 .desc-subtitle{
-    font-size: 18px;
-    margin: 40px 0;
+    font-size: 24px;
+    margin: 20px 0;
 }
-.desc-p,.recruit-item,.job-title,.require-span{
+.desc-p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.recruit-item,.job-title,.require-span{
     font-size: 16px;
 }
 .job-title,.require-span{
     color: #e3435a;
-}
-.desc-p{
-    font-weight: lighter;
 }
 .recruit-tab,.job-box,.job-desc,.require-p{
     flex-direction: column;

@@ -1,19 +1,24 @@
 
 .desc-left{
     width: 410px;
-    color: #666;
 }
-.desc-left .desc-p{
+.desc-left .desc-p,.travel-item-desc{
     font-size: 14px;
-}
-.interest-title,.site-title,.information-item p,.travel-item-desc,.tab-p{
-    font-size: 18px;
-}
-.sub-desc-title{
-    margin: 20px 0;
 }
 .sub-desc-title,.know-btn,.sub-share-title,.more-btn{
     font-size: 16px;
+}
+.interest-title,.site-title,.information-item p{
+    font-size: 18px;
+}
+.tab-p{
+    font-size: 24px;
+}
+.sub-desc-title{
+    margin: 40px 0 20px 0;
+}
+.desc-right{
+    margin-left: 180px;
 }
 .sub-share-title,.desc-p,.tab-p,.travel-item-outer,.travel-item-outer p,.commonweal-desc-title,.desc-span,.service-p,.interest-title,.information-item p{
     font-weight: lighter;
@@ -30,25 +35,21 @@
 .desc-right,.video-right-img,.tab-p{
     display: inline-block;
 }
-
 .desc-right-img,.video-paly,.video-btn-box,.travel-item-inner,.travel-item-outer,.know-btn{
     position: absolute;
 }
 .desc-right{
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 580px;
-    min-height: 400px;
+    width: 494px;
+    height: 340px;
 }
 .desc-right-img{
     left: -30%;
     top: 12%;
-    width: 410px;
-    height: 276px;
-    border: 5px solid #fff;
-}
-.tab-p,.button,.video-btn-box{
-    cursor: pointer;
+    width: 378px;
+    height: 254px;
+    border: 4px solid #fff;
 }
 .button{
     border: none;
@@ -70,7 +71,7 @@
     margin-top: 28px;
     border-radius: 5px;
     opacity: 1;
-    bottom: 15px;
+    bottom: 0;
 }
 .know-btn:hover{
     transition: all .3s;
@@ -85,11 +86,10 @@
     margin: 0 auto 60px auto;
 }
 .sub-share-title{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .share-left{
-    width: 604px;
-    min-height: 406px;
+    width: 555px;
 }
 .video-img{
     height: 100%;
@@ -116,11 +116,11 @@
     flex-wrap: wrap;
 }
 .video-right-img:first-child{
-    margin: 0 20px 21px 0;
+    margin: 0 20px 20px 0;
 }
 .video-right-img{
-    width: 283px;
-    height: 192px;
+    width: 267.5px;
+    height: 179px;
 }
 .video-paly{
     left: 0;
@@ -148,24 +148,24 @@
     display: block;
 }
 .tab-content-item{
-    padding: 40px 0 80px 0;
+    padding: 40px 0 60px 0;
 }
 .travel-item,.site-item{
-    width: 287.5px;
-    height: 387.5px;
+    width: 267.5px;
+    height: 359.5px;
 }
 
 .travel-item-inner{
-    bottom: 30px;
-    left: 6.5%;
-    width: 250px;
+    bottom: 20px;
+    left: 7.5%;
+    width: 230px;
     min-height: 135px;
     opacity: .4;
 }
 .travel-item-outer{
-    bottom: 40px;
-    left: 10%;
-    width: 230px;
+    bottom: 30px;
+    left: 13%;
+    width: 200px;
     min-height: 117px;
     opacity: .7;
     z-index: 10;
@@ -191,8 +191,8 @@
     margin-bottom: 40px;
 }
 .commonweal-img{
-    width: 390px;
-    height: 257px;
+    width: 363px;
+    height: 240px;
 }
 .commonweal-item{
     margin-bottom: 20px;
@@ -204,35 +204,46 @@
 .site-desc-content p,.sub-share-title{
     line-height: 25px;
 }
-.desc-span{
+.commonweal-desc{
     line-height: 30px;
-}
-.desc-span,.desc-detail{
     font-size: 16px;
 }
 .desc-detail{
+    width: 100%;
+    text-align: right;
+    font-size: 18px;
     color: #e3435a;
-    margin-left: 20px;
+    margin-top: 40px;
 }
-.more-btn,.interest-img{
+.more-btn{
     margin: 40px 0;
+}
+.interest-img{
+    margin: 20px auto 60px;
 }
 .more-btn{
     width: 120px;
     height: 40px;
     line-height: 40px;
-    border-radius: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #e3435a;
+    border: 1px solid #e3435a;
     opacity: 1;
 }
 .more-btn:hover{
-    opacity: .8;
+    color: #fff;
+    background-color: #e3435a;
     transition: all .3s;
 }
 .service-box{
     text-align: center;
 }
-.service-box,.service-bgm,.interest-title,.tab-box{
-    margin-top: 80px;
+.tab-box{
+    margin-top: 60px;
+}
+.service-box,.interest-title,.service-bgm{
+    margin-top: 40px;
 }
 .service-bgm .service-item{
     border: none;
@@ -242,18 +253,18 @@
     justify-content: center;
 }
 .service-icon{
-    width: 83px;
-    height: 83px;
+    width: 100px;
+    height: 100px;
 }
 .service-bgm .service-item:not(:last-of-type){
-    margin-right: 192px;
+    margin-right: 225px;
 }
 .service-bgm .service-p{
     margin-top: 40px;
     font-size: 24px;
 }
 .customize-title{
-    margin: 80px 0;
+    margin: 60px 0;
 }
 .interest-img{
     width: 180px;
@@ -267,17 +278,39 @@
 }
 .site-img{
     width: 100%;
-    height: 207px;
+    height: 195px;
 }
 .information-img{
-    width: 575px;
-    height: 387.5px;
+    width: 553px;
+    height: 359.5px;
 }
 .information-list{
-    width: calc(100% - 575px);
+    width: calc(100% - 553px);
     margin-left: 40px;
 }
 .information-item{
     border-bottom: 1px solid #aaa;
-    padding: 15.8px 0;
+    padding: 17.4px 0;
+}
+.guide-box{
+    position: relative;
+}
+.guide-desc{
+    width: 1000px;
+    position: absolute;
+    top: 260px;
+    left: 65px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.guide-img{
+    height: 200px;
+}
+.guide-desc-p{
+    display: inline-block;
+    font-size: 18px;
+}
+.guide-desc-p:not(:first-of-type){
+    padding-left: 33px;
 }

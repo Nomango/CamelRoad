@@ -1,7 +1,9 @@
-
+.about-content{
+    margin: 60px auto 80px;
+}
 .brand-img{
-    width: 287.5px;
-    height: 387.5px;
+    width: 267.5px;
+    height: 360px;
 }
 .brand-desc{
     width: 680px;
@@ -9,6 +11,7 @@
 }
 .desc-p{
     line-height: 35px;
+    font-size: 16px;
 }
 .advantage-item{
     width: 200px;

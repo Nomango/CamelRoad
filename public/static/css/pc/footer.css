@@ -1,11 +1,16 @@
 .footer-box{
+    width: 100%;
     background-color: #333;
     padding: 40px 0;
 }
-.footer-box{
+.footer-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+.footer-content{
+    width: 1130px;
+    margin: 0 auto;
 }
 .footer-item{
     display: inline-block;
@@ -17,9 +22,8 @@
     color: #fff;
 }
 .footer-item-title{
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 40px;
-    font-weight: bold;
 }
 .footer-item-subcon,.footer-right-subtitle{
     font-size: 16px;
@@ -32,10 +36,11 @@
 }
 .footer-right{
     margin-left: 120px;
+    text-align: center;
 }
 .footer-right-img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
 }
 .footer-right-subtitle{
     margin-top: 20px;

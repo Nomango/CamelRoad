@@ -5,22 +5,29 @@ body{
     margin: 20px auto 60px;
 }
 .item-img{
-    width: 390px;
-    height: 257px;
+    width: 364px;
+    height: 240px;
+}
+.item-title{
+    font-size: 28px;
+}
+.detail-span{
+    width: 100%;
+    font-size: 18px;
+    text-align: right;
+    margin-top: 40px;
+    color: #e3435a;
 }
 .item-desc{
     padding: 10px 20px 20px 20px;
     text-align: left;
 }
-.detail-span,.desc-span{
-    font-size: 18px;
-}
-.desc-span{
+.item-content{
     line-height: 30px;
+    text-align: justify;
 }
-.detail-span{
-    color: #e3435a;
-    margin-left: 20px;
+.detail-span,.desc-span,.item-subtitle{
+    font-size: 16px;
 }
 .page-box{
     margin-top: 60px;

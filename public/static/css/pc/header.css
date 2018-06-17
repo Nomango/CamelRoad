@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-body,.account-input,.date-input,.pre-btn{
+body,.account-input,.date-input,.pre-btn,.text-em{
     color: #666;
 }
 ul,li{
@@ -25,21 +25,21 @@ a:hover,.about-dl dd a:hover{
 .result-list,.result-desc-footer,.page-box,.desc-content-box,.share-content,.share-right,.travel-item-box,.commonweal-content,
 .commonweal-item,.service-bgm,.service-item,.information-list,.information-item,.team-img-box,.welfare-desc-box,.recruit-tab,
 .job-box,.job-desc,.require-p,.recruit-content,.product-list,.price-p,.selected-desc-footer,.chartered-desc-footer,
-.selected-list,.chartered-list,.common-weal-item,.pre-p,.next-p,.date-left,.date-right,.swiper-slide
+.selected-list,.chartered-list,.common-weal-item,.pre-p,.next-p,.date-left,.date-right,.swiper-slide,
 .service-list{
     display: flex;
 }
 .header-box{
     padding: 20px 0;
 }
-.header-content,.brand-img-box,.form-item:first-child,.result-list,.result-desc-footer,.desc-content-box,
+.header-content,.brand-img-box,.form-item:first-child,.result-list,.result-desc-footer,
 .travel-item-box,.information-item,.team-img-box,.product-list{
     justify-content: space-between;
 }
 .advantage-list,.swiper-slide{
     justify-content: space-around;
 }
-.page-box,.pre-p,.next-p,.customize-process-box,.sort-item,.page-box,.recruit-content,.welfare-desc-box{
+.page-box,.pre-p,.next-p,.customize-process-box,.sort-item,.page-box,.recruit-content,.welfare-desc-box,.desc-content-box{
     justify-content: center;
 }
 .header-content,.advantage-list,.brand-img-box,.page-box,.pre-p,.next-p,.point-box,.date-right,.site-box,
@@ -63,16 +63,20 @@ a:hover,.about-dl dd a:hover{
 }
 .header-content,.about-content,.common-weal-content,.customize-content,.detail-content-box,.content-body,
 .commonweal-content,.recruit-box,.join-content,.product-content,.tourist-content{
-    width: 1210px;
+    width: 1130px;
 }
-.header-content,.form-box,.content-body,.commonweal-content,.share-box,.commonweal-box{
+.header-content,.form-box,.content-body,.commonweal-content,.share-box,.commonweal-box,.customize-content{
     margin: 0 auto;
 }
-.about-content,.recruit-box,.join-content,.desc-content-box,.tourist-content{
-    margin: 80px auto;
+.desc-content-box,.join-content,.tourist-content{
+    margin: 60px auto;
+}
+.recruit-box{
+    margin: 40px auto;
 }
 .tab-item,.pre-p,.next-p,.submit-btn,.bespoke-btn,.account-btn,.introduce-item,.service-item,
-.close-icon,.site-item,.sort-item,.result-item,.button,.recruit-item{
+.close-icon,.site-item,.sort-item,.result-item,.button,.recruit-item,.travel-item,.tab-p,.video-btn-box,
+.more-btn,.selected-item,.chartered-item{
     cursor: pointer;
 }
 .tab-item.active .tab-item-a,.price-span,.service-item.active{
@@ -84,10 +88,10 @@ a:hover,.about-dl dd a:hover{
 .introduce-dsec,.item-desc-p{
     margin-top: 10px;
 }
-.advantage-desc{
+.advantage-desc,.advantage-subtitle{
     margin-top: 20px;
 }
-.advantage-subtitle,.customize-desc,.customize-desc-p{
+.customize-desc,.customize-desc-p{
     margin-top: 40px;
 }
 .advantage-desc,.customize-desc-p{
@@ -96,22 +100,28 @@ a:hover,.about-dl dd a:hover{
 .introduce-dsec,.account-input,.date-input,.result-desc-top,.item-desc-p{
     line-height: 30px;
 }
-.advantage-desc,.customize-desc-p,.form-input,.service-item p,.site-p,.job-span{
+.advantage-desc,.customize-desc-p,.form-input,.service-item p,.site-p,.job-span,.result-desc-top{
     font-size: 14px;
 }
-.dd-a,.tab-item,.provide-subtitle,.account-btn,.introduce-desc-box,.item-desc-p{
+.dd-a,.tab-item,.provide-subtitle,.account-btn,.introduce-desc-box,.item-desc-p,.result-desc-footer{
     font-size: 16px;
 }
-.advantage-subtitle,.customize-desc-title,.desc-box,.introduce-tab,.price-em,.item-desc-title,.price-span{
+.desc-box,.introduce-tab,.price-em,.item-desc-title,.price-span{
     font-size: 18px;
 }
-.content-title,.advantage-title,.item-title,.provide-title,.detail-title,.commonweal-desc-title,
-.commonweal-title,.travel-item-title,.desc-title,.share-title,.service-title,.customize-title,
-.content-title,.welfare-title,.recruit-title,.product-title{
+.advantage-subtitle,.customize-desc-title,.travel-item-title{
     font-size: 24px;
 }
+.commonweal-desc-title{
+    font-size: 28px;
+}
+.content-title,.advantage-title,.provide-title,.detail-title,
+.commonweal-title,.desc-title,.share-title,.service-title,.customize-title,
+.content-title,.welfare-title,.recruit-title,.product-title{
+    font-size: 32px;
+}
 .tab-item:not(:last-of-type){
-    margin-right: 80px;
+    margin-right: 40px;
 }
 .introduce-dsec{
     margin-top: 10px;
@@ -119,14 +129,11 @@ a:hover,.about-dl dd a:hover{
 .job-span{
     margin-top: 20px;
 }
-.bespoke-btn,.welfare-desc-box,.recruit-content,.require-p{
-    margin-top: 40px;
-}
-.page-box{
+.advantage-box{
     margin-top: 60px;
 }
-.advantage-box,.brand-img-box,.provide-box,.welfare-box,.team-img-box{
-    margin-top: 80px;
+.brand-img-box,.provide-box,.welfare-box,.team-img-box,.welfare-desc-box,.recruit-content,.require-p{
+    margin-top: 40px;
 }
 .common-weal-item:not(:last-of-type),.form-item,.result-item{
     margin-bottom: 20px;
@@ -164,7 +171,7 @@ a:hover,.about-dl dd a:hover{
 .account-box,.introduce-tab,.date-input,.service-item,.price-input,.sort-box,.select-btn-box{
     border: 1px solid #ccc;
 }
-.mall-dl .dd-a:hover,.about-dl .dd-a:hover,.dd-a,.mall-dl,.page-p span.active,.bespoke-btn,.account-btn,.next-btn{
+.mall-dl .dd-a:hover,.about-dl .dd-a:hover,.dd-a,.mall-dl,.page-p span.active,.bespoke-btn,.account-btn{
     color: #fff;
 }
 .about-dl dd,.mall-dl dd{

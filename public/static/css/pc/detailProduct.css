@@ -61,6 +61,18 @@ body{
     color: #666;
     padding: 0 0 10px 0;
 }
+.bespoke-btn{
+    margin-top: 40px;
+}
+.date-box{
+    align-items: center;
+}
+.account-box{
+    margin-left: 10px;
+}
+.detail-title{
+    margin-left: -26px;
+}
 .introduce-item.active .introduce-item-span{
     font-weight: normal;
     border-bottom: 1.5px solid #e3435a;

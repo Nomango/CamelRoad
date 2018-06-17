@@ -17,7 +17,7 @@
     <div class="categroy-right">
         <div class="cate-box hideCate showCate">
             <div class="product">
-                <div class="cate-list card" onclick="detailSpecailty()">
+                <div class="cate-list card" onclick="detailProduct()">
                     <img src="__IMAGE__/alt.jpg" alt="" class="cate-list-img">
                     <div class="categroy-list-desc">
                         <p class="categroy-list-title">【标题】新疆特产是基本的</p>
@@ -63,8 +63,8 @@
         $(this).addClass('active').siblings().removeClass('active');
         $('.categroy-right .cate-box').eq(index).addClass('showCate').siblings().removeClass('showCate')
     })
-    function detailSpecailty() {
-        location.href = "{:url('Contact/detailSpecialty')}";
+    function detailProduct() {
+        location.href = "{:url('Contact/detailProduct')}";
     }
 </script>
 </body>

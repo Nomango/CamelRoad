@@ -89,7 +89,7 @@ body{
 .day-span{
     margin-right: 40px;
 }
-.primary-span,.day-span,.setout-date,.chartered-type,.chartered-car{
+.primary-span,.day-span,.setout-date,.chartered-type,.chartered-car,.introduce-tab-p{
     color: #999;
 }
 .site-title{
@@ -107,7 +107,6 @@ body{
 }
 .introduce-tab-p{
     font-size: 32pt;
-    color: #999;
 }
 .introduce-tab-p.active{
     color: #333;
