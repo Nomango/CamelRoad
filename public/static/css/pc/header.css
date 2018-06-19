@@ -24,7 +24,7 @@ a:hover,.about-dl dd a:hover{
 .account-box,.detail-desc,.introduce-item,.introduce-dsec,.introduce-tab,.site-box,.select-box,.site-list,.sort-box,.sort-item,
 .result-list,.result-desc-footer,.page-box,.desc-content-box,.share-content,.share-right,.travel-item-box,.commonweal-content,
 .commonweal-item,.service-bgm,.service-item,.information-list,.information-item,.team-img-box,.welfare-desc-box,.recruit-tab,
-.job-box,.job-desc,.require-p,.recruit-content,.product-list,.price-p,.selected-desc-footer,.chartered-desc-footer,
+.job-box,.job-desc,.require-p,.recruit-content,.price-p,.selected-desc-footer,.chartered-desc-footer,
 .selected-list,.chartered-list,.common-weal-item,.pre-p,.next-p,.date-left,.date-right,.swiper-slide,
 .service-list{
     display: flex;
@@ -33,7 +33,7 @@ a:hover,.about-dl dd a:hover{
     padding: 20px 0;
 }
 .header-content,.brand-img-box,.form-item:first-child,.result-list,.result-desc-footer,
-.travel-item-box,.information-item,.team-img-box,.product-list{
+.travel-item-box,.information-item,.team-img-box{
     justify-content: space-between;
 }
 .advantage-list,.swiper-slide{
@@ -62,7 +62,7 @@ a:hover,.about-dl dd a:hover{
     text-align: center;
 }
 .header-content,.about-content,.common-weal-content,.customize-content,.detail-content-box,.content-body,
-.commonweal-content,.recruit-box,.join-content,.product-content,.tourist-content{
+.commonweal-content,.recruit-box,.join-content,.tourist-content{
     width: 1130px;
 }
 .header-content,.form-box,.content-body,.commonweal-content,.share-box,.commonweal-box,.customize-content{
@@ -191,9 +191,9 @@ a:hover,.about-dl dd a:hover{
     color: #666;
     border: 1px solid #666;
     background: transparent;
+    transition: all .3s;
 }
 .product-content .next-btn:hover,.product-content .pre-btn:hover,.result-box .next-btn:hover,.result-box .pre-btn:hover{
-    transition: all .3s;
     color: #fff;
     background-color: #666;
 }

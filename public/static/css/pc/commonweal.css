@@ -21,6 +21,7 @@ body{
 .item-desc{
     padding: 10px 20px 20px 20px;
     text-align: left;
+    min-width: 766px;
 }
 .item-content{
     line-height: 30px;

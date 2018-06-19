@@ -1,9 +1,6 @@
 body{
     background-color: #f5f5f5;
 }
-.detail-head{
-    background-image: url("__IMAGE__/pc/common.jpg");
-}
 .detail-content{
     width: 1130px;
     margin: 20px auto 40px;
