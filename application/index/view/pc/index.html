@@ -13,7 +13,6 @@
             height: 292px!important;
             background-image: url("__IMAGE__/pc/service.jpg");
         }
-
     </style>
 </head>
 <body>
@@ -239,10 +238,6 @@
 <script>
     var video = document.getElementById("video");
     var back_btn = $(".return-box");
-    var url = window.location.href;
-    if (url == "http://localhost:8088/CamelRoad/public/index/pcindex/pcindex.html"){
-        $("#home").css('color','#e3435a')
-    }
     $(".video-btn-box").click(function () {
         console.log("123");
         video.style.display = "block";
@@ -273,8 +268,6 @@
     function detailTourist() {
         location.href = "{:url('Customize/detailTourist')}"
     }
-
-
 </script>
 </body>
 </html>

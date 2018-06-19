@@ -131,12 +131,6 @@
 {include file="pclayout/return" /}
 {include file="pclayout/footer" /}
 <script>
-    var url = window.location.href;
-    if (url == "http://localhost:8088/CamelRoad/public/index/customize/detailtouristmall.html"){
-        $("#bazaMall").css('color','#e3435a')
-    }else {
-        console.log(url)
-    }
     $(".sort-item").click(function () {
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');

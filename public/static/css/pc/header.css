@@ -82,6 +82,9 @@ a:hover,.about-dl dd a:hover{
 .tab-item.active .tab-item-a,.price-span,.service-item.active{
     color: #e3435a;
 }
+.tab-item-a.active {
+    color: #e3435a;
+}
 .service-item.active{
     border: 1px solid #e3435a;
 }

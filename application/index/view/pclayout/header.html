@@ -7,35 +7,35 @@
         <div class="header-tab-box">
             <ul>
                 <li class="tab-item">
-                    <a href="{:url('Pcindex/pcindex')}" class="tab-item-a" id="home">主页</a>
+                    <a href="{:url('Index/index')}" class="tab-item-a<?php if(isset($isIndex)) { ?> active<?php } ?>" id="home">主页</a>
                 </li>
                 <li class="tab-item">
-                    <a href="{:url('Customize/customize')}" class="tab-item-a" id="customize">定制旅行</a>
+                    <a href="{:url('Customize/index')}" class="tab-item-a<?php if(isset($isCustomize)) { ?> active<?php } ?>" id="customize">定制旅行</a>
                 </li>
                 <li class="tab-item">
-                    <a href="{:url('Customize/commonweal')}" class="tab-item-a" id="commonweal">公益活动</a>
+                    <a href="{:url('Commonweal/index')}" class="tab-item-a<?php if(isset($isCommonweal)) { ?> active<?php } ?>" id="commonweal">公益活动</a>
                 </li>
                 <li class="tab-item">
-                    <a href="javascript:void(0)" class="tab-item-a" id="bazaMall">巴扎商城</a>
+                    <a href="javascript:void(0)" class="tab-item-a<?php if(isset($isMall)) { ?> active<?php } ?>" id="bazaMall">巴扎商城</a>
                     <dl class="mall-dl">
                         <dd class="triangle"></dd>
                         <dd class="tab-item-dd">
-                            <a href="{:url('Customize/touristMall')}" class="dd-a">旅游商城</a>
+                            <a href="{:url('Tourist/index')}" class="dd-a">旅游商城</a>
                         </dd>
                         <dd class="tab-item-dd">
-                            <a href="{:url('Customize/productMall')}" class="dd-a">特产商城</a>
+                            <a href="{:url('Product/index')}" class="dd-a">特产商城</a>
                         </dd>
                     </dl>
                 </li>
                 <li class="tab-item">
-                    <a href="javascript:void(0)" class="tab-item-a" id="aboutus">关于我们</a>
+                    <a href="javascript:void(0)" class="tab-item-a<?php if(isset($isAbout)) { ?> active<?php } ?>" id="aboutus">关于我们</a>
                     <dl class="about-dl">
                         <dd class="triangle"></dd>
                         <dd class="tab-item-dd">
-                            <a href="{:url('Customize/aboutUs')}" class="dd-a">关于我们</a>
+                            <a href="{:url('About/index')}" class="dd-a">关于我们</a>
                         </dd>
                         <dd class="tab-item-dd">
-                            <a href="{:url('Customize/joinUs')}" class="dd-a">加入我们</a>
+                            <a href="{:url('About/join')}" class="dd-a">加入我们</a>
                         </dd>
                     </dl>
                 </li>

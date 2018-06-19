@@ -1,52 +1,38 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: gogo
- * Date: 2018/6/12
- * Time: 15:32
+ * User: Nomango
+ * Date: 2018-6-19
+ * Time: 21:59
  */
 
 namespace app\index\controller;
 
 
 use think\Controller;
+use think\Request;
 
 class CustomizeController extends Controller
 {
-    //定制旅行
-    public function customize(){
-        return $this->fetch('pc/customize');
+    public function __construct()
+    {
+        parent::__construct();
+        $this->assign([
+            'isCustomize' => true,
+        ]);
     }
-    //公益活动
-    public function commonweal(){
-        return $this->fetch('pc/commonweal');
+
+    // 私人定制旅行
+    public function index(){
+        if (Request::instance()->isMobile()) {
+            return $this->fetch('index/customize');
+        } else {
+            return $this->fetch('pc/customize');
+        }
     }
-    //关于我们
-    public function aboutUs(){
-        return $this->fetch('pc/aboutUs');
-    }
-    //加入我们
-    public function joinUs(){
-        return $this->fetch('pc/joinUs');
-    }
-    //旅游商城
-    public function touristMall(){
-        return $this->fetch('pc/touristMall');
-    }
-    //详细旅游
-    public function detailTouristMall(){
-        return $this->fetch('pc/detailTouristMall');
-    }
-    //每一个旅游
-    public function detailTourist(){
-        return $this->fetch('pc/detailTourist');
-    }
-    //特产商城
-    public function productMall(){
-        return $this->fetch('pc/productMall');
-    }
-    //详细特产
-    public function detailProduct(){
-        return $this->fetch('pc/detailProduct');
+
+    //预定提交
+    public function reserve(){
+        return $this->fetch('index/reserve');
     }
 }

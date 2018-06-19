@@ -83,10 +83,6 @@
 {include file="pclayout/return" /}
 {include file="pclayout/footer" /}
 <script>
-    var url = window.location.href;
-    if (url == "http://localhost:8088/CamelRoad/public/index/customize/joinus.html"){
-        $("#aboutus").css('color','#e3435a')
-    }
     $(".recruit-item").click(function () {
         var index = $(this).index();
         $(this).addClass("active").siblings().removeClass('active');
