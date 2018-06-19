@@ -85,8 +85,12 @@ input::placeholder{
 }
 .result-item{
     width: 363px;
-    min-height: 384px;
-    box-shadow: 3px 5px 29px rgba(0,0,0,.18);
+    height: 396px;
+    transition: all .3s;
+}
+.result-item:hover{
+    margin-top: -10px;
+    box-shadow: 0 0 29px rgba(0,0,0,.25);
 }
 .result-img{
     height: 263px;

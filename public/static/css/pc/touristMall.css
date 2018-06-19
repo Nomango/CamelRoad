@@ -1,5 +1,6 @@
 body{
     font-size: 14px;
+    background-color: #f5f5f5;
 }
 .selected-desc-footer,.chartered-desc-footer,.selected-list,.chartered-list{
     justify-content: space-between;
@@ -10,9 +11,16 @@ body{
 }
 .selected-item,.chartered-item{
     width: 363px;
-    min-height: 384px;
-    box-shadow: 3px 5px 29px rgba(0,0,0,.18);
+    height: 384px;
     margin-bottom: 20px;
+    transition: all .3s;
+}
+.selected-item:hover,.chartered-item:hover{
+    margin-top: -10px;
+    box-shadow: 0 0 29px rgba(0,0,0,.25);
+}
+.selected-item:hover .selected-desc{
+
 }
 .selected-img,.chartered-img{
     height: 263px;
@@ -21,6 +29,7 @@ body{
     font-size: 32px;
 }
 .selected-desc,.chartered-desc{
+    background-color: #fff;
     padding: 10px;
 }
 .selected-desc-left,.chartered-desc-left{
