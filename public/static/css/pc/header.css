@@ -138,7 +138,7 @@ a:hover,.about-dl dd a:hover{
 .brand-img-box,.provide-box,.welfare-box,.team-img-box,.welfare-desc-box,.recruit-content,.require-p{
     margin-top: 40px;
 }
-.common-weal-item:not(:last-of-type),.form-item,.result-item{
+.common-weal-content a .common-weal-item:not(:last-of-type),.form-item,.result-item{
     margin-bottom: 20px;
 }
 .advantage-title{

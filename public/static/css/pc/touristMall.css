@@ -16,7 +16,7 @@ body{
     transition: all .3s;
 }
 .selected-item:hover,.chartered-item:hover{
-    margin-top: -10px;
+    transform: scale(1.03);
     box-shadow: 0 0 29px rgba(0,0,0,.25);
 }
 .selected-item:hover .selected-desc{
@@ -76,6 +76,7 @@ body{
 }
 .swiper-container{
     width: 100%;
+    z-index: 0;
 }
 .swiper-slide-img-box{
     width: 350px;

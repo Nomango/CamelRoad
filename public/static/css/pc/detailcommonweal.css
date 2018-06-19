@@ -1,0 +1,25 @@
+body{
+    background-color: #f5f5f5;
+}
+.detail-head{
+    background-image: url("__IMAGE__/pc/common.jpg");
+}
+.detail-content{
+    width: 1130px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+.detail-title{
+    font-size: 24px;
+    font-weight: 100;
+    color: #666;
+    margin: 0 0 40px;
+}
+.detail-desc{
+    font-size: 16px;
+    word-break: break-all;
+    line-height: 30px;
+    text-align: left;
+}

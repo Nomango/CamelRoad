@@ -44,6 +44,10 @@ body{
     border-right: 1.5px solid #e3435a;
     transform: rotate(-135deg);
 }
+.common-weal-item{
+    cursor: pointer;
+    margin-bottom: 20px;
+}
 .pre-p .page-icon{
     margin: 0 0 0 8px;
 }

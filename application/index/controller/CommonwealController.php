@@ -26,4 +26,9 @@ class CommonwealController extends Controller
     public function index(){
         return $this->fetch('pc/commonweal');
     }
+
+    //公益详情页
+    public function detail(){
+        return $this->fetch('pc/detailcommonweal');
+    }
 }
