@@ -196,9 +196,13 @@
 .commonweal-item{
     margin-bottom: 20px;
 }
+.common-weal-item{
+    position: relative;
+}
 .commonweal-desc-box{
     padding: 10px 20px 20px 20px;
     text-align: left;
+    min-width: 766px;
 }
 .site-desc-content p,.sub-share-title{
     line-height: 25px;
@@ -208,11 +212,11 @@
     font-size: 16px;
 }
 .desc-detail{
-    width: 100%;
-    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
     font-size: 18px;
     color: #e3435a;
-    margin-top: 40px;
 }
 .more-btn{
     margin: 40px 0;
