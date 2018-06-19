@@ -64,10 +64,9 @@ body{
     margin: 20px auto 0 ;
     color: #e3435a;
     border-radius: 10px;
-
+    transition: all .5s;
 }
 .more-btn:hover{
-    transition: all .5s;
     color: #fff;
     background-color: #e3435a;
 }

@@ -67,7 +67,7 @@
     <div class="tab-content-box">
         <div class="tab-content-item hideCon showCon">
             <div class="travel-item-box">
-                <div class="travel-item" onclick="detailTourist()" style="background-image: url('__IMAGE__/130.jpg')">
+                <div class="travel-item" style="background-image: url('__IMAGE__/130.jpg')">
                     <div class="travel-item-inner"></div>
                     <div class="travel-item-outer">
                         <p class="travel-item-title">乌鲁木齐</p>
@@ -169,32 +169,18 @@
 <div class="commonweal-box">
     <div class="commonweal-content">
         <p class="commonweal-title">公益活动</p>
+        {volist name="commonweals" id="c"}
         <div class="commonweal-item">
             <img src="__IMAGE__/pc/common.jpg" alt="" class="commonweal-img">
             <div class="commonweal-desc-box">
-                <p class="commonweal-desc-title">标题</p>
-                <p class="commonweal-desc">
-                    公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法。指有关社会公众的福祉和利益。
-                    公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法。指有关社会公众的福祉和利益。
-                    公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法
-                </p>
-                <p class="desc-detail">查看详情 >></p>
+                <p class="commonweal-desc-title">{$c.title}</p>
+                <p class="commonweal-desc">{$c.desc}</p>
+                <a href="{:url('Commonweal/detail')}?id={$c.id}"><p class="desc-detail">查看详情 >></p></a>
             </div>
         </div>
-        <div class="commonweal-item">
-            <img src="__IMAGE__/pc/common.jpg" alt="" class="commonweal-img">
-            <div class="commonweal-desc-box">
-                <p class="commonweal-desc-title">标题</p>
-                <p class="commonweal-desc">
-                    公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法。指有关社会公众的福祉和利益。
-                    公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法。指有关社会公众的福祉和利益。
-                    公益是公共利益视野的简称。这是为人民服务的一种通俗的讲法
-                </p>
-                <p class="desc-detail">查看详情 >></p>
-            </div>
-        </div>
+        {/volist}
         <div class="more-btn-box">
-            <button class="button more-btn">查看更多</button>
+            <a href="{:url('Commonweal/index')}"><button class="button more-btn">查看更多</button></a>
         </div>
     </div>
 </div>
@@ -233,11 +219,10 @@
         </div>
     </div>
 </div>
-{include file="pclayout/return" /}
+
 {include file="pclayout/footer" /}
 <script>
     var video = document.getElementById("video");
-    var back_btn = $(".return-box");
     $(".video-btn-box").click(function () {
         console.log("123");
         video.style.display = "block";
@@ -251,23 +236,6 @@
         $(this).addClass('active').siblings().removeClass('active');
         $(".tab-content-item").eq(index).addClass('showCon').siblings().removeClass('showCon')
     });
-    back_btn.on('click',function () {
-        $('html,body').animate({
-            scrollTop: 0
-        },800)
-    });
-    $(window).on('scroll',function () {
-        if($(window).scrollTop() > $(window).height()){
-            back_btn.fadeIn();
-        } else {
-            back_btn.fadeOut();
-        }
-    });
-    $(window).trigger('scroll');//触发选中的事件
-
-    function detailTourist() {
-        location.href = "{:url('Customize/detailTourist')}"
-    }
 </script>
 </body>
 </html>

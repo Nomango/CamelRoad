@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="__CSS__/pc/detailcommonweal.css">
     {include file="layout/head"/}
     <style>
-
+        .detail-head{
+            background-image: url("__IMAGE__/{$commonweal.image}");
+        }
     </style>
 </head>
 <body>
@@ -14,37 +16,11 @@
 <div class="detail-box">
     <div class="detail-head allhead-img"></div>
     <div class="detail-content">
-        <p class="detail-title">公益活动</p>
-        <p class="detail-desc">
-            人工智能如今在各个领域全面开花，例如在电商、金融、交通等领域。本专题重点讨论大型企业之人工智能平台背后的核心系统架构和核心技术，
-            例如模型、算法和数据训练等，以及实践人工智能应用需要哪些新思维。
-        </p>
+        <p class="detail-title">{$commonweal.title}</p>
+        <p class="detail-desc">{$commonweal.content}</p>
     </div>
 </div>
-{include file="pclayout/return" /}
-{include file="pclayout/footer" /}
-<script>
-    var url = window.location.href;
-    if (url == "http://localhost:8088/CamelRoad/public/index/customize/commonweal.html"){
-        $("#commonweal").css('color','#e3435a')
-    }else{
-        console.log(url);
-    }
-    var back_btn = $(".return-box");
-    back_btn.on('click',function () {
-        $('html,body').animate({
-            scrollTop: 0
-        },800)
-    });
-    $(window).on('scroll',function () {
-        if($(window).scrollTop() > $(window).height()){
-            back_btn.fadeIn();
-        } else {
-            back_btn.fadeOut();
-        }
 
-    });
-    $(window).trigger('scroll');//触发选中的事件
-</script>
+{include file="pclayout/footer" /}
 </body>
 </html>

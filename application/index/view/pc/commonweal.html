@@ -16,57 +16,34 @@
 <div class="commonweal-box">
     <div class="common-weal-head allhead-img"></div>
     <div class="common-weal-content">
-        {for start="0" end="3"}
-        <a href="{:url('Commonweal/detail')}">
-            <div class="common-weal-item">
-                <img src="__IMAGE__/pc/common.jpg" alt="" class="item-img">
-                <div class="item-desc">
-                    <p class="item-title">标题</p>
-                    <p class="item-content">
-                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法。指有福安社会公众的福祉和利益
-                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法。指有福安社会公众的福祉和利益
-                        公益是公共利益事业的简称，这是为人民服务的一种通俗说法
-                    </p>
-                    <p class="detail-span">查看详情 >></p>
-                </div>
+        {volist name="commonweals" id="c"}
+        <div class="common-weal-item">
+            <img src="__IMAGE__/{$c.image}" alt="" class="item-img">
+            <div class="item-desc">
+                <p class="item-title">{$c.title}</p>
+                <p class="item-content">{$c.desc}</p>
+                <a href="{:url('Commonweal/detail')}?id={$c.id}"><p class="detail-span">查看详情 >></p></a>
             </div>
-        </a>
-        {/for}
-        <div class="page-box">
-            <p class="pre-p">
-                <i class="page-icon"></i>
-            </p>
-            <p class="page-p">
-                <span class="active">1</span>
-                <span class="">2</span>
-                <span class="">3</span>
-                <span class="">4</span>
-                <span class="">5</span>
-            </p>
-            <p class="next-p">
-                <i class="page-icon"></i>
-            </p>
         </div>
+        {/volist}
+        <!--<div class="page-box">-->
+            <!--<p class="pre-p">-->
+                <!--<i class="page-icon"></i>-->
+            <!--</p>-->
+            <!--<p class="page-p">-->
+                <!--<span class="active">1</span>-->
+                <!--<span class="">2</span>-->
+                <!--<span class="">3</span>-->
+                <!--<span class="">4</span>-->
+                <!--<span class="">5</span>-->
+            <!--</p>-->
+            <!--<p class="next-p">-->
+                <!--<i class="page-icon"></i>-->
+            <!--</p>-->
+        <!--</div>-->
     </div>
 </div>
-{include file="pclayout/return" /}
-{include file="pclayout/footer" /}
-<script>
-    var back_btn = $(".return-box");
-    back_btn.on('click',function () {
-        $('html,body').animate({
-            scrollTop: 0
-        },800)
-    });
-    $(window).on('scroll',function () {
-        if($(window).scrollTop() > $(window).height()){
-            back_btn.fadeIn();
-        } else {
-            back_btn.fadeOut();
-        }
 
-    });
-    $(window).trigger('scroll');//触发选中的事件
-</script>
+{include file="pclayout/footer" /}
 </body>
 </html>

@@ -45,7 +45,6 @@ body{
     transform: rotate(-135deg);
 }
 .common-weal-item{
-    cursor: pointer;
     margin-bottom: 20px;
 }
 .pre-p .page-icon{

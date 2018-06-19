@@ -79,40 +79,75 @@
         <p class="provide-subtitle">说出你的需求，谈谈你的旅行</p>
         <div class="form-box">
             <div class="form-item">
-                <input type="text" class="form-input name-input" placeholder="姓名">
-                <input type="text" class="form-input site-input" placeholder="目的地">
-                <input type="text" class="form-input day-input" placeholder="天数">
+                <input id="demand-name" type="text" class="form-input name-input" placeholder="姓名">
+                <input id="demand-dest" type="text" class="form-input site-input" placeholder="目的地">
+                <input id="demand-duration" type="text" class="form-input day-input" placeholder="天数">
             </div>
             <div class="form-item">
-                <input type="text" class="form-input phone-input" placeholder="电话号码">
+                <input id="demand-phone" type="text" class="form-input phone-input" placeholder="电话号码">
             </div>
             <div class="form-item">
-                <textarea name="" id="" class="form-input textarea-input" placeholder="备注内容" style="overflow: hidden"></textarea>
+                <textarea id="demand-remarks" name="" class="form-input textarea-input" placeholder="需求描述" style="overflow: hidden"></textarea>
             </div>
             <div class="form-item">
-                <button class="submit-btn">提交</button>
+                <button id="demand-submit" class="submit-btn">提交</button>
             </div>
         </div>
     </div>
 </div>
-{include file="pclayout/return" /}
+
 {include file="pclayout/footer" /}
 <script>
-    var back_btn = $(".return-box");
-    back_btn.on('click',function () {
-        $('html,body').animate({
-            scrollTop: 0
-        },800)
-    });
-    $(window).on('scroll',function () {
-        if($(window).scrollTop() > $(window).height()){
-            back_btn.fadeIn();
-        } else {
-            back_btn.fadeOut();
-        }
+    $(document).ready(function () {
+        layui.use('layer');
 
+        $('#demand-submit').click(function () {
+            var name = $('#demand-name').val();
+            var dest = $('#demand-dest').val();
+            var duration = $('#demand-duration').val();
+            var phone = $('#demand-phone').val();
+            var remarks = $('#demand-remarks').val();
+            if (name == "" ||
+                dest == "" ||
+                duration == "" ||
+                phone == "" ||
+                remarks == "") {
+                layui.layer.msg('请填完后再提交哦~', {icon: 2});
+                return;
+            }
+
+            $('#demand-submit').attr('disabled', 'disabled');
+
+            $.ajax({
+                type: 'POST',
+                data: {
+                    name: name,
+                    dest: dest,
+                    duration: duration,
+                    phone: phone,
+                    remarks: remarks
+                },
+                url: '{:url("Customize/submit")}',
+                success: function (data) {
+                    if (data.code != 0) {
+                        layui.layer.msg(data.msg, {icon: 2});
+                        $('#demand-submit').removeAttr('disabled');
+                    } else {
+                        layui.layer.msg(data.msg, {
+                            icon: 1
+                            ,time: 1500
+                        }, function() {
+                            window.location.reload();
+                        });
+                    }
+                },
+                error: function () {
+                    layui.layer.msg('无法连接服务器！', {icon: 5});
+                    $('#demand-submit').removeAttr('disabled');
+                }
+            });
+        });
     });
-    $(window).trigger('scroll');//触发选中的事件
 </script>
 </body>
 </html>

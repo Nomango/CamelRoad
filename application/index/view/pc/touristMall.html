@@ -102,31 +102,7 @@
         </div>
     </div>
 </div>
-{include file="pclayout/return" /}
-{include file="pclayout/footer" /}
-<script>
-    var mySwiper = new Swiper('.swiper-container',{
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        },
-        speed:300
-    });
-    var back_btn = $(".return-box");
-    back_btn.on('click',function () {
-        $('html,body').animate({
-            scrollTop: 0
-        },800)
-    });
-    $(window).on('scroll',function () {
-        if($(window).scrollTop() > $(window).height()){
-            back_btn.fadeIn();
-        } else {
-            back_btn.fadeOut();
-        }
 
-    });
-    $(window).trigger('scroll');//触发选中的事件
-</script>
+{include file="pclayout/footer" /}
 </body>
 </html>

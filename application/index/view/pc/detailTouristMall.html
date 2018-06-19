@@ -54,7 +54,7 @@
         </div>
         <div class="result-box">
             <div class="result-list">
-                <div class="result-item" onclick="detailTourist()">
+                <div class="result-item">
                     <img src="__IMAGE__/pc/bhb.jpg" alt="" class="result-img">
                     <div class="result-desc">
                         <p class="result-desc-top">
@@ -128,7 +128,7 @@
         </div>
     </div>
 </div>
-{include file="pclayout/return" /}
+
 {include file="pclayout/footer" /}
 <script>
     $(".sort-item").click(function () {
@@ -137,24 +137,6 @@
         $(this).siblings().children('img').removeClass('showCon');
         $(this).children('img').addClass('showCon');
     });
-    function detailTourist() {
-        location.href = "{:url('Customize/detailTourist')}";
-    }
-    var back_btn = $(".return-box");
-    back_btn.on('click',function () {
-        $('html,body').animate({
-            scrollTop: 0
-        },800)
-    });
-    $(window).on('scroll',function () {
-        if($(window).scrollTop() > $(window).height()){
-            back_btn.fadeIn();
-        } else {
-            back_btn.fadeOut();
-        }
-
-    });
-    $(window).trigger('scroll');//触发选中的事件
 </script>
 </body>
 </html>

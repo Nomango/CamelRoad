@@ -1,6 +1,7 @@
 <?php
 namespace app\index\controller;
 
+use app\common\model\Commonweal;
 use think\Controller;
 use think\Request;
 
@@ -16,6 +17,11 @@ class IndexController extends Controller
 
     public function index()
     {
+        $commweals = Commonweal::limit(0 , 3)->select();
+        $this->assign([
+            'commonweals' => $commweals,
+        ]);
+
         if (Request::instance()->isMobile()) {
             return $this->fetch();
         } else {
