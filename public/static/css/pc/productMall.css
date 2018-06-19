@@ -2,7 +2,18 @@ body{
     background-color: #f5f5f5;
 }
 .product-content{
+    width: 1170px;
     margin: 60px auto 40px;
+}
+.product-list{
+    overflow: hidden;
+    clear: both;
+    margin-left: 20px;
+}
+.product-item{
+    float: left;
+    display: inline-block;
+    margin: 0 20px 20px 0;
 }
 .price-p{
     justify-content: space-between;
