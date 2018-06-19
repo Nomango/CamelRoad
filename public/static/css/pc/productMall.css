@@ -44,16 +44,3 @@
     height: 40px;
     line-height: 40px;
 }
-.page-span{
-    margin: 0 40px;
-}
-.pre-btn,.next-btn{
-    color: #666;
-    border: 1px solid #666;
-    background: transparent;
-}
-.next-btn:hover,.pre-btn:hover{
-    transition: all .3s;
-    color: #fff;
-    background-color: #666;
-}

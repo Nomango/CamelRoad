@@ -116,14 +116,3 @@ input::placeholder{
     height: 40px;
     line-height: 40px;
 }
-.page-span{
-    margin: 0 40px;
-}
-.pre-btn{
-    color: #666;
-    border: 1px solid #666;
-    background: transparent;
-}
-.next-btn{
-    background-color: #666;
-}

@@ -12,7 +12,7 @@ a:hover,.about-dl dd a:hover{
     color: #333;
 }
 .header-box,.about-box,.common-weal-head,.customize-head,.customize-desc,.phone-input,.textarea-input,.detail-box,
-.detail-head,.date-box,.desc-box,.detail-box,.result-img,.share-box,.desc-content-box,.video-img,.commonweal-box,
+.detail-head,.date-box,.desc-box,.detail-box,.result-img,.share-box,.desc-content-box,.commonweal-box,
 .service-box,.customize-box,.service-bgm,.join-box,.welfare-box,.welfare-desc-box,.product-box,.product-item-img,
 .tourist-box,.selected-img,.chartered-img,.more-box{
     width: 100%;
@@ -180,6 +180,19 @@ a:hover,.about-dl dd a:hover{
 .advantage-img,.desc-img{
     width: 100px;
     height: 100px;
+}
+.product-content .page-span,.result-box .page-span{
+    margin: 0 40px;
+}
+.product-content .pre-btn, .product-content .next-btn,.result-box .pre-btn, .result-box .next-btn{
+    color: #666;
+    border: 1px solid #666;
+    background: transparent;
+}
+.product-content .next-btn:hover,.product-content .pre-btn:hover,.result-box .next-btn:hover,.result-box .pre-btn:hover{
+    transition: all .3s;
+    color: #fff;
+    background-color: #666;
 }
 .triangle{
     top: -40px;
