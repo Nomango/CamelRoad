@@ -13,24 +13,18 @@
 {include file="layout/banner" /}
 
 <div class="sub-banner-list">
-    <a href="{:url('Tourist/index')}">
-        <div class="sub-banner-item">
-            <img src="__IMAGE__/1.png" alt="" class="sub-banner-img">
-            <p class="sub-banner-p">新疆旅游</p>
-        </div>
-    </a>
-    <a href="{:url('Product/index')}">
-        <div class="sub-banner-item">
-            <img src="__IMAGE__/2.png" alt="" class="sub-banner-img">
-            <p class="sub-banner-p">新疆特产</p>
-        </div>
-    </a>
-    <a href="{:url('Customize/index')}">
-        <div class="sub-banner-item">
-            <img src="__IMAGE__/3.png" alt="" class="sub-banner-img">
-            <p class="sub-banner-p">私人订制</p>
-        </div>
-    </a>
+    <div class="sub-banner-item" onclick="location.href=`{:url('Tourist/index')}`">
+        <img src="__IMAGE__/1.png" alt="" class="sub-banner-img">
+        <p class="sub-banner-p">新疆旅游</p>
+    </div>
+    <div class="sub-banner-item" onclick="location.href=`{:url('Product/index')}`">
+        <img src="__IMAGE__/2.png" alt="" class="sub-banner-img">
+        <p class="sub-banner-p">新疆特产</p>
+    </div>
+    <div class="sub-banner-item" onclick="location.href=`{:url('Customize/index')}`">
+        <img src="__IMAGE__/3.png" alt="" class="sub-banner-img">
+        <p class="sub-banner-p">私人订制</p>
+    </div>
 </div>
 <div class="content-body">
     <div class="tabContainer">

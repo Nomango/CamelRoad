@@ -23,12 +23,12 @@ class TouristController extends Controller
         ]);
     }
 
-    public function index() {
+    public function landing() {
         return $this->fetch('pc/touristMall');
     }
 
     //详细旅游
-    public function category() {
+    public function index() {
         if (Request::instance()->isMobile()) {
             return $this->fetch('index/detailTouristMall');
         } else {

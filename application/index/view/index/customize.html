@@ -14,34 +14,82 @@
     </div>
     <div class="private-box">
         <div class="private-item">
-            <p class="primary-title">客服联系</p>
-            <span class="sub-primary-title">（填写资讯单）</span>
-        </div>
-        <div class="private-item">
-            <p class="primary-item-p">出发地</p>
-            <input type="text" placeholder="成都" class="private-input">
+            <p class="primary-title">订制旅行</p>
+            <span class="sub-primary-title">（填写私人定制需求单）</span>
         </div>
         <div class="private-item">
             <p class="primary-item-p">目的地</p>
-            <input type="text" placeholder="乌鲁木齐" class="private-input">
+            <input id="demand-dest" type="text" placeholder="乌鲁木齐" class="private-input">
         </div>
         <div class="private-item">
             <p class="primary-item-p">出发日期</p>
-            <input type="text" placeholder="2018-05-20" class="private-input">
+            <input id="demand-departure-time" type="text" placeholder="2018年5月20号" class="private-input">
         </div>
         <div class="private-item">
             <p class="primary-item-p">联系人</p>
-            <input type="text" placeholder="联系人姓名" class="private-input">
+            <input id="demand-name" type="text" placeholder="联系人姓名" class="private-input">
         </div>
         <div class="private-item">
             <p class="primary-item-p">联系电话</p>
-            <input type="text" placeholder="联系人电话" class="private-input">
+            <input id="demand-phone" type="text" placeholder="联系人电话" class="private-input">
         </div>
     </div>
     <div class="remark-box">
-        <p class="remark-p">备注</p>
-        <textarea type="text" placeholder="备注旅行" style="overflow: hidden" class="private-textarea"></textarea>
-        <button class="submit-btn">提交需求</button>
+        <p class="remark-p">需求描述</p>
+        <textarea id="demand-remarks" type="text" placeholder="详细描述您的需求" style="overflow: hidden" class="private-textarea"></textarea>
+        <button id="demand-submit" class="submit-btn">提交需求</button>
     </div>
+    <script>
+        $(document).ready(function () {
+            layui.use('layer');
+
+            $('#demand-submit').click(function () {
+                var name = $('#demand-name').val();
+                var dest = $('#demand-dest').val();
+                var departure_time = $('#demand-departure-time').val();
+                var phone = $('#demand-phone').val();
+                var remarks = $('#demand-remarks').val();
+                if (name == "" ||
+                    dest == "" ||
+                    departure_time == "" ||
+                    phone == "" ||
+                    remarks == "") {
+                    layui.layer.msg('请填完后再提交哦~', {icon: 2});
+                    return;
+                }
+
+                $('#demand-submit').attr('disabled', 'disabled');
+
+                $.ajax({
+                    type: 'POST',
+                    data: {
+                        name: name,
+                        dest: dest,
+                        departure_time: departure_time,
+                        phone: phone,
+                        remarks: remarks
+                    },
+                    url: '{:url("Customize/submit")}',
+                    success: function (data) {
+                        if (data.code != 0) {
+                            layui.layer.msg(data.msg, {icon: 2});
+                            $('#demand-submit').removeAttr('disabled');
+                        } else {
+                            layui.layer.msg(data.msg, {
+                                icon: 1
+                                ,time: 1500
+                            }, function() {
+                                window.location.reload();
+                            });
+                        }
+                    },
+                    error: function () {
+                        layui.layer.msg('无法连接服务器！', {icon: 5});
+                        $('#demand-submit').removeAttr('disabled');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -39,14 +39,14 @@ class CustomizeController extends Controller
 
     // 提交私人定制需求
     public function submit() {
-        $request = Request::instance();
+        $data = Request::instance()->param();
 
         $demand = new Demand();
-        $demand['name'] = $request->param('name');
-        $demand['dest'] = $request->param('dest');
-        $demand['duration'] = $request->param('duration/d');
-        $demand['phone'] = $request->param('phone');
-        $demand['remarks'] = $request->param('remarks');
+        $demand['name'] = $data['name'];
+        $demand['dest'] = $data['dest'];
+        $demand['departure_time'] = $data['departure_time'];
+        $demand['phone'] = $data['phone'];
+        $demand['remarks'] = $data['remarks'];
         if ($demand->save()) {
             return serve_json(0, '提交成功');
         } else {

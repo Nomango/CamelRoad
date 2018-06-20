@@ -86,9 +86,9 @@ body{
     height: 40px;
     line-height: 40px;
     opacity: 1;
+    transition: all .3s;
 }
 .bespoke-btn:hover{
-    transition: all .3s;
     opacity: .8;
 }
 .introduce-tab{

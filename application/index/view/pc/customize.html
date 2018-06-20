@@ -81,7 +81,7 @@
             <div class="form-item">
                 <input id="demand-name" type="text" class="form-input name-input" placeholder="姓名">
                 <input id="demand-dest" type="text" class="form-input site-input" placeholder="目的地">
-                <input id="demand-duration" type="text" class="form-input day-input" placeholder="天数">
+                <input id="demand-departure-time" type="text" class="form-input day-input" placeholder="出发时间">
             </div>
             <div class="form-item">
                 <input id="demand-phone" type="text" class="form-input phone-input" placeholder="电话号码">
@@ -104,12 +104,12 @@
         $('#demand-submit').click(function () {
             var name = $('#demand-name').val();
             var dest = $('#demand-dest').val();
-            var duration = $('#demand-duration').val();
+            var departure_time = $('#demand-departure-time').val();
             var phone = $('#demand-phone').val();
             var remarks = $('#demand-remarks').val();
             if (name == "" ||
                 dest == "" ||
-                duration == "" ||
+                departure_time == "" ||
                 phone == "" ||
                 remarks == "") {
                 layui.layer.msg('请填完后再提交哦~', {icon: 2});
@@ -123,7 +123,7 @@
                 data: {
                     name: name,
                     dest: dest,
-                    duration: duration,
+                    departure_time: departure_time,
                     phone: phone,
                     remarks: remarks
                 },
