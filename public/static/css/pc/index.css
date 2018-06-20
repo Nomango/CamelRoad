@@ -203,6 +203,7 @@
     padding: 10px 20px 20px 20px;
     text-align: left;
     min-width: 766px;
+    position: relative;
 }
 .site-desc-content p,.sub-share-title{
     line-height: 25px;
@@ -213,7 +214,7 @@
 }
 .desc-detail{
     position: absolute;
-    right: 0;
+    right: 20px;
     bottom: 20px;
     font-size: 18px;
     color: #e3435a;
