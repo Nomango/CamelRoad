@@ -48,9 +48,9 @@ class CustomizeController extends Controller
         $demand['phone'] = $request->param('phone');
         $demand['remarks'] = $request->param('remarks');
         if ($demand->save()) {
-            return ServeJSON(0, '提交成功');
+            return serve_json(0, '提交成功');
         } else {
-            return ServeJSON(10001, '服务器异常');
+            return serve_json(10001, '服务器异常');
         }
     }
 }

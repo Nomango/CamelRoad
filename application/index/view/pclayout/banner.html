@@ -28,9 +28,9 @@
 </style>
 <div class="swiper-container">
     <div class="swiper-wrapper"><!--style="background-image: url('__IMAGE__/130.jpg')"-->
-        <div class="swiper-slide"><img src="__IMAGE__/kzls.jpg" alt="" width="100%"></div>
-        <div class="swiper-slide"><img src="__IMAGE__/alt.jpg" alt="" width="100%"></div>
-        <div class="swiper-slide"><img src="__IMAGE__/kzls.jpg" alt="" width="100%"></div>
+        {volist name="banners" id="b"}
+        <div class="swiper-slide"><img src="__IMAGE__/{$b.image}" alt="" width="100%"></div>
+        {/volist}
     </div>
     <div class="swiper-button-prev swiper-button-white"></div>
     <div class="swiper-button-next swiper-button-white"></div>

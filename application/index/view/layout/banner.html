@@ -18,9 +18,9 @@
 </style>
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="__IMAGE__/user_bg_1.jpg" alt="" width="100%"></div>
-        <div class="swiper-slide"><img src="__IMAGE__/user_bg_2.jpg" alt="" width="100%"></div>
-        <div class="swiper-slide"><img src="__IMAGE__/user_bg_3.jpg" alt="" width="100%"></div>
+        {volist name="banners" id="b"}
+        <div class="swiper-slide"><img src="__IMAGE__/{$b.image}" alt="" width="100%"></div>
+        {/volist}
     </div>
     <div class="swiper-pagination swiper-pagination-bullets">
         <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>

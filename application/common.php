@@ -10,9 +10,14 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
-function ServeJSON($code, $msg) {
+function serve_json($code, $msg) {
     return json([
         'code' => $code,
         'msg' => $msg,
     ]);
+}
+
+// 时间格式化
+function time_format($date, $format) {
+    return date($format, strtotime($date));
 }
