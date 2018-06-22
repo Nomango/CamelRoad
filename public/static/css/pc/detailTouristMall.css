@@ -9,9 +9,13 @@ em{
     font-style: normal;
 }
 .detail-content{
-    width: 1130px;
-    margin: 20px auto 0;
-    padding: 0 10px 40px 10px;
+    width: 100%;
+
+    padding: 40px 10px 40px 10px;
+}
+.result-list{
+    width: 1170px;
+    margin: 0 auto;
 }
 .select-box{
     border-bottom: 1px solid #ccc;
@@ -44,7 +48,7 @@ em{
 .site-item.active{
     color: #e3435a;
 }
-.site-item{
+.site-item,.sort-price-box{
     margin-left: 20px;
 }
 .sort-item{
@@ -63,9 +67,6 @@ em{
     transform: rotate(180deg);
     margin-left: 10px;
 }
-.sort-price-box{
-    margin-left: 20px;
-}
 input::placeholder{
     color: #999;
 }
@@ -74,19 +75,18 @@ input::placeholder{
     height: 30px;
     text-indent: 5px;
 }
-.result-box{
-    margin-top: 40px;
-}
-.result-list{
-    flex-wrap: wrap;
-}
 .page-box{
     margin-top: 20px;
+}
+.page-span{
+    margin: 0 20px;
 }
 .result-item{
     width: 363px;
     height: 396px;
     transition: all .3s;
+    display: inline-block;
+    margin-right: 20px;
 }
 .result-item:hover{
     transform: translateY(-10px);
@@ -119,4 +119,14 @@ input::placeholder{
     width: 110px;
     height: 40px;
     line-height: 40px;
+}
+.pre-btn,.next-btn{
+    color: #666;
+    border: 1px solid #666;
+    background: transparent;
+    transition: all .3s;
+}
+.pre-btn:hover,.next-btn:hover{
+    background-color: #666;
+    color: #fff;
 }

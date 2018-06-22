@@ -22,7 +22,7 @@ a:hover,.about-dl dd a:hover{
 }
 .header-content,.advantage-list,.brand-img-box,.customize-process-box,.form-item:first-child,.customize-img-box,.point-box,.date-box,
 .account-box,.detail-desc,.introduce-item,.introduce-dsec,.introduce-tab,.site-box,.select-box,.site-list,.sort-box,.sort-item,
-.result-list,.result-desc-footer,.page-box,.desc-content-box,.share-content,.share-right,.travel-item-box,.commonweal-content,
+.result-desc-footer,.page-box,.desc-content-box,.share-content,.share-right,.travel-item-box,.commonweal-content,
 .commonweal-item,.service-bgm,.service-item,.information-list,.information-item,.team-img-box,.welfare-desc-box,.recruit-tab,
 .job-box,.job-desc,.require-p,.recruit-content,.price-p,.selected-desc-footer,.chartered-desc-footer,
 .common-weal-item,.pre-p,.next-p,.date-left,.date-right,.swiper-slide,
@@ -32,7 +32,7 @@ a:hover,.about-dl dd a:hover{
 .header-box{
     padding: 20px 0;
 }
-.header-content,.brand-img-box,.form-item:first-child,.result-list,.result-desc-footer,
+.header-content,.brand-img-box,.form-item:first-child,.result-desc-footer,
 .travel-item-box,.information-item,.team-img-box{
     justify-content: space-between;
 }
@@ -62,7 +62,7 @@ a:hover,.about-dl dd a:hover{
     text-align: center;
 }
 .header-content,.about-content,.common-weal-content,.customize-content,.detail-content-box,.content-body,
-.commonweal-content,.recruit-box,.join-content{
+.recruit-box,.join-content{
     width: 1130px;
 }
 .header-content,.form-box,.content-body,.commonweal-content,.share-box,.commonweal-box,.customize-content{

@@ -15,7 +15,10 @@ class IndexController extends Controller
             'isIndex' => true,
         ]);
     }
-
+    //公益详情页
+    public function detailcommonweal(){
+        return $this->fetch('index/detailcommonweal');
+    }
     public function index()
     {
         $banners = Banner::all();
