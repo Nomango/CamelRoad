@@ -1,8 +1,12 @@
 body{
-    font-size: 24pt;
+    font-size: 18pt;
+    color: #666;
 }
-.detail-head,.detail-img,.head-top-box{
+.detail-head,.detail-img,.head-top-box,.route-box,.route-img{
     width: 100%;
+}
+.route-box{
+    padding-bottom: 100pt;
 }
 .head-top-box{
     position: relative;
@@ -33,7 +37,7 @@ body{
     border-left: 26px solid transparent;
     border-top: 26px solid transparent;
 }
-.detail-desc-title{
+.detail-desc-title,.site-desc{
     font-size: 24pt;
 }
 .introduce-tab-box,.date-right,.chartered-btn,.setout-item,.chartered-item{
@@ -42,22 +46,35 @@ body{
 .detail-desc-box,.setout-box,.chartered-box,.site-box{
     background-color: #fff;
 }
-.detail-desc-box,.setout-box,.chartered-box,.introduce-content{
+.detail-desc-box{
+    padding: 20px 20px 0 20px;
+}
+.setout-box,.chartered-box,.introduce-content{
     padding: 20px;
 }
-.detail-desc-price,.setout-box,.setout-content,.chartered-box,.chartered-content{
+.detail-desc-price,.chartered-box,.site-box{
     margin-top: 20px;
 }
-.detail-desc-price{
+.detail-desc-price,.site-desc{
     justify-content: space-between;
 }
-.detail-desc-left,.detail-desc-right,.detail-desc-price,.date-box,.introduce-tab-box,.setout-content,.chartered-content{
+.detail-desc-price{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 40px;
+}
+.detail-desc-left,.detail-desc-right,.detail-desc-price,.date-box,.introduce-tab-box,.site-desc{
     display: flex;
 }
-.price-span,.primary-span,.setout-date,.chartered-box{
-    font-size: 22pt;
+.price-span{
+    font-size: 32pt;
 }
-.setout-content,.chartered-content,.introduce-tab-box,.date-box{
+.price-desc{
+    margin-left: 10px;
+}
+.detail-head,.primary-span{
+    font-size: 18pt;
+}
+.introduce-tab-box,.date-box,.detail-desc-left,.detail-desc-price,.site-desc{
     align-items: center;
 }
 .setout-content,.chartered-content{
@@ -69,6 +86,9 @@ body{
 }
 .setout-item{
     padding: 20px 58px;
+}
+.site-desc{
+   height: 75pt;
 }
 .chartered-item{
     padding: 20px 21px;
@@ -86,10 +106,7 @@ body{
     color: #e3435a;
     margin-left: 20px;
 }
-.day-span{
-    margin-right: 40px;
-}
-.primary-span,.day-span,.setout-date,.chartered-type,.chartered-car,.introduce-tab-p{
+.primary-span,.setout-date,.chartered-type,.chartered-car,.introduce-tab-p{
     color: #999;
 }
 .site-title{
@@ -113,7 +130,7 @@ body{
     border-bottom: 2px solid #e3435a;
 }
 .introduce-content{
-    min-height: 310px;
+    min-height: 730px;
     height: auto;
 }
 .chartered-btn{

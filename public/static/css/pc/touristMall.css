@@ -7,20 +7,21 @@ body{
 }
 .selected-list,.chartered-list{
     margin-top: 40px;
-    flex-wrap: wrap;
+}
+.tourist-content{
+    width: 1180px;
+    padding-left: 20px;
 }
 .selected-item,.chartered-item{
     width: 363px;
     height: 384px;
-    margin-bottom: 20px;
+    margin:0 20px 20px 0;
     transition: all .3s;
+    display: inline-block;
 }
 .selected-item:hover,.chartered-item:hover{
-    margin-top: -10px;
+    transform: translateY(-10px);
     box-shadow: 0 0 29px rgba(0,0,0,.25);
-}
-.selected-item:hover .selected-desc{
-
 }
 .selected-img,.chartered-img{
     height: 263px;

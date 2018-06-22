@@ -1,84 +1,90 @@
 body{
+    color: #333!important;
     background-color: #eeeeee;
+}
+.price-span{
+    font-size: 32px;
+}
+.desc-box,.submit-head-img{
+    position: relative;
+}
+.price-p{
+    align-items: baseline;
+    padding-bottom: 10px;
+}
+.desc-head{
+    padding: 0 0 0 20px;
+}
+.desc-head,.site-date-box{
+    border-bottom: 1px solid #ccc;
+}
+.desc-box,.introduce-tab{
+    background-color: #fff;
+}
+.site-date-box{
+    font-size: 14px;
+    padding: 10px 0 60px 20px;
+}
+.price-desc{
+    margin-left: 10px;
+}
+.site-box,.date-p{
+    margin-top: 10px;
+}
+.detail-subtitle,.site-name,.date-con{
+    color: #999;
+}
+.site-name,.date-con,.desc-box,.introduce-content-box{
+    margin-left: 20px;
+}
+.tag-box,.close-a{
+    position: absolute;
+}
+.tag-box{
+    right: 40px;
+    top: 0;
+}
+.tag-img{
+    width: 80px;
+    height: 70px;
+}
+.tag-p,.close-a,.close-a:hover{
+    color: #fff;
+}
+.tag-p{
+    font-size: 18px;
+    z-index: 10;
+    margin: -58px 0 0 16px;
+}
+.introduce-img{
+    width: 100%;
 }
 .detail-content-box{
     margin: 10px auto;
     padding: 40px 10px 10px 10px;
 }
 .detail-desc{
-    margin: 20px 0 30px 0;
+    margin: 20px 0 40px 0;
 }
 .detail-img{
-    width: 399px;
-    height: 399px;
+    width: 582px;
+    height: 348px;
 }
-.detail-img,.desc-box{
-    margin-left: 20px;
+.detail-subtitle,.detail-title,.introduce-con,.form-item{
+    margin-top: 20px;
 }
 .detail-title{
-    margin-left: 45px;
-}
-.introduce-content-box{
-    padding-left: 20px;
+    font-size: 24px;
 }
 .desc-box{
-    padding: 20px 0 0 40px;
+    padding: 20px 0 50px 0;
     border-top: 1px solid #ccc;
 }
-.price-p,.date-box{
-    margin-top: 25px;
-}
-.date-right{
-    margin-left: 100px;
-}
-.account-input,.date-input{
-    height: 30px;
-}
-.date-input{
-    width: 65px;
-    text-indent: 5px;
-}
-.account-input{
-    width: 80px;
-}
-.account-btn{
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    background-color: #ccc;
-}
-.reduce-btn{
-    margin: 5px 0 0 10px;
-}
-.add-btn{
-    margin: 5px 10px 0 0;
+.price-p{
+    margin-top: 60px;
 }
 .add-btn i{
     margin: 0 0 0 -2px;
-}
-.service-box,.service-list,.introduce-con{
-    margin-top: 20px;
-}
-.service-item{
-    width: 96px;
-    height: 60px;
-    flex-direction: column;
-}
-.service-item:not(:last-of-type){
-    margin-right: 20px;
-}
-.date-left{
-    align-items: center;
-}
-.type-p{
-    margin-top: 8px;
-}
-.site-p{
-    margin: 20px 0;
-}
-.connect-p{
-    margin: 0 5px;
-    color: #999;
 }
 .bespoke-btn{
     outline: none;
@@ -99,20 +105,13 @@ body{
     color: #666;
     padding: 0 0 10px 0;
 }
-.service-list{
-    display: flex;
-}
 .bespoke-btn{
-    margin-top: 22px;
-}
-.account-box{
-    margin-left: 10px;
+    margin: 50px 0 0 20px;
 }
 .introduce-item.active .introduce-item-span{
     font-weight: normal;
     border-bottom: 1.5px solid #e3435a;
 }
-
 .line-span{
     margin: 0 20px;
 }
@@ -124,9 +123,119 @@ body{
 .introduce-con{
     min-height: 200px;
 }
-.introduce-desc-title{
-    color: rgb(63,169,245);
+.mask{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+    z-index: 10;
 }
-.introduce-dsec,.introduce-item-span{
-    font-weight: lighter;
+.submit-box,.mask{
+    position: fixed;
+    display: none;
+}
+.submit-box{
+    width: 800px;
+    top: 40px;
+    left: 23% ;
+    background-color: #fff;
+    z-index: 11;
+    animation: showIn 1s ease forwards;
+}
+.submit-head-img{
+    width: 100%;
+    height: 204.5px!important;
+}
+.close-a{
+    font-size: 30px;
+    top: 10px;
+    right: 20px;
+    opacity: .8;
+}
+.close-a:hover{
+    opacity: 1;
+}
+.form-title{
+    font-size: 24px;
+}
+.form-title,.form-subtitle{
+    margin-top: 10px;
+}
+.submit-form-box{
+    width: 363.5px;
+}
+.form-subtitle{
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.form-item,.submit-footer{
+    display: flex;
+}
+.submit-footer{
+    align-items: center;
+    justify-content: space-around;
+}
+.wechat-box{
+    margin-top: 120px;
+}
+.item-p{
+    padding: 10px 0;
+    text-align: left;
+    font-size: 16px;
+}
+.item-input,.item-textarea{
+    height: 40px;
+    width: 307.5px;
+    display: inline-block;
+    text-indent: 10px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+.item-textarea{
+    height: 98px;
+    resize: none;
+}
+.submit-btn{
+    cursor: pointer;
+    width: 165.5px;
+    height: 40px;
+    line-height: 40px;
+    transition: all .3s;
+    border: 1px solid #ccc;
+    color: #fff;
+    background-color: #e3435a;
+    opacity: 1;
+    margin-left: 54px;
+}
+.submit-btn:hover{
+    opacity: .8;
+}
+.wechat-span{
+    color: #e3435a;
+}
+.wechat-img{
+    width: 220px;
+    height: 220px;
+}
+.wechat-p{
+    font-size: 14px;
+}
+@keyframes showIn {
+    0%{
+        opacity: .3;
+        -ms-transform: scale(.5);
+        transform: scale(.5);
+    }
+    50%{
+        opacity: .8;
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
 }

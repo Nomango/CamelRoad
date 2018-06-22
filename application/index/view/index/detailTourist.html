@@ -5,6 +5,9 @@
     <title>骆驼带路</title>
     {include file="layout/head"/}
     <link rel="stylesheet" href="__CSS__/mobile/detailTourist.css" />
+    <style>
+
+    </style>
 </head>
 <body>
 {include file="layout/header"/}
@@ -21,90 +24,44 @@
         <p class="detail-desc-title">乌鲁木齐三日游</p>
         <div class="detail-desc-price">
             <p class="detail-desc-left">
-                <span class="primary-span">促销价</span>
                 <span class="price-span">￥2564</span>
+                <span class="price-desc">元起/成人（3450.00元起/儿童）</span>
             </p>
             <p class="detail-desc-right">
                 <span class="day-span">天数：6天</span>
-                <span class="primary-span">已售：888</span>
             </p>
         </div>
-    </div>
-</div>
-<div class="setout-box">
-    <p class="setout-title">出发日期</p>
-    <div class="setout-content">
-        <div class="setout-item active">
-            <p class="setout-date">5/23</p>
-            <p class="setout-price">￥2564</p>
-        </div>
-        <div class="setout-item">
-            <p class="setout-date">6/1</p>
-            <p class="setout-price">￥2564</p>
-        </div>
-        <div class="setout-item">
-            <p class="setout-date">10/23</p>
-            <p class="setout-price">￥2564</p>
-        </div>
-        <div class="setout-item">
-            <p class="setout-date">12/23</p>
-            <p class="setout-price">￥2564</p>
-        </div>
-    </div>
-</div>
-<div class="chartered-box">
-    <p class="chartered-title">包车服务</p>
-    <div class="chartered-content">
-        <div class="chartered-item active">
-            <p class="chartered-type">5座经济型</p>
-            <p class="chartered-car">（别克威朗）</p>
-        </div>
-        <div class="chartered-item">
-            <p class="chartered-type">5座经济型</p>
-            <p class="chartered-car">（别克威朗）</p>
-        </div>
-        <div class="chartered-item">
-            <p class="chartered-type">5座经济型</p>
-            <p class="chartered-car">（别克威朗）</p>
-        </div>
-        <div class="chartered-item">
-            <p class="chartered-type">5座经济型</p>
-            <p class="chartered-car">（别克威朗）</p>
+        <div class="site-desc">
+            <p class="site-name">集合地点：乌鲁木齐</p>
+            <p class="date-p">日程时间：2018-05-04-2018-08-12</p>
         </div>
     </div>
 </div>
 <div class="site-box">
-    <p class="site-title">出发地点：乌鲁木齐</p>
     <div class="introduce-tab-box">
-        <p class="introduce-tab-p active">产品介绍</p>
+        <p class="introduce-tab-p active">行程介绍</p>
         <p class="introduce-tab-p">费用说明</p>
     </div>
     <div class="introduce-content-box">
-        <div class="introduce-content hideCon showCon">产品介绍</div>
+        <div class="introduce-content hideCon showCon">
+            <div class="route-box">
+                <img src="__IMAGE__/mobile-route.jpg" alt="" class="route-img">
+            </div>
+        </div>
         <div class="introduce-content hideCon">费用说明</div>
     </div>
 </div>
 <button class="chartered-btn">预约</button>
 <script>
-    $(".setout-item").click(function () {
-        var index = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active');
-    });
-    $(".chartered-item").click(function () {
-        var index = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active');
-    });
+
     $(".introduce-tab-p").click(function () {
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
         $(".introduce-content").eq(index).addClass('showCon').siblings().removeClass('showCon')
     });
     $(".chartered-btn").click(function () {
-        var setout_item = $(".setout-item.active").children().eq(0).html();
-        var item = $(".setout-item.active").children().eq(1).html();
-        console.log(setout_item)
-        console.log(item)
-        location.href = "{:url('Contact/reserve')}";
+
+        location.href = "{:url('Customize/reserve')}";
 
     })
 </script>

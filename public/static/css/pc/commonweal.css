@@ -1,12 +1,13 @@
 body{
     background-color: #eeeeee;
 }
+
 .common-weal-content{
     margin: 20px auto 60px;
 }
 .item-img{
-    width: 364px;
-    height: 240px;
+    width: 100%;
+    height: 340px;
 }
 .item-title{
     font-size: 28px;
@@ -15,23 +16,22 @@ body{
     position: relative;
 }
 .detail-span{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
+    float: right;
     font-size: 18px;
     color: #e3435a;
 }
 .item-desc{
-    padding: 10px 20px 20px 20px;
-    min-width: 766px;
+    padding: 20px;
     position: relative;
-}
-.item-content{
-    line-height: 30px;
-    text-align: justify;
 }
 .detail-span,.desc-span,.item-subtitle{
     font-size: 16px;
+}
+.item-content{
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
 }
 .page-box{
     margin-top: 60px;
@@ -50,6 +50,7 @@ body{
 }
 .common-weal-item{
     margin-bottom: 20px;
+    flex-direction: column;
 }
 .pre-p .page-icon{
     margin: 0 0 0 8px;

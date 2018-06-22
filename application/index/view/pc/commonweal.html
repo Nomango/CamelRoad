@@ -22,8 +22,10 @@
             <img src="__IMAGE__/{$c.image}" alt="" class="item-img">
             <div class="item-desc">
                 <p class="item-title">{$c.title}</p>
-                <p class="item-content">{$c.desc}</p>
-                <a href="{:url('Commonweal/detail')}?id={$c.id}"><p class="detail-span">查看详情 >></p></a>
+                <div class="desc-box">
+                    <p class="item-content">{$c.desc}</p>
+                    <a href="{:url('Commonweal/detail')}?id={$c.id}"><p class="detail-span">查看详情 >></p></a>
+                </div>
             </div>
         </div>
         {/volist}

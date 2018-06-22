@@ -9,6 +9,9 @@
         .detail-head{
             background-image: url("__IMAGE__/pc/horse.jpg");
         }
+        .submit-head-img{
+            background-image: url("__IMAGE__/pc/common.jpg");
+        }
     </style>
 </head>
 <body>
@@ -16,56 +19,38 @@
 <div class="detail-box">
     <div class="detail-head allhead-img"></div>
     <div class="detail-content-box">
-        <p class="detail-title">乌鲁木齐三日游</p>
         <div class="detail-desc">
-            <img src="__IMAGE__/pc/horse.jpg" alt="" class="detail-img">
+            <div class="detai-img-box">
+                <img src="__IMAGE__/pc/horse.jpg" alt="" class="detail-img">
+                <div class="detail-subimg">
+
+                </div>
+            </div>
             <div class="desc-box">
-                <p class="sold-p">已售：888</p>
-                <p class="price-p">
-                    促销价：
-                    <span class="price-span">￥2564</span>
-                </p>
-                <div class="date-box">
-                    <div class="date-left">
-                        <p class="date-name">出发日期：</p>
-                        <input type="text" class="date-input">
-                        <p class="connect-p">-</p>
-                        <input type="text" class="date-input">
-                        <p class="connect-p">-</p>
-                        <input type="text" class="date-input">
-                    </div>
-                   <div class="date-right">
-                       <p class="account-p">数量:</p>
-                       <div class="account-box">
-                           <p class="account-btn reduce-btn"><i>-</i></p>
-                           <input type="text" value="1" class="account-input">
-                           <p class="account-btn add-btn"><i>+</i></p>
-                       </div>
-                   </div>
+                <div class="tag-box">
+                    <img src="__IMAGE__/pc/tag.jpg" alt="" class="tag-img">
+                    <p class="tag-p">8日游</p>
                 </div>
-                <div class="service-box">
-                    <p class="service-p">包车服务:</p>
-                    <div class="service-list">
-                        <div class="service-item active">
-                            <p class="type-p">5座经济型</p>
-                            <p>（别克威朗）</p>
-                        </div>
-                        <div class="service-item">
-                            <p class="type-p">5座经济型</p>
-                            <p>（别克威朗）</p>
-                        </div>
-                        <div class="service-item">
-                            <p class="type-p">5座经济型</p>
-                            <p>（别克威朗）</p>
-                        </div>
-                        <div class="service-item">
-                            <p class="type-p">5座经济型</p>
-                            <p>（别克威朗）</p>
-                        </div>
-                    </div>
+                <div class="desc-head">
+                    <p class="detail-title">喀纳斯环线游</p>
+                    <p class="detail-subtitle">吐鲁番-乌鲁木齐-石河子-喀纳斯8日游</p>
+                    <p class="price-p">
+                        <span>￥</span>
+                        <span class="price-span">2564</span>
+                        <span class="price-desc">元起/成人（3450.00元起/儿童）</span>
+                    </p>
                 </div>
-                <p class="site-p">出发地点：乌鲁木齐</p>
-                <button class="bespoke-btn">预约</button>
+                <div class="site-date-box">
+                    <p class="site-box">
+                        <span class="site-span">集合地点</span>
+                        <span class="site-name">乌鲁木齐</span>
+                    </p>
+                    <p class="date-p">
+                        <span class="date-span">日程时间</span>
+                        <span class="date-con">2018-05-04-2015-08-12</span>
+                    </p>
+                </div>
+                <button class="bespoke-btn">立即预定</button>
             </div>
         </div>
         <div class="introduce-box">
@@ -82,20 +67,45 @@
             <div class="introduce-content-box">
                 <div class="introduce-con hideCon showCon">
                     <div class="introduce-desc-box">
-                        <p class="introduce-desc-title">1.【报名费用】</p>
-                        <p class="introduce-dsec">
-                            <span>
-                                享奢团：
-                            </span>
-                            <span>定价为成人6900元/人 儿童为3450元/人</span>
-                            <span>
-                                经济团：
-                            </span>
-                            <span>定价为成人4900元/人 儿童为2900元/人</span>
-                        </p>
+                        <img src="__IMAGE__/pc/route1.jpg" alt="" class="introduce-img">
                     </div>
                 </div>
                 <div class="introduce-con hideCon">费用说明</div>
+            </div>
+        </div>
+    </div>
+    <div class="mask"></div>
+    <div class="submit-box">
+        <div class="submit-head-img allhead-img">
+            <a href="javascript:;" class="close-a">×</a>
+        </div>
+        <div class="submit-footer">
+            <div class="submit-form-box">
+                <p class="form-title">开启定制旅行</p>
+                <p class="form-subtitle">你只需决定出发，其他的交给骆驼带路</p>
+                <div class="form-item">
+                    <p class="item-p">姓名：</p>
+                    <input type="text" class="item-input">
+                </div>
+                <div class="form-item">
+                    <p class="item-p">手机：</p>
+                    <input type="text" class="item-input">
+                </div>
+                <div class="form-item">
+                    <p class="item-p">备注：</p>
+                    <textarea class="item-textarea" style="overflow: hidden;"></textarea>
+                </div>
+                <div class="form-item">
+                    <button class="button submit-btn">提交</button>
+                </div>
+            </div>
+            <div class="wechat-box">
+                <img src="__IMAGE__/pc/qrcode.png" alt="" class="wechat-img">
+                <p class="wechat-p">
+                    扫码关注
+                    <span class="wechat-span">骆驼带路</span>
+                    微信公众号
+                </p>
             </div>
         </div>
     </div>
@@ -103,27 +113,22 @@
 
 {include file="pclayout/footer" /}
 <script>
-    $(".service-item").click(function () {
-        $(this).addClass('active').siblings().removeClass('active');
-    });
-    $(".reduce-btn").on('click',function () {
-        var count = $(".account-input").val();
-        if(count>0){
-            --count;
-            $(".account-input").val(count);
-        }
-    });
-    $(".add-btn").on('click',function () {
-        var count = $(".account-input").val();
-        count++;
-        $(".account-input").val(count);
-    });
-
     $(".introduce-item").click(function () {
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
         $(".introduce-con").eq(index).addClass('showCon').siblings().removeClass('showCon');
     });
+    $(".bespoke-btn").click(showIn);
+    $(".mask").click(showOut);
+    $(".close-a").click(showOut);
+    function showIn() {
+        $(".submit-box").show();
+        $(".mask").fadeIn();
+    }
+    function showOut() {
+        $(".submit-box").fadeOut();
+        $(".mask").fadeOut();
+    }
 </script>
 </body>
 </html>

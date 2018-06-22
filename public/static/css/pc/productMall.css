@@ -6,12 +6,9 @@ body{
     margin: 60px auto 40px;
 }
 .product-list{
-    overflow: hidden;
-    clear: both;
-    margin-left: 20px;
+    text-align: left;
 }
 .product-item{
-    float: left;
     display: inline-block;
     margin: 0 20px 20px 0;
 }
@@ -19,7 +16,6 @@ body{
     justify-content: space-between;
 }
 .product-list{
-    flex-wrap: wrap;
     margin: 40px 0 60px;
 }
 .button,.product-item{
@@ -32,7 +28,7 @@ body{
     transition: all .3s;
 }
 .product-item:hover{
-    transform: scale(1.03);
+    transform: translateY(-10px);
     box-shadow: 0 0 29px rgba(0,0,0,.25);
 }
 .product-item-img{
