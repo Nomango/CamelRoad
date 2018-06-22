@@ -9,47 +9,71 @@
         .detail-head{
             background-image: url("__IMAGE__/pc/dtourist.jpg");
         }
+        .search-box{
+            width: 100%;
+            height: 130px;
+            background-color: #515151;
+        }
+        .search-content{
+            width: 1130px;
+            padding-top: 20px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-img{
+            width: 80px;
+            height: 80px;
+        }
+        .search-input-box{
+            display: inline-block;
+            margin-left: 60px;
+        }
+        .input-top{
+            display: flex;
+            align-items: center;
+        }
+        .search-input{
+            width: 385px;
+            text-indent: 10px;
+            height: 30px;
+        }
+        .search-btn{
+            width: 36px;
+            height: 34px;
+            line-height: 20px;
+            background-color: #e3435a;
+        }
+        .search-img{
+            width: 20px;
+            height: 20px;
+        }
+        .hot-p{
+            color: #fff;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .search-input-box{
+            text-align: left;
+        }
     </style>
 </head>
 <body>
 {include file="pclayout/header" /}
 <div class="detail-box">
     <div class="detail-head allhead-img"></div>
-    <div class="detail-content">
-        <div class="select-box">
-            <p class="select-p">当前选择:</p>
-            <div class="select-btn-box">
-                <p class="close-p">
-                    <i class="close-icon"></i>
-                </p>
-                <p>精选旅行</p>
-            </div>
-        </div>
-        <div class="site-box">
-            <p class="site-p">目的地：</p>
-            <div class="site-list">
-                <p class="site-item active">乌鲁木齐</p>
-                <p class="site-item">乌鲁木齐</p>
-                <p class="site-item">乌鲁木齐</p>
-            </div>
-        </div>
-        <div class="sort-box">
-            <div class="sort-item comprehensive-box active">
-                <p class="comprehensive">综合排序</p>
-                <img src="__IMAGE__/pc/arrow.png" alt="" class="arrow-img hideCon showCon">
-            </div>
-            <div class="sort-item price-item">
-                <p class="comprehensive">价格</p>
-                <img src="__IMAGE__/pc/arrow.png" alt="" class="arrow-img hideCon">
-            </div>
-            <div class="sort-item sold-item">
-                <p class="comprehensive">销量</p>
-                <img src="__IMAGE__/pc/arrow.png" alt="" class="arrow-img hideCon">
-            </div>
-            <div class="sort-price-box">
-                <input type="text" placeholder="￥" class="price-input">
-                <span>-</span>
-                <input type="text" placeholder="￥" class="price-input">
+    <div class="search-box">
+        <div class="search-content">
+            <img src="__IMAGE__/search/logo.jpg" alt="" class="logo-img">
+            <div class="search-input-box">
+                <div class="input-top">
+                    <input type="text" class="search-input">
+                    <button class="button search-btn">
+                        <img src="__IMAGE__/search/search.jpg" alt="" class="search-img">
+                    </button>
+                </div>
+                <p class="hot-p">热门搜索：乌鲁木齐、喀什、伊犁</p>
             </div>
         </div>
         <div class="result-box">
@@ -75,6 +99,11 @@
                 {/volist}
             </div>
             {$tourist->render()}
+        </div>
+        <div class="page-box">
+            <button class="button pre-btn">上一页</button>
+            <span class="page-span">1</span>
+            <button class="button next-btn">下一页</button>
         </div>
     </div>
 </div>

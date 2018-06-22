@@ -147,14 +147,15 @@
     <div class="commonweal-content">
         <p class="commonweal-title">公益活动</p>
         {volist name="commonweals" id="c"}
+        <a href="{:url('Commonweal/detail')}?id={$c.id}">
         <div class="commonweal-item">
             <img src="__IMAGE__/{$c.image}" alt="" class="commonweal-img">
             <div class="commonweal-desc-box">
                 <p class="commonweal-desc-title">{$c.title}</p>
                 <p class="commonweal-desc">{$c.desc}</p>
-                <a href="{:url('Commonweal/detail')}?id={$c.id}"><p class="desc-detail">查看详情 >></p></a>
             </div>
         </div>
+        </a>
         {/volist}
         <div class="more-btn-box">
             <a href="{:url('Commonweal/index')}"><button class="button more-btn">查看更多</button></a>
