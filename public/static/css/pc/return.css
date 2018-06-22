@@ -12,6 +12,7 @@
     background-color: #999999;
     border-radius: 10px;
     cursor: pointer;
+    opacity: .8;
 }
 .return-icon{
     display: block;

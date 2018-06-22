@@ -39,8 +39,16 @@ class TouristController extends Controller
 
     //详细旅游
     public function index() {
-        $tourist = Tourist::paginate(9);
+        $query = Request::instance()->param('q');
+        if (is_null($query) || $query == '') {
+            $query = '';
+            $tourist = Tourist::paginate(9);
+        } else {
+            $tourist = Tourist::where('name|desc|departure|oneline_desc','like','%'.$query.'%')->select();
+        }
+
         $this->assign([
+            'query' => $query,
             'tourist' => $tourist,
         ]);
 

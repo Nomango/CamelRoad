@@ -68,17 +68,21 @@
             <img src="__IMAGE__/search/logo.jpg" alt="" class="logo-img">
             <div class="search-input-box">
                 <div class="input-top">
-                    <input type="text" class="search-input">
-                    <button class="button search-btn">
+                    <form action="{:url('Tourist/index')}">
+                    <input name="q" type="text" class="search-input" value="{$query}">
+                    <button type="submit" class="button search-btn">
                         <img src="__IMAGE__/search/search.jpg" alt="" class="search-img">
                     </button>
+                    </form>
                 </div>
                 <p class="hot-p">热门搜索：乌鲁木齐、喀什、伊犁</p>
             </div>
         </div>
+    </div>
+    <div class="detail-content">
         <div class="result-box">
             <div class="result-list">
-                {volist name="tourist" id="t"}
+                {volist name="tourist" id="t" empty="抱歉，暂无相关数据！"}
                 <div class="result-item">
                     <img src="__IMAGE__/{$t.image_1}" alt="" class="result-img">
                     <div class="result-desc">
@@ -98,24 +102,11 @@
                 </div>
                 {/volist}
             </div>
-            {$tourist->render()}
-        </div>
-        <div class="page-box">
-            <button class="button pre-btn">上一页</button>
-            <span class="page-span">1</span>
-            <button class="button next-btn">下一页</button>
+            {eq name="query" value=""}{$tourist->render()}{/eq}
         </div>
     </div>
 </div>
 
 {include file="pclayout/footer" /}
-<script>
-    $(".sort-item").click(function () {
-        var index = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active');
-        $(this).siblings().children('img').removeClass('showCon');
-        $(this).children('img').addClass('showCon');
-    });
-</script>
 </body>
 </html>
