@@ -21,7 +21,7 @@
     <div class="detail-content-box">
         <div class="detail-desc">
             <div class="detai-img-box">
-                <img src="__IMAGE__/pc/horse.jpg" alt="" class="detail-img">
+                <img src="__IMAGE__/{$tourist.image_1}" alt="" class="detail-img">
                 <div class="detail-subimg">
 
                 </div>
@@ -29,25 +29,25 @@
             <div class="desc-box">
                 <div class="tag-box">
                     <img src="__IMAGE__/pc/tag.jpg" alt="" class="tag-img">
-                    <p class="tag-p">8日游</p>
+                    <p class="tag-p">{$tourist.duration}日游</p>
                 </div>
                 <div class="desc-head">
-                    <p class="detail-title">喀纳斯环线游</p>
-                    <p class="detail-subtitle">吐鲁番-乌鲁木齐-石河子-喀纳斯8日游</p>
+                    <p class="detail-title">{$tourist.name}</p>
+                    <p class="detail-subtitle">{$tourist.desc}</p>
                     <p class="price-p">
                         <span>￥</span>
-                        <span class="price-span">2564</span>
-                        <span class="price-desc">元起/成人（3450.00元起/儿童）</span>
+                        <span class="price-span">{$tourist.adult_price}</span>
+                        <span class="price-desc">元起/成人（{$tourist.child_price} 元起/儿童）</span>
                     </p>
                 </div>
                 <div class="site-date-box">
                     <p class="site-box">
                         <span class="site-span">集合地点</span>
-                        <span class="site-name">乌鲁木齐</span>
+                        <span class="site-name">{$tourist.departure}</span>
                     </p>
                     <p class="date-p">
                         <span class="date-span">日程时间</span>
-                        <span class="date-con">2018-05-04-2015-08-12</span>
+                        <span class="date-con">2018-05-04-2015-08-12（内容有误）</span>
                     </p>
                 </div>
                 <button class="bespoke-btn">立即预定</button>
@@ -67,10 +67,14 @@
             <div class="introduce-content-box">
                 <div class="introduce-con hideCon showCon">
                     <div class="introduce-desc-box">
-                        <img src="__IMAGE__/pc/route1.jpg" alt="" class="introduce-img">
+                        <img src="__IMAGE__/{$tourist.intro}" alt="" class="introduce-img">
                     </div>
                 </div>
-                <div class="introduce-con hideCon">费用说明</div>
+                <div class="introduce-con hideCon">
+                    <div class="introduce-desc-box">
+                        <img src="__IMAGE__/{$tourist.warning}" alt="" class="introduce-img">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -126,7 +130,7 @@
         $(".mask").fadeIn();
     }
     function showOut() {
-        $(".submit-box").fadeOut();
+        $(".submit-box").hide();
         $(".mask").fadeOut();
     }
 </script>

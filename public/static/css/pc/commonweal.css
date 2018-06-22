@@ -52,6 +52,7 @@ body{
 .common-weal-item{
     width: 70%;
     min-width: 700px;
+    max-width: 1200px;
     margin: 30px auto 30px;
     flex-direction: column;
 }

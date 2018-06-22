@@ -54,77 +54,27 @@
         </div>
         <div class="result-box">
             <div class="result-list">
+                {volist name="tourist" id="t"}
                 <div class="result-item">
-                    <img src="__IMAGE__/pc/bhb.jpg" alt="" class="result-img">
+                    <img src="__IMAGE__/{$t.image_1}" alt="" class="result-img">
                     <div class="result-desc">
                         <p class="result-desc-top">
-                            <span class="result-desc-left"> < 包车自由行 > </span>
-                            <span class="result-desc-right">环天山360度无死角，包车自由行，独家推荐。</span>
+                            <span class="result-desc-left"> < {$t.name} > </span>
+                            <span class="result-desc-right">{$t.desc}</span>
                         </p>
                         <p class="result-desc-footer">
-                            <span class="date-span">阿勒泰：6天</span>
-                            <span class="sold-span">已售：100</span>
+                            <span class="date-span">{$t.departure}：{$t.duration}天</span>
+                            <!--<span class="sold-span">已售：100</span>-->
                             <span class="price-span">
-                                <em class="price-em">￥110000</em>
-                                <em class="text-em">起</em>
+                                <em class="price-em">￥{$t.adult_price}</em>
+                                <!--<em class="text-em">起</em>-->
                             </span>
                         </p>
                     </div>
                 </div>
-                <div class="result-item">
-                    <img src="__IMAGE__/pc/bhb.jpg" alt="" class="result-img">
-                    <div class="result-desc">
-                        <p class="result-desc-top">
-                            新疆探险旅游，自驾旅游等特色旅游线路，大美新疆一生不可错过的旅行！
-                        </p>
-                        <p class="result-desc-footer">
-                            <span class="date-span">阿勒泰：6天</span>
-                            <span class="sold-span">已售：100</span>
-                            <span class="price-span">
-                            <em class="price-em">￥110000</em>
-                            <em class="text-em">起</em>
-                        </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="result-item">
-                    <img src="__IMAGE__/pc/bhb.jpg" alt="" class="result-img">
-                    <div class="result-desc">
-                        <p class="result-desc-top">
-                            新疆探险旅游，自驾旅游等特色旅游线路，大美新疆一生不可错过的旅行！
-                        </p>
-                        <p class="result-desc-footer">
-                            <span class="date-span">阿勒泰：6天</span>
-                            <span class="sold-span">已售：100</span>
-                            <span class="price-span">
-                            <em class="price-em">￥110000</em>
-                            <em class="text-em">起</em>
-                        </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="result-item">
-                    <img src="__IMAGE__/pc/bhb.jpg" alt="" class="result-img">
-                    <div class="result-desc">
-                        <p class="result-desc-top">
-                            新疆探险旅游，自驾旅游等特色旅游线路，大美新疆一生不可错过的旅行！
-                        </p>
-                        <p class="result-desc-footer">
-                            <span class="date-span">阿勒泰：6天</span>
-                            <span class="sold-span">已售：100</span>
-                            <span class="price-span">
-                            <em class="price-em">￥110000</em>
-                            <em class="text-em">起</em>
-                        </span>
-                        </p>
-                    </div>
-                </div>
+                {/volist}
             </div>
-            <div class="page-box">
-                <button class="button pre-btn">上一页</button>
-                <span class="page-span">1</span>
-                <button class="button next-btn">下一页</button>
-            </div>
+            {$tourist->render()}
         </div>
     </div>
 </div>

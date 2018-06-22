@@ -21,27 +21,27 @@
     <div class="tourist-content">
         <p class="selected-p">精选旅行</p>
         <div class="selected-list">
-            {for start="0" end="5"}
-            <a href="{:url('Tourist/detail')}">
+            {volist name="tourist1" id="t"}
+            <a href="{:url('Tourist/detail')}?id={$t.id}">
             <div class="selected-item">
-                <img src="__IMAGE__/pc/bhb.jpg" alt="" class="selected-img">
+                <img src="__IMAGE__/{$t.image_1}" alt="" class="selected-img">
                 <div class="selected-desc">
                     <p class="selected-desc-top">
-                        <span class="selected-desc-left"> < 喀纳斯伊犁草原大环线 > </span>
-                        <span class="selected-desc-right">纯玩深度喀纳斯湖+伊犁草原品质6日游。</span>
+                        <span class="selected-desc-left"> < {$t.name} > </span>
+                        <span class="selected-desc-right">{$t.desc}</span>
                     </p>
                     <p class="selected-desc-footer">
-                        <span class="date-span">阿勒泰：6天</span>
+                        <span class="date-span">{$t.departure}：{$t.duration}天</span>
                         <!--<span class="sold-span">已售：100</span>-->
                         <span class="price-span">
-                            <em class="price-em">￥2268</em>
+                            <em class="price-em">￥{$t.adult_price}</em>
                             <!--<em class="text-em">起</em>-->
                         </span>
                     </p>
                 </div>
             </div>
             </a>
-            {/for}
+            {/volist}
         </div>
         <div class="more-box">
             <a href="{:url('Tourist/index')}"><button class="more-btn">查看更多旅行</button></a>
@@ -50,26 +50,16 @@
             <p class="recommend-title">主题推荐</p>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        {for start="0" end="3"}
-                        <a href="{:url('Tourist/detail')}">
-                        <div class="swiper-slide-img-box">
-                            <img src="__IMAGE__/kzls.jpg" alt="" class="swiper-slide-img">
-                            <p class="swiper-slide-p">新疆探险旅游，自驾旅游等特色旅游线路，大美新疆，一生不可错过的旅行!</p>
-                        </div>
-                        </a>
-                        {/for}
-                    </div>
-                    <div class="swiper-slide">
-                        {for start="0" end="3"}
-                        <a href="{:url('Tourist/detail')}">
+                    {volist name="tourist2" id="t" mod="3"}
+                    {eq name="mod" value="0"}<div class="swiper-slide">{/eq}
+                        <a href="{:url('Tourist/detail')}?id={$t.id}">
                             <div class="swiper-slide-img-box">
-                                <img src="__IMAGE__/kzls.jpg" alt="" class="swiper-slide-img">
-                                <p class="swiper-slide-p">新疆探险旅游，自驾旅游等特色旅游线路，大美新疆，一生不可错过的旅行!</p>
+                                <img src="__IMAGE__/{$t.image_1}" alt="" class="swiper-slide-img">
+                                <p class="swiper-slide-p">{$t.desc}</p>
                             </div>
                         </a>
-                        {/for}
-                    </div>
+                    {eq name="mod" value="2"}</div>{/eq}
+                    {/volist}
                 </div>
                 <div class="swiper-button-prev swiper-button-white"></div>
                 <div class="swiper-button-next swiper-button-white"></div>
@@ -78,32 +68,40 @@
         <div class="chartered-box">
             <p class="chartered-title">包车自由行</p>
             <div class="chartered-list">
-                {for start="0" end="3"}
-                <a href="{:url('Tourist/detail')}">
+                {volist name="tourist3" id="t"}
+                <a href="{:url('Tourist/detail')}?{$t.id}">
                 <div class="chartered-item">
-                    <img src="__IMAGE__/pc/bhb.jpg" alt="" class="chartered-img">
+                    <img src="__IMAGE__/{$t.image_1}" alt="" class="chartered-img">
                     <div class="chartered-desc">
                         <p class="chartered-desc-top">
-                            <span class="chartered-desc-left"> < 包车自由行 > </span>
-                            <span class="chartered-desc-right">环天山360度无死角，包车自由行，独家推荐。</span>
+                            <span class="selected-desc-left"> < {$t.name} > </span>
+                            <span class="selected-desc-right">{$t.desc}</span>
                         </p>
                         <p class="chartered-desc-footer">
-                            <span class="date-span">阿勒泰：6天</span>
+                            <span class="date-span">{$t.departure}：{$t.duration}天</span>
                             <!--<span class="sold-span">已售：100</span>-->
                             <span class="price-span">
-                            <em class="price-em">￥2268</em>
-                            <!--<em class="text-em">起</em>-->
-                        </span>
+                                <em class="price-em">￥{$t.adult_price}</em>
+                                <!--<em class="text-em">起</em>-->
+                            </span>
                         </p>
                     </div>
                 </div>
                 </a>
-                {/for}
+                {/volist}
             </div>
         </div>
     </div>
 </div>
-
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        speed:300
+    });
+</script>
 {include file="pclayout/footer" /}
 </body>
 </html>
