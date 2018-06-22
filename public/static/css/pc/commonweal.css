@@ -10,7 +10,7 @@ body{
     height: 340px;
 }
 .item-title{
-    font-size: 28px;
+    font-size: 24px;
 }
 .item-desc{
     position: relative;
@@ -32,6 +32,7 @@ body{
     margin-top: 20px;
     text-align: center;
     color: #999;
+    font-size: 16px;
 }
 .page-box{
     margin-top: 60px;
@@ -49,7 +50,9 @@ body{
     transform: rotate(-135deg);
 }
 .common-weal-item{
-    margin-bottom: 20px;
+    width: 70%;
+    min-width: 700px;
+    margin: 30px auto 30px;
     flex-direction: column;
 }
 .pre-p .page-icon{

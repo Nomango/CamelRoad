@@ -18,16 +18,17 @@
     <div class="common-weal-head allhead-img"></div>
     <div class="common-weal-content">
         {volist name="commonweals" id="c"}
+        <a href="{:url('Commonweal/detail')}?id={$c.id}">
         <div class="common-weal-item">
             <img src="__IMAGE__/{$c.image}" alt="" class="item-img">
             <div class="item-desc">
                 <p class="item-title">{$c.title}</p>
                 <div class="desc-box">
                     <p class="item-content">{$c.desc}</p>
-                    <a href="{:url('Commonweal/detail')}?id={$c.id}"><p class="detail-span">查看详情 >></p></a>
                 </div>
             </div>
         </div>
+        </a>
         {/volist}
         <!--<div class="page-box">-->
             <!--<p class="pre-p">-->
