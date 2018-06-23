@@ -11,11 +11,10 @@ body{
 .detail-img{
     width: 399px;
     height: 399px;
-    margin-left: 30px;
 }
 .desc-box{
     margin-left: 20px;
-    padding: 20px 0 0 40px;
+    padding: 20px 0 0 20px;
     border-top: 1px solid #ccc;
 }
 .price-p,.date-box{
@@ -52,6 +51,9 @@ body{
 .bespoke-btn:hover{
     transition: all .3s;
     opacity: .8;
+}
+.desc-box,.introduce-tab{
+    background-color: #fff;
 }
 .introduce-tab{
     width: calc(100% - 20px);
