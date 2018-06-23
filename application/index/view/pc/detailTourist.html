@@ -5,12 +5,49 @@
     <title>骆驼带路</title>
     {include file="layout/head"/}
     <link rel="stylesheet" href="__CSS__/pc/detailTourist.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <style>
         .detail-head{
             background-image: url("__IMAGE__/pc/horse.jpg");
         }
         .submit-head-img{
             background-image: url("__IMAGE__/pc/common.jpg");
+        }
+        .swiper-container{
+            position: relative;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            z-index: 1;
+        }
+        .swiper-pagination{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            transition: .3s opacity;
+            transform: translate3d(0,0,0);
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .swiper-slide{
+            width: 582px;
+        }
+        .swiper-pagination-bullet{
+            cursor: pointer;
+            width: 180px;
+            height: 123px;
+            display: inline-block;
+            opacity: .2;
+        }
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+        .swiper-pagination-bullet img{
+            width: 100%;
+            height: 123px;
         }
     </style>
 </head>
@@ -20,11 +57,22 @@
     <div class="detail-head allhead-img"></div>
     <div class="detail-content-box">
         <div class="detail-desc">
-            <div class="detai-img-box">
-                <img src="__IMAGE__/{$tourist.image_1}" alt="" class="detail-img">
-                <div class="detail-subimg">
-
+            <div id="banner">
+                <div class="swiper-container swiper-container-horizontal">
+                    <img src="__IMAGE__/{$tourist.image_1}" class="detail-img">
                 </div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active">
+                        <img src="__IMAGE__/pc/ajh.jpg">
+                    </span>
+                    <span class="swiper-pagination-bullet">
+                        <img src="__IMAGE__/{$tourist.image_1}">
+                    </span>
+                    <span class="swiper-pagination-bullet">
+                        <img src="__IMAGE__/pc/common.jpg">
+                    </span>
+                </div>
+
             </div>
             <div class="desc-box">
                 <div class="tag-box">
@@ -133,6 +181,10 @@
         $(".submit-box").hide();
         $(".mask").fadeOut();
     }
+    $(".swiper-pagination-bullet").click(function () {
+        $(this).addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
+        $(".detail-img")[0].src = "" + $(this).children('img')[0].src;
+    })
 </script>
 </body>
 </html>

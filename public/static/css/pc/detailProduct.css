@@ -17,8 +17,8 @@ body{
     padding: 20px 0 0 20px;
     border-top: 1px solid #ccc;
 }
-.price-p,.date-box{
-    margin-top: 25px;
+.price-p,.date-box,.sold-p{
+    margin-top: 20px;
 }
 .account-input{
     height: 30px;
@@ -73,7 +73,7 @@ body{
     margin-left: 10px;
 }
 .detail-title{
-    margin-left: -26px;
+    font-size: 24px;
 }
 .introduce-item.active .introduce-item-span{
     font-weight: normal;
