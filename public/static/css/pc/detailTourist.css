@@ -128,7 +128,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.5);
     z-index: 10;
 }
 .submit-box,.mask{
@@ -137,11 +137,11 @@ body{
 }
 .submit-box{
     width: 800px;
-    top: 40px;
+    top: 30px;
     left: 23% ;
     background-color: #fff;
     z-index: 11;
-    animation: showIn .8s ease forwards;
+    animation: showIn 1s ease-out forwards;
 }
 .submit-head-img{
     width: 100%;
@@ -219,20 +219,12 @@ body{
 .wechat-p{
     font-size: 14px;
 }
-@keyframes showIn {
-    0%{
-        opacity: .3;
-        -ms-transform: scale(.5);
-        transform: scale(.5);
-    }
-    50%{
-        opacity: .8;
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-    100%{
-        opacity: 1;
-        -ms-transform: scale(1);
-        transform: scale(1);
-    }
+.showIn{
+    display: block;
+    animation: showIn 2s ease-out forwards;
+}
+@keyframes showIn{
+    0% {opacity: .3;transform: translate3d(0,-8%,0);}
+    50% {opacity: 1;}
+    100% {opacity: 1;transform: translate3d(0,2%,0);}
 }
