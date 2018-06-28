@@ -112,11 +112,8 @@ a:hover,.about-dl dd a:hover{
 .desc-box,.introduce-tab,.price-em,.item-desc-title{
     font-size: 18px;
 }
-.advantage-subtitle,.customize-desc-title,.travel-item-title{
+.advantage-subtitle,.customize-desc-title,.travel-item-title,.commonweal-desc-title{
     font-size: 24px;
-}
-.commonweal-desc-title{
-    font-size: 28px;
 }
 .content-title,.advantage-title,.provide-title,.commonweal-title,.desc-title,.share-title,
 .service-title,.customize-title, .content-title,.welfare-title,.recruit-title,.product-title{
