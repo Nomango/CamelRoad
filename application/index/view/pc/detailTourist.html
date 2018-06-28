@@ -32,10 +32,10 @@
                         <img src="__IMAGE__/{$tourist.image_1}">
                     </span>
                     <span class="swiper-pagination-bullet">
-                        <img src="__IMAGE__/pc/ajh.jpg">
+                        <img src="__IMAGE__/{$tourist.image_2}">
                     </span>
                     <span class="swiper-pagination-bullet">
-                        <img src="__IMAGE__/pc/common.jpg">
+                        <img src="__IMAGE__/{$tourist.image_3}">
                     </span>
                 </div>
 
@@ -103,18 +103,18 @@
                 <p class="form-subtitle">你只需决定出发，其他的交给骆驼带路</p>
                 <div class="form-item">
                     <p class="item-p">姓名：</p>
-                    <input type="text" class="item-input">
+                    <input id="order-name" type="text" class="item-input">
                 </div>
                 <div class="form-item">
                     <p class="item-p">手机：</p>
-                    <input type="text" class="item-input">
+                    <input id="order-phone" type="text" class="item-input">
                 </div>
                 <div class="form-item">
                     <p class="item-p">备注：</p>
-                    <textarea class="item-textarea" style="overflow: hidden;"></textarea>
+                    <textarea id="order-remark" class="item-textarea" style="overflow: hidden;"></textarea>
                 </div>
                 <div class="form-item">
-                    <button class="button submit-btn">提交</button>
+                    <button id="order-submit" class="button submit-btn">提交</button>
                 </div>
             </div>
             <div class="wechat-box">
@@ -151,6 +151,51 @@
         $(this).addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
         $(".detail-img")[0].src = "" + $(this).children('img')[0].src;
     })
+
+    $(document).ready(function () {
+        layui.use('layer');
+
+        $('#order-submit').click(function () {
+            var name = $('#order-name').val();
+            var phone = $('#order-phone').val();
+            var remark = $('#order-remark').val();
+            if (name == "" ||
+                phone == "" ||
+                remark == "") {
+                layui.layer.msg('请填完后再提交哦~', {icon: 2});
+                return;
+            }
+
+            $('#order-submit').attr('disabled', 'disabled');
+
+            $.ajax({
+                type: 'POST',
+                data: {
+                    tourist_id: '{$tourist.id}',
+                    name: name,
+                    phone: phone,
+                    remark: remark
+                },
+                url: '{:url("Tourist/order")}',
+                success: function (data) {
+                    if (data.code != 0) {
+                        layui.layer.msg(data.msg, {icon: 2});
+                        $('#order-submit').removeAttr('disabled');
+                    } else {
+                        showOut();
+                        layui.layer.msg(data.msg, {
+                            icon: 1
+                            ,time: 1500
+                        });
+                    }
+                },
+                error: function () {
+                    layui.layer.msg('无法连接服务器！', {icon: 5});
+                    $('#order-submit').removeAttr('disabled');
+                }
+            });
+        });
+    });
 </script>
 </body>
 </html>

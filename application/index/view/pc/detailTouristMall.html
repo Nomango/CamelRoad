@@ -83,6 +83,7 @@
         <div class="result-box">
             <div class="result-list">
                 {volist name="tourist" id="t" empty="抱歉，暂无相关数据！"}
+                <a href="{:url('Tourist/detail')}?id={$t.id}">
                 <div class="result-item">
                     <img src="__IMAGE__/{$t.image_1}" alt="" class="result-img">
                     <div class="result-desc">
@@ -100,6 +101,7 @@
                         </p>
                     </div>
                 </div>
+                </a>
                 {/volist}
             </div>
             {eq name="query" value=""}{$tourist->render()}{/eq}

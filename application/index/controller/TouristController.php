@@ -9,6 +9,7 @@
 namespace app\index\controller;
 
 
+use app\common\model\Order;
 use app\common\model\Tourist;
 use think\Controller;
 use think\Request;
@@ -25,9 +26,9 @@ class TouristController extends Controller
     }
 
     public function landing() {
-        $tourist1 = Tourist::where('category', '=', 1)->select();
-        $tourist2 = Tourist::where('category', '=', 2)->select();
-        $tourist3 = Tourist::where('category', '=', 3)->select();
+        $tourist1 = Tourist::where('category', '=', 1)->order('id desc')->limit(0, 3)->select();
+        $tourist2 = Tourist::where('category', '=', 2)->order('id desc')->limit(0, 6)->select();
+        $tourist3 = Tourist::where('category', '=', 3)->order('id desc')->limit(0, 6)->select();
 
         $this->assign([
             'tourist1' => $tourist1,
@@ -62,6 +63,10 @@ class TouristController extends Controller
     //每一个旅游
     public function detail(){
         $id = Request::instance()->param('id/d');
+        if (!isset($id)) {
+            abort(404,'页面不存在');
+            return;
+        }
         $tourist = Tourist::get($id);
         $this->assign([
             'tourist' => $tourist,
@@ -71,6 +76,21 @@ class TouristController extends Controller
             return $this->fetch('index/detailTourist');
         } else {
             return $this->fetch('pc/detailTourist');
+        }
+    }
+
+    public function order() {
+        $data = Request::instance()->param();
+
+        $order = new Order();
+        $order['tourist_id'] = $data['tourist_id'];
+        $order['name'] = $data['name'];
+        $order['phone'] = $data['phone'];
+        $order['remark'] = $data['remark'];
+        if ($order->save()) {
+            return serve_json(0, '提交成功');
+        } else {
+            return serve_json(10001, '服务器异常');
         }
     }
 }

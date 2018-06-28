@@ -69,7 +69,7 @@
             <p class="chartered-title">包车自由行</p>
             <div class="chartered-list">
                 {volist name="tourist3" id="t"}
-                <a href="{:url('Tourist/detail')}?{$t.id}">
+                <a href="{:url('Tourist/detail')}?id={$t.id}">
                 <div class="chartered-item">
                     <img src="__IMAGE__/{$t.image_1}" alt="" class="chartered-img">
                     <div class="chartered-desc">
