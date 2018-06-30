@@ -9,54 +9,7 @@
         .detail-head{
             background-image: url("__IMAGE__/pc/dtourist.jpg");
         }
-        .search-box{
-            width: 100%;
-            height: 130px;
-            background-color: #515151;
-        }
-        .search-content{
-            width: 1130px;
-            padding-top: 20px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .logo-img{
-            width: 80px;
-            height: 80px;
-        }
-        .search-input-box{
-            display: inline-block;
-            margin-left: 60px;
-        }
-        .input-top{
-            display: flex;
-            align-items: center;
-        }
-        .search-input{
-            width: 385px;
-            text-indent: 10px;
-            height: 30px;
-        }
-        .search-btn{
-            width: 36px;
-            height: 34px;
-            line-height: 20px;
-            background-color: #e3435a;
-        }
-        .search-img{
-            width: 20px;
-            height: 20px;
-        }
-        .hot-p{
-            color: #fff;
-            font-size: 14px;
-            margin-top: 20px;
-        }
-        .search-input-box{
-            text-align: left;
-        }
+
     </style>
 </head>
 <body>
@@ -69,10 +22,10 @@
             <div class="search-input-box">
                 <div class="input-top">
                     <form action="{:url('Tourist/index')}">
-                    <input name="q" type="text" class="search-input" value="{$query}">
-                    <button type="submit" class="button search-btn">
-                        <img src="__IMAGE__/search/search.jpg" alt="" class="search-img">
-                    </button>
+                        <input name="q" type="text" class="search-input" value="{$query}">
+                        <button type="submit" class="button search-btn">
+                            <img src="__IMAGE__/search/search.jpg" alt="" class="search-img">
+                        </button>
                     </form>
                 </div>
                 <p class="hot-p">热门搜索：乌鲁木齐、喀什、伊犁</p>

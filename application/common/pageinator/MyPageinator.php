@@ -17,18 +17,18 @@ class MyPageinator extends Paginator
      * @param string $text
      * @return string
      */
-    protected function getPreviousButton($text = "上一页")
+    protected function getPreviousButton($text = "")
     {
 
         if ($this->currentPage() <= 1) {
-            return '<button class="button pre-btn">' . $text . '</button>';
+            return '<p class="pre-p"><i class="page-icon"></i>' . $text . '</p>';
         }
 
         $url = $this->url(
             $this->currentPage() - 1
         );
 
-        return '<a href="' . htmlentities($url) . '"><button class="button pre-btn">' . $text . '</button></a>';
+        return '<a href="' . htmlentities($url) . '"><p class="pre-p"><i class="page-icon"></i>' . $text . '</p></a>';
     }
 
     /**
@@ -36,15 +36,15 @@ class MyPageinator extends Paginator
      * @param string $text
      * @return string
      */
-    protected function getNextButton($text = "下一页")
+    protected function getNextButton($text = "")
     {
         if (!$this->hasMore) {
-            return '<button class="button pre-btn">' . $text . '</button>';
+            return '<p class="next-p"><i class="page-icon"></i>' . $text . '</p>';
         }
 
         $url = $this->url($this->currentPage() + 1);
 
-        return '<a href="' . htmlentities($url) . '"><button class="button pre-btn">' . $text . '</button></a>';
+        return '<a href="' . htmlentities($url) . '"><p class="next-p"><i class="page-icon"></i>' . $text . '</p></a>';
     }
 
     /**
@@ -107,13 +107,13 @@ class MyPageinator extends Paginator
         if ($this->hasPages()) {
             if ($this->simple) {
                 return sprintf(
-                    '<div class="page-box">%s %s</div>',
+                    '<div class="page-box"><p class="page-p">%s%s</p></div>',
                     $this->getPreviousButton(),
                     $this->getNextButton()
                 );
             } else {
                 return sprintf(
-                    '<div class="page-box">%s %s %s</div>',
+                    '<div class="page-box">%s <p class="page-p">%s %s</p></div>',
                     $this->getPreviousButton(),
                     $this->getLinks(),
                     $this->getNextButton()
@@ -142,7 +142,7 @@ class MyPageinator extends Paginator
      */
     protected function getDisabledTextWrapper($text)
     {
-        return '<span class="page-span">' . $text . '</span>';
+        return '<span class="page-span active">' . $text . '</span>';
     }
 
     /**
@@ -153,7 +153,7 @@ class MyPageinator extends Paginator
      */
     protected function getActivePageWrapper($text)
     {
-        return '<span class="page-span">' . $text . '</span>';
+        return '<span class="page-span active">' . $text . '</span>';
     }
 
     /**

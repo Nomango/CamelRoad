@@ -78,9 +78,6 @@ input::placeholder{
 .page-box{
     margin-top: 20px;
 }
-.page-span{
-    margin: 0 20px;
-}
 .result-item{
     width: 363px;
     height: 396px;
@@ -110,10 +107,8 @@ input::placeholder{
 .result-desc-right,.date-span,.sold-span{
     color: #999;
 }
-.button,.page-span{
-    font-size: 20px;
-}
 .button{
+    font-size: 20px;
     border: none;
     outline: none;
     width: 110px;
@@ -129,4 +124,52 @@ input::placeholder{
 .pre-btn:hover,.next-btn:hover{
     background-color: #666;
     color: #fff;
+}
+.search-box{
+    width: 100%;
+    height: 130px;
+    background-color: #515151;
+}
+.search-content{
+    width: 1130px;
+    padding-top: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-img{
+    width: 80px;
+    height: 80px;
+}
+.search-input-box{
+    display: inline-block;
+    margin-left: 60px;
+}
+.input-top{
+    display: flex;
+    align-items: center;
+}
+.search-input{
+    width: 385px;
+    text-indent: 10px;
+    height: 30px;
+}
+.search-btn{
+    width: 36px;
+    height: 34px;
+    line-height: 20px;
+    background-color: #e3435a;
+}
+.search-img{
+    width: 20px;
+    height: 20px;
+}
+.hot-p{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.search-input-box{
+    text-align: left;
 }

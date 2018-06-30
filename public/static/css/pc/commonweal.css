@@ -32,43 +32,11 @@ body{
     color: #999;
     font-size: 16px;
 }
-.page-box{
-    margin-top: 60px;
-}
-.pre-p,.next-p{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #e3435a;
-}
-.page-icon{
-    width: 15px;
-    height: 15px;
-    border-top: 1.5px solid #e3435a;
-    border-right: 1.5px solid #e3435a;
-    transform: rotate(-135deg);
-}
 .common-weal-item{
     width: 1130px;
     margin: 30px auto 30px;
     flex-direction: column;
 }
-.pre-p .page-icon{
-    margin: 0 0 0 8px;
-}
-.next-p,.page-p span.active{
-    background-color: #e3435a;
-}
-.next-p .page-icon{
-    border-color: #fff;
-    transform: rotate(45deg);
-    margin: 0 8px 0 0;
-}
-.page-p{
-    margin: 0 20px;
-}
-.page-p span{
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-    padding-right: 2px;
+.page-box{
+    margin-top: 60px;
 }

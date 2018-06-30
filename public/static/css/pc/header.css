@@ -55,7 +55,7 @@ a:hover,.about-dl dd a:hover{
 .introduce-box,.desc-box,.job-box,.tab-content,.form-item:last-child{
     text-align: left;
 }
-.mall-dl,.about-dl,.about-content,.page-p span,.customize-content,.submit-btn,.account-input,.account-btn,
+.mall-dl,.about-dl,.about-content,.page-span,.customize-content,.submit-btn,.account-input,.account-btn,
 .bespoke-btn,.detail-content-box,.service-item,.select-btn-box,.desc-left-top,.button,.share-top,
 .commonweal-box,.customize-box,.travel-item-outer,.welfare-box,.welfare-desc-box,.recruit-box,
 .join-content,.recruit-item,.product-content,.swiper-slide-img-box,.more-box,.more-btn,.wechat-box{
@@ -79,13 +79,10 @@ a:hover,.about-dl dd a:hover{
 .more-btn,.selected-item,.chartered-item{
     cursor: pointer;
 }
-.tab-item.active .tab-item-a,.price-span,.service-item.active{
+.tab-item.active .tab-item-a,.price-span,.service-item.active,.tab-item-a.active {
     color: #e3435a;
 }
-.tab-item-a.active {
-    color: #e3435a;
-}
-.service-item.active{
+.service-item.active,.pre-p,.next-p{
     border: 1px solid #e3435a;
 }
 .introduce-dsec,.item-desc-p{
@@ -103,7 +100,7 @@ a:hover,.about-dl dd a:hover{
 .introduce-dsec,.account-input,.date-input,.result-desc-top,.item-desc-p{
     line-height: 30px;
 }
-.advantage-desc,.customize-desc-p,.form-input,.service-item p,.site-p,.job-span,.result-desc-top{
+.advantage-desc,.customize-desc-p,.form-input,.service-item p,.site-p,.job-span,.result-desc-top,.page-span{
     font-size: 14px;
 }
 .dd-a,.tab-item,.provide-subtitle,.account-btn,.introduce-desc-box,.item-desc-p,.result-desc-footer{
@@ -146,7 +143,7 @@ a:hover,.about-dl dd a:hover{
 .header-img{
     width: 12%;
 }
-.tab-item,.advantage-item,.page-p span,.point-icon,.account-btn{
+.tab-item,.advantage-item,.page-span,.point-icon,.account-btn{
     display: inline-block;
 }
 .mall-dl,.about-dl,.hideCon{
@@ -155,10 +152,10 @@ a:hover,.about-dl dd a:hover{
 .mall-dl,.about-dl,.triangle,.close-p,.close-icon:after,.swiper-slide-p{
     position: absolute;
 }
-.mall-dl,.about-dl,.bespoke-btn,.recruit-item.active{
+.mall-dl,.about-dl,.bespoke-btn,.recruit-item.active,.pre-p:hover,.next-p:hover,.page-span.active{
     background-color: #e3435a;
 }
-.pre-p,.next-p,.page-p span,.point-icon,.account-btn,.close-icon{
+.pre-p,.next-p,.page-span,.point-icon,.account-btn,.close-icon{
     border-radius: 50%;
 }
 .page-icon,.triangle,.showCon,.close-icon{
@@ -170,7 +167,7 @@ a:hover,.about-dl dd a:hover{
 .account-box,.introduce-tab,.date-input,.service-item,.price-input,.sort-box,.select-btn-box{
     border: 1px solid #ccc;
 }
-.mall-dl .dd-a:hover,.about-dl .dd-a:hover,.dd-a,.mall-dl,.page-p span.active,.bespoke-btn,.account-btn{
+.mall-dl .dd-a:hover,.about-dl .dd-a:hover,.dd-a,.mall-dl,.page-span.active,.bespoke-btn,.account-btn{
     color: #fff;
 }
 .about-dl dd,.mall-dl dd{
@@ -180,18 +177,36 @@ a:hover,.about-dl dd a:hover{
     width: 100px;
     height: 100px;
 }
-.product-content .page-span,.result-box .page-span{
-    margin: 0 40px;
-}
-.product-content .pre-btn, .product-content .next-btn,.result-box .pre-btn, .result-box .next-btn{
-    color: #666;
-    border: 1px solid #666;
-    background: transparent;
+.pre-p,.next-p{
+    width: 40px;
+    height: 40px;
     transition: all .3s;
 }
-.product-content .next-btn:hover,.product-content .pre-btn:hover,.result-box .next-btn:hover,.result-box .pre-btn:hover{
-    color: #fff;
-    background-color: #666;
+.next-p .page-icon{
+    transform: rotate(45deg);
+    margin: 0 8px 0 0;
+}
+.page-icon{
+    width: 15px;
+    height: 15px;
+    border-top: 1.5px solid #e3435a;
+    border-right: 1.5px solid #e3435a;
+    transform: rotate(-135deg);
+}
+.pre-p .page-icon{
+    margin: 0 0 0 8px;
+}
+.pre-p:hover .page-icon,.next-p:hover .page-icon{
+    border-color: #fff;
+}
+.page-p{
+    margin: 0 20px;
+}
+.page-span{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    padding-right: 2px;
 }
 .triangle{
     top: -40px;
