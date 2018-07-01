@@ -254,3 +254,9 @@ body{
 .swiper-pagination-bullet img,.swiper-pagination-bullet{
     height: 123px;
 }
+@media (max-width: 1024px) {
+    .submit-box{
+        top: 5px;
+        left: 10%;
+    }
+}

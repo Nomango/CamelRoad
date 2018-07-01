@@ -9,6 +9,7 @@
         .detail-head{
             background-image: url("__IMAGE__/pc/product.jpg");
         }
+
     </style>
 </head>
 <body>
@@ -17,14 +18,31 @@
     <div class="detail-head allhead-img"></div>
     <div class="detail-content-box">
         <div class="detail-desc">
-            <img src="__IMAGE__/pc/product.jpg" alt="" class="detail-img">
+            <div id="banner">
+                <div class="swiper-container swiper-container-horizontal">
+                    <img src="__IMAGE__/pc/product.jpg" class="detail-img">
+                </div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active">
+                        <img src="__IMAGE__/pc/product.jpg">
+                    </span>
+                    <span class="swiper-pagination-bullet">
+                        <img src="__IMAGE__/pc/common.jpg">
+                    </span>
+                    <span class="swiper-pagination-bullet">
+                        <img src="__IMAGE__/pc/product.jpg">
+                    </span>
+                </div>
+            </div>
             <div class="desc-box">
-                <p class="detail-title">新疆干果</p>
-                <p class="sold-p">已售：888</p>
-                <p class="price-p">
-                    促销价：
-                    <span class="price-span">￥2564</span>
-                </p>
+                <div class="desc-panel">
+                    <p class="detail-title">新疆干果</p>
+                    <p class="sold-p">已售：888</p>
+                    <p class="price-p">
+                        促销价：
+                        <span class="price-span">￥2564</span>
+                    </p>
+                </div>
                 <div class="date-box">
                     <p class="account-p">数量:</p>
                     <div class="account-box">
@@ -86,7 +104,10 @@
         count++;
         $(".account-input").val(count);
     });
-
+    $(".swiper-pagination-bullet").click(function () {
+        $(this).addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
+        $(".detail-img")[0].src = "" + $(this).children('img')[0].src;
+    });
     $(".introduce-item").click(function () {
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');

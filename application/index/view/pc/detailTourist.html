@@ -5,8 +5,6 @@
     <title>骆驼带路</title>
     {include file="layout/head"/}
     <link rel="stylesheet" href="__CSS__/pc/detailTourist.css" />
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">-->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>-->
     <style>
         .detail-head{
             background-image: url("__IMAGE__/pc/horse.jpg");
@@ -38,7 +36,6 @@
                         <img src="__IMAGE__/{$tourist.image_3}">
                     </span>
                 </div>
-
             </div>
             <div class="desc-box">
                 <div class="tag-box">
@@ -150,7 +147,7 @@
     $(".swiper-pagination-bullet").click(function () {
         $(this).addClass('swiper-pagination-bullet-active').siblings().removeClass('swiper-pagination-bullet-active');
         $(".detail-img")[0].src = "" + $(this).children('img')[0].src;
-    })
+    });
 
     $(document).ready(function () {
         layui.use('layer');

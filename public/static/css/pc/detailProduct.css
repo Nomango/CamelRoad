@@ -9,15 +9,21 @@ body{
     margin: 20px 0 30px 0;
 }
 .detail-img{
-    width: 399px;
-    height: 399px;
+    width: 582px;
+    height: 348px;
 }
 .desc-box{
     margin-left: 20px;
-    padding: 20px 0 0 20px;
+    padding: 20px 20px 0 20px;
     border-top: 1px solid #ccc;
 }
-.price-p,.date-box,.sold-p{
+.price-p{
+    align-items: center;
+}
+.price-span{
+    font-size: 32px;
+}
+.price-p,.date-box,.sold-p,.introduce-con,.swiper-pagination{
     margin-top: 20px;
 }
 .account-input{
@@ -91,7 +97,6 @@ body{
     border-left: 1px solid #ccc;
 }
 .introduce-con{
-    margin-top: 20px;
     min-height: 200px;
 }
 .introduce-desc-title{
@@ -99,4 +104,36 @@ body{
 }
 .introduce-dsec,.introduce-item-span{
     font-weight: lighter;
+}
+.desc-panel{
+    background-color: #f5f5f5;
+    padding: 10px 0 10px 8px;
+}
+.swiper-container{
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.swiper-pagination{
+    z-index: 10;
+    text-align: center;
+    transition: .3s opacity linear;
+    display: flex;
+    justify-content: space-between;
+}
+.swiper-pagination-bullet{
+    width: 178px;
+    display: inline-block;
+    opacity: .5;
+}
+.swiper-pagination-bullet-active {
+    border: 2px solid #e3435a;
+    opacity: 1;
+}
+.swiper-pagination-bullet img,.swiper-pagination-bullet{
+    height: 123px;
+}
+.swiper-pagination-bullet img,.swiper-pagination{
+    width: 100%;
 }
